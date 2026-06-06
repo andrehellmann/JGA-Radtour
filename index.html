@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JGA MTB Voralpen-Loop 2026 · München · Rofan · München</title>
+<title>JGA MTB Voralpen-Loop 2026 · Zwei Varianten</title>
 <style>
 /* required styles */
 
@@ -1179,6 +1179,65 @@ svg.leaflet-image-layer.leaflet-interactive path {
     cursor: not-allowed;
   }
 
+
+  /* ── VARIANTEN-TOGGLE ──────────────────────────────────────────────────── */
+  .variant-toggle-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #f0faf5;
+    border: 2px solid var(--primary);
+    border-radius: 12px;
+    padding: 14px 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  .vt-label {
+    font-weight: 700;
+    color: var(--primary);
+    font-size: 15px;
+    white-space: nowrap;
+  }
+
+  .vt-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 18px;
+    border: 2px solid var(--border);
+    background: white;
+    color: var(--text);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.2s;
+    line-height: 1.3;
+  }
+
+  .vt-btn small {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--text-muted);
+    margin-top: 2px;
+  }
+
+  .vt-btn:hover:not(.active) {
+    border-color: var(--primary-light);
+    background: #f5fdf8;
+  }
+
+  .vt-btn.active {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+  }
+
+  .vt-btn.active small {
+    color: rgba(255,255,255,0.8);
+  }
+
   .footer {
     text-align: center;
     padding: 24px 0;
@@ -1203,7 +1262,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   <div class="header">
     <div class="emoji">🚵‍♂️🍻🏔️</div>
     <h1>JGA MTB Voralpen-Loop 2026</h1>
-    <div class="subtitle">München · Achensee · Rofan-Hütte · München · 24.–30. August 2026</div>
+    <div class="subtitle"><span id="v-subtitle">München · Achensee · Rofan-Hütte · München · 24.–30. August 2026</span></div>
     <div class="header-stats">
       <div class="header-stat">📏 ~415 km</div>
       <div class="header-stat">⛰️ ~6.800 hm</div>
@@ -1216,17 +1275,30 @@ svg.leaflet-image-layer.leaflet-interactive path {
   <div class="concept-banner">
     <div class="concept-banner-icon">🔄</div>
     <div class="concept-banner-text">
-      <strong>Echte Loop-Tour ohne Zug-Hopping unterwegs</strong>
-      Jeden Tag einfach weiterfahren – nur An- und Abreise mit der Bahn.
+      <strong id="v-banner-title">Echte Loop-Tour · Rofan-Hütte Variante</strong>
+      <span id="v-banner-sub">Di direkt hoch zur Rofan-Hütte (1.840 m) – Mi entspannte Abfahrt via Inntal nach Kufstein.</span>
     </div>
+  </div>
+
+  <!-- VARIANTEN-TOGGLE -->
+  <div class="variant-toggle-bar">
+    <span class="vt-label">Variante:</span>
+    <button class="vt-btn active" id="btn-rofan" onclick="setVariant('rofan')">
+      🏔️ Rofan-Hütte <small>Di→Mi · Privatzimmer</small>
+    </button>
+    <button class="vt-btn" id="btn-erfurter" onclick="setVariant('erfurter')">
+      ⛺ Erfurter Hütte <small>Mi→Do · Matrazenlager frei!</small>
+    </button>
   </div>
 
   <!-- TABS -->
   <div class="tabs">
     <button class="tab active" data-tab="overview">📊 Übersicht & Karte</button>
     <button class="tab" data-tab="stage1">Mo · Lenggries</button>
-    <button class="tab" data-tab="stage2">Di · Rofan-Hütte 🌶️</button>
-    <button class="tab" data-tab="stage3">Mi · Kufstein</button>
+    <button class="tab v-tab" data-tab="stage2" data-variant="rofan">Di · Rofan-Hütte 🌶️</button>
+    <button class="tab v-tab" data-tab="stage3" data-variant="rofan">Mi · Kufstein</button>
+    <button class="tab v-tab" data-tab="stage2e" data-variant="erfurter" style="display:none">Di · Achensee</button>
+    <button class="tab v-tab" data-tab="stage3e" data-variant="erfurter" style="display:none">Mi · Erfurter Hütte 🌶️</button>
     <button class="tab" data-tab="stage4">Do · München</button>
     <button class="tab" data-tab="stage5">Fr · Schliersee</button>
     <button class="tab" data-tab="stage6">Sa · Tegernsee</button>
@@ -1286,22 +1358,42 @@ svg.leaflet-image-layer.leaflet-interactive path {
             <td>80 km / 600 hm</td>
             <td>Lenggries (Hotel)</td>
           </tr>
-          <tr class="basti-row">
+          <!-- Variante Rofan -->
+          <tr class="basti-row v-row v-rofan">
             <td class="day-cell">Di 25.08. 🌶️</td>
             <td>Lenggries → Sylvensteinsee → Achensee → <strong>Berggasthof Rofan</strong></td>
             <td>75 km / 1.800 hm</td>
-            <td><strong>🏔️ Berghütte Privatzimmer (Di→Mi)</strong></td>
+            <td><strong>🏔️ Rofan-Hütte Privatzimmer (Di→Mi)</strong></td>
           </tr>
-          <tr>
+          <tr class="v-row v-rofan">
             <td class="day-cell">Mi 26.08.</td>
             <td>Rofan-Abfahrt → Inntal → <strong>Kufstein</strong></td>
             <td>70 km / 600 hm</td>
             <td>Kufstein (Hotel)</td>
           </tr>
-          <tr>
+          <tr class="v-row v-rofan">
             <td class="day-cell">Do 27.08.</td>
             <td>Kufstein → Inntalradweg → Rosenheim → <strong>München</strong></td>
             <td>80 km / 400 hm</td>
+            <td>München (Hotel) · <strong>Basti raus</strong> 🚉</td>
+          </tr>
+          <!-- Variante Erfurter -->
+          <tr class="v-row v-erfurter" style="display:none">
+            <td class="day-cell">Di 25.08.</td>
+            <td>Lenggries → Sylvensteinsee → <strong>Achensee/Pertisau</strong></td>
+            <td>65 km / 1.200 hm</td>
+            <td>Pertisau (Hotel)</td>
+          </tr>
+          <tr class="basti-row v-row v-erfurter" style="display:none">
+            <td class="day-cell">Mi 26.08. 🌶️</td>
+            <td>Pertisau → Maurach → Rofan-Höhenweg → <strong>Erfurter Hütte</strong></td>
+            <td>40 km / 1.500 hm</td>
+            <td><strong>⛺ Erfurter Hütte Matrazenlager (Mi→Do)</strong></td>
+          </tr>
+          <tr class="v-row v-erfurter" style="display:none">
+            <td class="day-cell">Do 27.08.</td>
+            <td>Erfurter Hütte → Rofan-Abfahrt → Inntalradweg → <strong>München</strong></td>
+            <td>100 km / 600 hm</td>
             <td>München (Hotel) · <strong>Basti raus</strong> 🚉</td>
           </tr>
           <tr class="andre-row">
@@ -1404,7 +1496,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   </div>
 
   <!-- TAB: STAGE 2 - TUESDAY (KÖNIGSETAPPE) -->
-  <div class="tab-content" id="stage2">
+  <div class="tab-content v-panel v-rofan" id="stage2">
     <div class="card">
       <div class="stage-header">
         <div class="stage-title-block">
@@ -1469,8 +1561,77 @@ svg.leaflet-image-layer.leaflet-interactive path {
     </div>
   </div>
 
+  
+
+<!-- TAB: STAGE 2E - TUESDAY ERFURTER -->
+  <div class="tab-content v-panel v-erfurter" id="stage2e" style="display:none">
+    <div class="card">
+      <div class="stage-header">
+        <div class="stage-title-block">
+          <h2>📅 Di 25.08. · Sylvensteinsee & Achensee</h2>
+          <div class="stage-route">Lenggries → Vorderriß → Sylvensteinsee → Achenkirch → Pertisau</div>
+        </div>
+      </div>
+
+      <div class="stage-stats">
+        <div class="stage-stat"><div class="stage-stat-value">65 km</div><div class="stage-stat-label">Distanz</div></div>
+        <div class="stage-stat"><div class="stage-stat-value">1.200 hm</div><div class="stage-stat-label">Höhenmeter</div></div>
+        <div class="stage-stat"><div class="stage-stat-value">6-7h</div><div class="stage-stat-label">Fahrzeit</div></div>
+        <div class="stage-stat"><div class="stage-stat-value">⭐⭐⭐</div><div class="stage-stat-label">Anspruch</div></div>
+      </div>
+
+      <h3>🚵 Route</h3>
+      <p>Aus Lenggries Auffahrt über das Brauneckgebiet, dann Abfahrt durch die <strong>Jachenau</strong> – einsame Voralpen-Idylle. Über Vorderriß zur <strong>Sylvensteinsee-Talsperre</strong> (Foto-Stop!), dann über die Grenze nach Österreich. Über den <strong>Achenpass</strong> (941 m) nach Achenkirch und am Ostufer des Achensees nach Pertisau.</p>
+
+      <div class="stage-details">
+        <div class="stage-info-block">
+          <h4>📍 Schlüsselstellen</h4>
+          <ul>
+            <li>Lenggries (680 m) – Start</li>
+            <li>Brauneck-Vorderhang (1.000 m)</li>
+            <li>Jachenau (810 m)</li>
+            <li>Vorderriß (820 m)</li>
+            <li>Sylvensteinsee (763 m) – Pause</li>
+            <li>Achenpass (941 m) – Grenze AT</li>
+            <li>Achenkirch (929 m)</li>
+            <li>Pertisau (929 m) – Übernachtung</li>
+          </ul>
+        </div>
+        <div class="stage-info-block">
+          <h4>🍻 Einkehr</h4>
+          <ul>
+            <li><strong>Jachenau Klosterwirt</strong> – Bayrisch traditionell</li>
+            <li><strong>Gasthof Post Vorderriß</strong></li>
+            <li><strong>Achenkirch</strong> – schöne Cafés</li>
+            <li>Schwimmen im Achensee am Abend!</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="highlights">
+        <h4>✨ Highlights</h4>
+        <ul style="margin-left: 16px;">
+          <li>Türkisblauer Sylvensteinsee – einer der schönsten Stauseen Bayerns</li>
+          <li>Jachenau – einsamste Voralpenregion</li>
+          <li>Achenpass-Übergang mit Grenz-Feeling</li>
+          <li>Achensee = "Tiroler Meer" mit kristallklarem Wasser</li>
+        </ul>
+      </div>
+
+      <div class="highlights">
+        <h4>🛏️ Übernachtung Pertisau am Achensee</h4>
+        <em>Hotel Karlwirt</em>, <em>Furtherwirt</em>, <em>Posthotel Achenkirch</em> (etwas außerhalb). Pertisau ist DER Bike-Ort am Achensee – Hotels mit Bike-Service und Garagen. Abends im Achensee schwimmen!
+      </div>
+
+      <div class="stage-nav">
+        <button onclick="switchTab('stage1')">← Zurück zu Mo</button>
+        <button onclick="switchTab('stage3e')">Weiter zu Mi · Erfurter Hütte →</button>
+      </div>
+    </div>
+  </div>
+
   <!-- TAB: STAGE 3 - WEDNESDAY (GENUSS-ETAPPE) -->
-  <div class="tab-content" id="stage3">
+  <div class="tab-content v-panel v-rofan" id="stage3">
     <div class="card">
       <div class="stage-header">
         <div class="stage-title-block">
@@ -1527,6 +1688,77 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
       <div class="stage-nav">
         <button onclick="switchTab('stage2')">← Zurück zu Di</button>
+        <button onclick="switchTab('stage4')">Weiter zu Do · München →</button>
+      </div>
+    </div>
+  </div>
+
+  
+
+<!-- TAB: STAGE 3 - WEDNESDAY (ERFURTER HÜTTE) -->
+  <div class="tab-content" id="stage3">
+    <div class="card">
+      <div class="stage-header">
+        <div class="stage-title-block">
+          <h2>📅 Mi 26.08. · Rofan-Höhenweg & Erfurter Hütte 🌶️</h2>
+          <div class="stage-route">Pertisau → Maurach → Rofanseilbahn → Rofan-Trails → Erfurter Hütte</div>
+        </div>
+      </div>
+
+      <div class="stage-stats">
+        <div class="stage-stat"><div class="stage-stat-value">40 km</div><div class="stage-stat-label">Distanz</div></div>
+        <div class="stage-stat"><div class="stage-stat-value">1.500 hm</div><div class="stage-stat-label">Höhenmeter</div></div>
+        <div class="stage-stat"><div class="stage-stat-value">5-6h</div><div class="stage-stat-label">Fahrzeit</div></div>
+        <div class="stage-stat"><div class="stage-stat-value">⭐⭐⭐</div><div class="stage-stat-label">Anspruch</div></div>
+      </div>
+
+      <div class="basti-note">
+        <strong>🌶️ Basti-Joker:</strong> Rofanseilbahn ab Maurach spart ~900 hm Eigenanstieg – flexibel je nach Tagesform. Die Trails am Höhenweg sind S1–S2, gut fahrbar. Erfurter Hütte ist das Ziel: 1.834 m, Matrazenlager für alle drei bereits gesichert.
+      </div>
+
+      <h3>🌅 Vormittag: Achensee → Maurach → Rofan</h3>
+      <p>Vom Hotel in Pertisau am <strong>Achensee-Westufer</strong> nach Maurach. Dort Entscheidung: Forststraße über die Bayreuther Hütte hochkurbeln (~900 hm, 2h) oder <strong>Rofanseilbahn</strong> nehmen (10 min). Oben beginnt die Rofan-Hochfläche auf ~1.800 m.</p>
+
+      <h3>🏔️ Nachmittag: Rofan-Höhenweg zur Erfurter Hütte</h3>
+      <p>Auf dem <strong>Tiroler Adlerweg / E4-Fernwanderweg</strong> entlang der Rofan-Hochfläche – MTB-tauglich auf Schotter und S1-Trails. Gigantische Blicke auf Achensee, Karwendel und Zillertaler Alpen. Die <strong>Erfurter Hütte</strong> liegt direkt an der Bergstation, das Ziel ist kaum zu verfehlen.</p>
+
+      <div class="stage-details">
+        <div class="stage-info-block">
+          <h4>📍 Schlüsselstellen</h4>
+          <ul>
+            <li>Pertisau (929 m) – Start</li>
+            <li>Achensee-Westufer</li>
+            <li>Maurach (957 m) – Rofanseilbahn Option</li>
+            <li>Bergstation Rofanseilbahn (1.834 m)</li>
+            <li>Bayreuther Hütte (1.620 m) – Einkehr</li>
+            <li>Mauritzalm / Krahnsattel</li>
+            <li><strong>Erfurter Hütte (1.834 m)</strong> – Übernachtung</li>
+          </ul>
+        </div>
+        <div class="stage-info-block">
+          <h4>🍽️ Einkehr-Highlights</h4>
+          <ul>
+            <li><strong>Bayreuther Hütte</strong> – urig, Tiroler Küche</li>
+            <li><strong>Mauritzalm</strong> – Almidylle</li>
+            <li><strong>Berggasthof Rofan</strong> – Tageseinkehr Terrasse</li>
+            <li><strong>Erfurter Hütte</strong> – Abendessen, Sonnenuntergang</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="highlights">
+        <h4>🛏️ Übernachtung: Erfurter Hütte (1.834 m) · Mi→Do ✅ Plätze frei!</h4>
+        <p>Direkt neben der Bergstation der Rofanseilbahn, 50 m vom Berggasthof Rofan. <strong>Matrazenlager für Mi→Do bereits verfügbar</strong> – jetzt buchen! Bewertung: 4,7 ⭐ (1.161 Bewertungen). Saubere Schlafräume, gutes Frühstück, freundliches Team. Hüttenschlafsack mitbringen!</p>
+        <a href="mailto:huette@erfurterhuette.at" class="external-link">erfurterhuette@aon.at</a>
+        <p style="margin-top:8px; font-size:13px;">📞 <strong>+43 5243 5517</strong> · oder <strong>+43 664 5146833</strong></p>
+      </div>
+
+      <div class="warning">
+        <strong>⚠️ Hüttenschlafsack Pflicht!</strong> Matrazenlager = eigener Schlafsack notwendig. Handtuch mitnehmen. Duschen kostenpflichtig (~2 €/Token). Bargeld einplanen – keine Kartenzahlung.
+      </div>
+
+      <div class="stage-nav">
+        <button onclick="switchTab('stage2e')">← Zurück zu Di</button>
         <button onclick="switchTab('stage4')">Weiter zu Do · München →</button>
       </div>
     </div>
@@ -1746,8 +1978,12 @@ svg.leaflet-image-layer.leaflet-interactive path {
         </thead>
         <tbody>
           <tr><td>Mo</td><td>Lenggries</td><td>Hotel zur Post / Arabella Brauneck</td><td>Mittel</td></tr>
-          <tr class="basti-row"><td><strong>Di</strong></td><td><strong>Rofan-Hütte (1.840m)</strong></td><td><strong>🏔️ Berggasthof Rofan Privatzimmer (Di→Mi)</strong></td><td><strong>🚨 HOCH – sofort!</strong></td></tr>
-          <tr><td>Mi</td><td>Kufstein</td><td>Hotel Andreas Hofer / Gasthof Bärenbad</td><td>Mittel</td></tr>
+          <!-- Rofan-Variante -->
+          <tr class="basti-row v-row v-rofan"><td><strong>Di</strong></td><td><strong>Rofan-Hütte (1.840m)</strong></td><td><strong>🏔️ Berggasthof Rofan Privatzimmer (Di→Mi)</strong></td><td><strong>🚨 HOCH – sofort!</strong></td></tr>
+          <tr class="v-row v-rofan"><td>Mi</td><td>Kufstein</td><td>Hotel Andreas Hofer / Gasthof Bärenbad</td><td>Mittel</td></tr>
+          <!-- Erfurter-Variante -->
+          <tr class="v-row v-erfurter" style="display:none"><td>Di</td><td>Pertisau/Achensee</td><td>Hotel Karlwirt / Furtherwirt</td><td>Mittel</td></tr>
+          <tr class="basti-row v-row v-erfurter" style="display:none"><td><strong>Mi</strong></td><td><strong>Erfurter Hütte (1.834m)</strong></td><td><strong>⛺ Erfurter Hütte Matrazenlager (Mi→Do) · +43 5243 5517</strong></td><td><strong>✅ Plätze frei – jetzt buchen!</strong></td></tr>
           <tr><td>Do</td><td>München</td><td>Motel One Hbf</td><td>Mittel</td></tr>
           <tr><td>Fr</td><td>Schliersee</td><td>Arabella Spitzingsee / Wassmann</td><td>Mittel</td></tr>
           <tr><td>Sa</td><td>München</td><td>gleiches Hotel wie Do</td><td>Niedrig</td></tr>
@@ -1792,7 +2028,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
       <h2>📋 To-Do bis Ende Mai 2026</h2>
       <div class="checklist">
         <div class="check-item"><input type="checkbox" id="t1"><label for="t1"><strong>SOFORT:</strong> Berggasthof Rofan buchen (Di 25.08. → Mi 26.08., Privatzimmer) · +43 676 4852540</label></div>
-        <div class="check-item"><input type="checkbox" id="t2"><label for="t2">Hotels buchen: Mo Lenggries · Mi Kufstein · Do+Sa München · Fr Schliersee</label></div>
+        <div class="check-item"><input type="checkbox" id="t2"><span class="v-span v-rofan"><label for="t2">Hotels buchen: Mo Lenggries · Mi Kufstein · Do+Sa München · Fr Schliersee</label></span><span class="v-span v-erfurter" style="display:none"><label for="t2">Hotels buchen: Mo Lenggries · Di Pertisau · Do+Sa München · Fr Schliersee</label></span></div>
         <div class="check-item"><input type="checkbox" id="t3"><label for="t3">ICE-Fahrradplatz Karlsruhe→München (Mo) + Rückfahrt (So)</label></div>
         <div class="check-item"><input type="checkbox" id="t4"><label for="t4">Räder zum Service / Bremsbeläge prüfen</label></div>
         <div class="check-item"><input type="checkbox" id="t5"><label for="t5">GPX-Tracks für alle Etappen in Komoot erstellen</label></div>
@@ -2175,6 +2411,195 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
   const allCoordsInit = Object.values(trackData).flatMap(d => d.track);
   map.fitBounds(allCoordsInit, { padding: [40, 40] });
+
+  // ===== VARIANTEN-TOGGLE =====
+  const VARIANTS = {
+    rofan: {
+      subtitle: 'München · Achensee · Rofan-Hütte · München · 24.–30. August 2026',
+      bannerTitle: 'Echte Loop-Tour · Rofan-Hütte Variante',
+      bannerSub: 'Di direkt hoch zur Rofan-Hütte (1.840 m) – Mi entspannte Abfahrt via Inntal nach Kufstein.',
+      trackData: {
+        tuesday: {
+          title: 'Di · Lenggries → Achensee → Rofan-Hütte 🌶️',
+          track: [
+            [47.6800, 11.5700],[47.6700, 11.5650],[47.6500, 11.5700],
+            [47.6300, 11.5900],[47.6100, 11.6200],[47.5900, 11.6500],
+            [47.5700, 11.6800],[47.5500, 11.7100],[47.5700, 11.6900],
+            [47.5800, 11.6800],[47.5750, 11.6500],[47.5650, 11.6300],
+            [47.5500, 11.6500],[47.5400, 11.6800],[47.5200, 11.7000],
+            [47.5000, 11.7100],[47.4750, 11.7200],[47.4400, 11.7350],
+            [47.4300, 11.7700],[47.4200, 11.7900],[47.4220, 11.8100],
+            [47.4280, 11.8350],[47.4350, 11.8600],[47.4360, 11.8920]
+          ]
+        },
+        wednesday: {
+          title: 'Mi · Rofan-Abfahrt → Inntal → Kufstein',
+          track: [
+            [47.4360, 11.8920],[47.4350, 11.8700],[47.4320, 11.8550],
+            [47.4280, 11.8350],[47.4220, 11.8100],[47.4200, 11.7900],
+            [47.4150, 11.7950],[47.4900, 11.8800],[47.5100, 11.9200],
+            [47.5200, 11.9600],[47.5400, 12.0200],[47.5600, 12.0800],
+            [47.5836, 12.1614]
+          ]
+        },
+        thursday: {
+          title: 'Do · Kufstein → München · Basti-Abschluss',
+          track: [
+            [47.5836, 12.1614],[47.6300, 12.1800],[47.7000, 12.1700],
+            [47.7500, 12.1500],[47.7900, 12.1300],[47.8200, 12.1200],
+            [47.8600, 12.1200],[47.9000, 12.0500],[47.9300, 11.9900],
+            [47.9600, 11.9200],[47.9800, 11.8500],[48.0100, 11.8000],
+            [48.0400, 11.7500],[48.0700, 11.7000],[48.1000, 11.6500],
+            [48.1200, 11.6200],[48.1351, 11.5820]
+          ]
+        }
+      },
+      pois: [
+        [47.4360, 11.8920, '🛏️ Berggasthof Rofan', 'Di→Mi · Privatzimmer · +43 676 4852540'],
+        [47.5836, 12.1614, '⛰️ Kufstein', 'Mi Übernachtung · Festungsblick']
+      ]
+    },
+    erfurter: {
+      subtitle: 'München · Achensee · Erfurter Hütte · München · 24.–30. August 2026',
+      bannerTitle: 'Echte Loop-Tour · Erfurter Hütte Variante',
+      bannerSub: 'Ursprünglicher Rhythmus: Di Pertisau, Mi Rofan-Berge & Erfurter Hütte (Mi→Do), Do Abfahrt München.',
+      trackData: {
+        tuesday: {
+          title: 'Di · Lenggries → Achensee/Pertisau',
+          track: [
+            [47.6800, 11.5700],[47.6700, 11.5650],[47.6500, 11.5700],
+            [47.6300, 11.5900],[47.6100, 11.6200],[47.5900, 11.6500],
+            [47.5700, 11.6800],[47.5500, 11.7100],[47.5700, 11.6900],
+            [47.5800, 11.6800],[47.5750, 11.6500],[47.5650, 11.6300],
+            [47.5500, 11.6500],[47.5400, 11.6800],[47.5200, 11.7000],
+            [47.5000, 11.7100],[47.4750, 11.7200],[47.4500, 11.7300],
+            [47.4400, 11.7350]
+          ]
+        },
+        wednesday: {
+          title: 'Mi · Rofan-Höhenweg & Erfurter Hütte 🌶️',
+          track: [
+            [47.4400, 11.7350],[47.4380, 11.7450],[47.4350, 11.7550],
+            [47.4300, 11.7700],[47.4200, 11.7900],[47.4150, 11.7950],
+            [47.4180, 11.8100],[47.4220, 11.8250],[47.4280, 11.8350],
+            [47.4320, 11.8500],[47.4350, 11.8650],[47.4370, 11.8780],
+            [47.4390, 11.8870],[47.4416, 11.7633]
+          ]
+        },
+        thursday: {
+          title: 'Do · Erfurter Hütte → Inntalradweg → München',
+          track: [
+            [47.4416, 11.7633],[47.4390, 11.8000],[47.4500, 11.8600],
+            [47.4600, 11.8900],[47.4700, 11.9000],[47.4800, 11.8900],
+            [47.4900, 11.8800],[47.5000, 11.8700],[47.5100, 11.8800],
+            [47.5836, 12.1614],[47.6500, 12.1700],[47.7300, 12.1700],
+            [47.7700, 12.1500],[47.7900, 12.1300],[47.8500, 12.1200],
+            [47.8600, 12.1100],[47.9000, 12.0500],[47.9300, 11.9900],
+            [47.9700, 11.9300],[48.0100, 11.8000],[48.0500, 11.7500],
+            [48.0800, 11.7000],[48.1100, 11.6500],[48.1351, 11.5820]
+          ]
+        }
+      },
+      pois: [
+        [47.4400, 11.7350, '🏊 Pertisau/Achensee', 'Di Übernachtung + Schwimmen'],
+        [47.4416, 11.7633, '🛏️ Erfurter Hütte', 'Mi→Do · Matrazenlager frei · +43 5243 5517']
+      ]
+    }
+  };
+
+  let currentVariant = 'rofan';
+
+  function setVariant(v) {
+    currentVariant = v;
+
+    // Toggle-Buttons
+    document.getElementById('btn-rofan').classList.toggle('active', v === 'rofan');
+    document.getElementById('btn-erfurter').classList.toggle('active', v === 'erfurter');
+
+    // Dynamische Texte
+    document.getElementById('v-subtitle').textContent = VARIANTS[v].subtitle;
+    document.getElementById('v-banner-title').textContent = VARIANTS[v].bannerTitle;
+    document.getElementById('v-banner-sub').textContent = VARIANTS[v].bannerSub;
+
+    // Tabellen-Zeilen & Logistik
+    document.querySelectorAll('.v-row.v-rofan').forEach(el => el.style.display = v === 'rofan' ? '' : 'none');
+    document.querySelectorAll('.v-row.v-erfurter').forEach(el => el.style.display = v === 'erfurter' ? '' : 'none');
+    document.querySelectorAll('.v-span.v-rofan').forEach(el => el.style.display = v === 'rofan' ? '' : 'none');
+    document.querySelectorAll('.v-span.v-erfurter').forEach(el => el.style.display = v === 'erfurter' ? '' : 'none');
+
+    // Tab-Buttons in der Tab-Leiste
+    document.querySelectorAll('.v-tab').forEach(btn => {
+      const show = btn.dataset.variant === v;
+      btn.style.display = show ? '' : 'none';
+      if (!show && btn.classList.contains('active')) {
+        btn.classList.remove('active');
+      }
+    });
+
+    // Tab-Inhalte (stage2/stage2e, stage3/stage3e)
+    document.querySelectorAll('.v-panel').forEach(el => {
+      const isRofan = el.classList.contains('v-rofan');
+      el.style.display = (isRofan === (v === 'rofan')) ? '' : 'none';
+      if (el.style.display === 'none') el.classList.remove('active');
+    });
+
+    // Aktuellen Tab-Zustand prüfen: wenn stage2/stage3 aktiv, auf richtige Variante umschalten
+    const activeTab = document.querySelector('.tab-content.active');
+    if (activeTab) {
+      const id = activeTab.id;
+      if (id === 'stage2' && v === 'erfurter') switchTab('stage2e');
+      else if (id === 'stage2e' && v === 'rofan') switchTab('stage2');
+      else if (id === 'stage3' && v === 'erfurter') switchTab('stage3e');
+      else if (id === 'stage3e' && v === 'rofan') switchTab('stage3');
+    }
+
+    // Karte aktualisieren
+    updateMapForVariant(v);
+  }
+
+  function updateMapForVariant(v) {
+    const vdata = VARIANTS[v];
+
+    // Alte Varianten-Layer entfernen
+    ['tuesday', 'wednesday', 'thursday'].forEach(day => {
+      if (layerGroups[day]) {
+        map.removeLayer(layerGroups[day]);
+        delete layerGroups[day];
+      }
+    });
+
+    // Varianten-POIs entfernen
+    if (window.variantPoiLayer) {
+      map.removeLayer(window.variantPoiLayer);
+    }
+
+    // Neue Tracks rendern
+    ['tuesday', 'wednesday', 'thursday'].forEach(day => {
+      const baseData = trackData[day];
+      const override = vdata.trackData[day];
+      const merged = Object.assign({}, baseData, override);
+      // Temporär trackData überschreiben
+      trackData[day] = merged;
+      renderTrack(day);
+      layerGroups[day].addTo(map);
+      // Zurücksetzen
+      trackData[day] = baseData;
+    });
+
+    // Varianten-POIs
+    window.variantPoiLayer = L.layerGroup();
+    vdata.pois.forEach(([lat, lng, name, info]) => {
+      L.marker([lat, lng], {
+        icon: L.divIcon({
+          className: 'custom-marker',
+          html: `<div class="day-marker poi">★</div>`,
+          iconSize: [22, 22], iconAnchor: [11, 11]
+        })
+      }).bindPopup(`<strong>${name}</strong><br>${info}`).addTo(window.variantPoiLayer);
+    });
+    window.variantPoiLayer.addTo(map);
+  }
+
 
 </script>
 
