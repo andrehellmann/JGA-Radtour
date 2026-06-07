@@ -1238,6 +1238,123 @@ svg.leaflet-image-layer.leaflet-interactive path {
     color: rgba(255,255,255,0.8);
   }
 
+  /* ── KOSTEN-TAB ────────────────────────────────────────────────────────── */
+  .cost-comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 8px;
+  }
+
+  @media (max-width: 800px) {
+    .cost-comparison { grid-template-columns: 1fr; }
+  }
+
+  .cost-col {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid var(--border);
+  }
+
+  .cost-col-rofan { border-color: #15803d; }
+  .cost-col-erfurter { border-color: #7c3aed; }
+
+  .cost-col-header {
+    padding: 14px 16px;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  .cost-col-rofan .cost-col-header { background: #15803d; color: white; }
+  .cost-col-erfurter .cost-col-header { background: #7c3aed; color: white; }
+
+  .cost-col-header small { font-weight: 400; opacity: 0.85; font-size: 12px; display: block; margin-top: 2px; }
+
+  .cost-table { margin: 0; font-size: 13px; }
+  .cost-table th { background: #f0f0f0; color: var(--text); font-size: 12px; padding: 8px 10px; }
+  .cost-table td { padding: 8px 10px; }
+  .cost-table td small { display: block; color: var(--text-muted); font-size: 11px; margin-top: 2px; }
+
+  .cost-section td {
+    background: #f5f5f5;
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 6px 10px;
+  }
+
+  .cost-highlight td { background: #fef9e7; font-weight: 600; }
+  .cost-muted td { color: var(--text-muted); font-style: italic; }
+
+  .cost-total td {
+    background: #f0faf5;
+    font-weight: 700;
+    font-size: 14px;
+    border-top: 2px solid var(--primary);
+  }
+
+  .cost-total-incl td {
+    background: #e8f5ee;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--primary);
+  }
+
+  /* Budget-Grid */
+  .budget-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    margin-top: 4px;
+  }
+
+  @media (max-width: 700px) { .budget-grid { grid-template-columns: 1fr; } }
+
+  .budget-box {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .budget-rofan { background: linear-gradient(135deg, #15803d, #2d7a5f); color: white; }
+  .budget-erfurter { background: linear-gradient(135deg, #7c3aed, #6d28d9); color: white; }
+  .budget-diff { background: linear-gradient(135deg, #d97706, #b45309); color: white; }
+
+  .budget-label { font-size: 13px; opacity: 0.9; margin-bottom: 8px; }
+  .budget-amount { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+  .budget-sub { font-size: 12px; opacity: 0.85; line-height: 1.6; }
+
+  /* Hotel-Cards */
+  .hotel-card {
+    background: #fafafa;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin: 10px 0 20px;
+  }
+
+  .hotel-card.hotel-highlight {
+    background: #fef9e7;
+    border-color: var(--accent);
+  }
+
+  .hotel-name { font-weight: 700; font-size: 15px; margin-bottom: 4px; }
+  .hotel-details { font-size: 13px; color: var(--text-muted); margin-bottom: 6px; line-height: 1.5; }
+  .hotel-price {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primary);
+    background: white;
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    border: 1px solid var(--primary);
+  }
+
   .footer {
     text-align: center;
     padding: 24px 0;
@@ -1302,6 +1419,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     <button class="tab" data-tab="stage4">Do · München</button>
     <button class="tab" data-tab="stage5">Fr · Schliersee</button>
     <button class="tab" data-tab="stage6">Sa · Tegernsee</button>
+    <button class="tab" data-tab="costs">💶 Kosten</button>
     <button class="tab" data-tab="logistics">🎒 Logistik & Packliste</button>
   </div>
 
@@ -1942,9 +2060,177 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
       <div class="stage-nav">
         <button onclick="switchTab('stage5')">← Zurück zu Fr</button>
-        <button onclick="switchTab('logistics')">Weiter zu Logistik →</button>
+        <button onclick="switchTab('costs')">Weiter zu Kosten →</button>
       </div>
     </div>
+  </div>
+
+  <!-- TAB: COSTS -->
+  <div class="tab-content" id="costs">
+
+    <div class="card">
+      <h2>💶 Kostenplan – Gesamtübersicht</h2>
+      <p style="color:var(--text-muted); margin-bottom:20px;">Basis: 3 Personen · August 2026 · Preise recherchiert Mai 2026 · Abendessen inkl. 1–2 Bier/Person</p>
+
+      <!-- VARIANTEN-GEGENÜBERSTELLUNG -->
+      <div class="cost-comparison">
+        <div class="cost-col cost-col-rofan">
+          <div class="cost-col-header">🏔️ Rofan-Hütte Variante<br><small>Di→Mi Privatzimmer</small></div>
+          <table class="cost-table">
+            <thead><tr><th>Posten</th><th>Gruppe</th><th>p.P.</th></tr></thead>
+            <tbody>
+              <tr class="cost-section"><td colspan="3">📍 Übernachtungen</td></tr>
+              <tr><td>Mo Lenggries<br><small>Posthotel Kolberbräu inkl. Frühstück</small></td><td>180 €</td><td>60 €</td></tr>
+              <tr class="cost-highlight"><td>Di→Mi Berggasthof Rofan<br><small>Privatzimmer + Abendessen + Frühstück</small></td><td>306 €</td><td>102 €</td></tr>
+              <tr><td>Mi Kufstein<br><small>Hotel Andreas Hofer inkl. Frühstück</small></td><td>180 €</td><td>60 €</td></tr>
+              <tr><td>Do+Sa München<br><small>Motel One Hbf (2 Nächte, kein Frühstück)</small></td><td>440 €</td><td>147 €</td></tr>
+              <tr><td>Fr Schliersee<br><small>Hotel Hubertus inkl. Frühstück</small></td><td>175 €</td><td>58 €</td></tr>
+              <tr class="cost-section"><td colspan="3">🍽️ Abendessen</td></tr>
+              <tr><td>Mo Lenggries</td><td>75 €</td><td>25 €</td></tr>
+              <tr class="cost-muted"><td>Di (inkl. in Hütte)</td><td>—</td><td>—</td></tr>
+              <tr><td>Mi Kufstein<br><small>Auracher Löchl o.ä.</small></td><td>80 €</td><td>27 €</td></tr>
+              <tr><td>Do München<br><small>Augustiner Stammhaus</small></td><td>100 €</td><td>33 €</td></tr>
+              <tr><td>Fr Schliersee</td><td>75 €</td><td>25 €</td></tr>
+              <tr><td>Sa München (JGA-Abschluss)</td><td>120 €</td><td>40 €</td></tr>
+              <tr class="cost-section"><td colspan="3">➕ Optional</td></tr>
+              <tr class="cost-muted"><td>Frühstück München 2× (15 €/P)</td><td>90 €</td><td>30 €</td></tr>
+              <tr class="cost-total"><td><strong>Gesamt (ohne Optional)</strong></td><td><strong>1.731 €</strong></td><td><strong>577 €</strong></td></tr>
+              <tr class="cost-total-incl"><td><strong>Gesamt (mit Frühstück München)</strong></td><td><strong>1.821 €</strong></td><td><strong>607 €</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="cost-col cost-col-erfurter">
+          <div class="cost-col-header">⛺ Erfurter Hütte Variante<br><small>Mi→Do Matrazenlager</small></div>
+          <table class="cost-table">
+            <thead><tr><th>Posten</th><th>Gruppe</th><th>p.P.</th></tr></thead>
+            <tbody>
+              <tr class="cost-section"><td colspan="3">📍 Übernachtungen</td></tr>
+              <tr><td>Mo Lenggries<br><small>Posthotel Kolberbräu inkl. Frühstück</small></td><td>180 €</td><td>60 €</td></tr>
+              <tr><td>Di Pertisau/Achensee<br><small>Café-Pension Erika inkl. Frühstück</small></td><td>210 €</td><td>70 €</td></tr>
+              <tr class="cost-highlight"><td>Mi→Do Erfurter Hütte<br><small>Matrazenlager + Frühstück (3 × 48 €)</small></td><td>144 €</td><td>48 €</td></tr>
+              <tr><td>Do+Sa München<br><small>Motel One Hbf (2 Nächte, kein Frühstück)</small></td><td>440 €</td><td>147 €</td></tr>
+              <tr><td>Fr Schliersee<br><small>Hotel Hubertus inkl. Frühstück</small></td><td>175 €</td><td>58 €</td></tr>
+              <tr class="cost-section"><td colspan="3">🍽️ Abendessen</td></tr>
+              <tr><td>Mo Lenggries</td><td>75 €</td><td>25 €</td></tr>
+              <tr><td>Di Pertisau<br><small>Karlwirt o.ä.</small></td><td>75 €</td><td>25 €</td></tr>
+              <tr><td>Mi Erfurter Hütte<br><small>⚠️ oft extra, ~15 €/P</small></td><td>45 €</td><td>15 €</td></tr>
+              <tr><td>Do München<br><small>Augustiner Stammhaus</small></td><td>100 €</td><td>33 €</td></tr>
+              <tr><td>Fr Schliersee</td><td>75 €</td><td>25 €</td></tr>
+              <tr><td>Sa München (JGA-Abschluss)</td><td>120 €</td><td>40 €</td></tr>
+              <tr class="cost-section"><td colspan="3">➕ Optional</td></tr>
+              <tr class="cost-muted"><td>Frühstück München 2× (15 €/P)</td><td>90 €</td><td>30 €</td></tr>
+              <tr class="cost-total"><td><strong>Gesamt (ohne Optional)</strong></td><td><strong>1.639 €</strong></td><td><strong>546 €</strong></td></tr>
+              <tr class="cost-total-incl"><td><strong>Gesamt (mit Frühstück München)</strong></td><td><strong>1.729 €</strong></td><td><strong>576 €</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ZUSATZKOSTEN -->
+    <div class="card">
+      <h2>➕ Zusatzkosten (nicht enthalten)</h2>
+      <table>
+        <thead><tr><th>Posten</th><th>Gruppe</th><th>p.P.</th><th>Hinweis</th></tr></thead>
+        <tbody>
+          <tr><td>🚆 Bahn Karlsruhe↔München (André + Nico, Hin+Rück)</td><td>~200 €</td><td>~67 €</td><td>ICE mit Fahrrad, Sparpreis</td></tr>
+          <tr><td>🚡 Rofanseilbahn (falls genutzt, alle 3)</td><td>~70 €</td><td>~23 €</td><td>optional, Basti-Joker</td></tr>
+          <tr><td>🚡 Stümpfling + Taubenstein Sa (André + Nico)</td><td>~50 €</td><td>~17 €</td><td>Tageskarte ~25 €/P</td></tr>
+          <tr><td>☕ Mittagessen & Kaffeepausen unterwegs (7 Tage)</td><td>~350 €</td><td>~117 €</td><td>Einkehr 1–2× täglich</td></tr>
+          <tr><td>🍫 Verpflegung auf dem Rad (Riegel, Gels)</td><td>~60 €</td><td>~20 €</td><td>~3 €/P/Tag</td></tr>
+          <tr><td>💊 Sonnencreme, Pflaster, Kleinzeug</td><td>~30 €</td><td>~10 €</td><td></td></tr>
+          <tr class="cost-total"><td><strong>Summe Zusatz</strong></td><td><strong>~760 €</strong></td><td><strong>~253 €</strong></td><td></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- GESAMTBUDGET -->
+    <div class="card">
+      <h2>🎯 Gesamtbudget pro Person</h2>
+      <div class="budget-grid">
+        <div class="budget-box budget-rofan">
+          <div class="budget-label">🏔️ Rofan-Variante</div>
+          <div class="budget-amount">~830–860 €</div>
+          <div class="budget-sub">577 € Unterkunft+Abendessen<br>+ ~253 € Zusatzkosten<br>+ ~30 € Puffer</div>
+        </div>
+        <div class="budget-box budget-erfurter">
+          <div class="budget-label">⛺ Erfurter-Variante</div>
+          <div class="budget-amount">~800–830 €</div>
+          <div class="budget-sub">546 € Unterkunft+Abendessen<br>+ ~253 € Zusatzkosten<br>+ ~30 € Puffer</div>
+        </div>
+        <div class="budget-box budget-diff">
+          <div class="budget-label">📊 Differenz</div>
+          <div class="budget-amount">~31 €/P</div>
+          <div class="budget-sub">Rofan-Hütte (Privatzimmer) etwas teurer<br>Erfurter (Matrazenlager) günstiger<br>aber eine Nacht weniger Komfort</div>
+        </div>
+      </div>
+
+      <div class="highlights" style="margin-top:20px;">
+        <h4>💡 Fazit</h4>
+        Beide Varianten liegen mit ~800–860 € pro Person eng beieinander. Die <strong>Rofan-Hütte ist komfortabler</strong> (Privatzimmer, Halbpension) bei marginal höherem Preis. Die <strong>Erfurter Hütte spart ~30 €/Person</strong>, dafür schläft ihr im Matrazenlager – was aber zum JGA-Feeling durchaus passt! Der größte Kostenhebel sind die <strong>Mittagspausen und Kaffeestopps</strong> unterwegs – hier könnt ihr 50–100 € pro Gruppe sparen, wenn ihr gezielter einkehrt.
+      </div>
+    </div>
+
+    <!-- KONKRETE HOTEL-EMPFEHLUNGEN -->
+    <div class="card">
+      <h2>🛏️ Konkrete Buchungsempfehlungen</h2>
+
+      <h3>Mo · Lenggries</h3>
+      <div class="hotel-card">
+        <div class="hotel-name">Posthotel & Gasthaus Kolberbräu ⭐⭐⭐</div>
+        <div class="hotel-details">Marktstraße 13 · ab ~68 €/Nacht inkl. Frühstück · Biergarten · zentral · Bike-Stellplatz</div>
+        <div class="hotel-price">~180 € für 3 Personen (2 DZ + Zustellbett)</div>
+      </div>
+
+      <h3 class="v-heading v-rofan">Di · Rofan-Hütte (Rofan-Variante)</h3>
+      <div class="hotel-card hotel-highlight v-hotel v-rofan">
+        <div class="hotel-name">🏔️ Berggasthof Rofan ⭐⭐⭐ (1.840 m)</div>
+        <div class="hotel-details">Privatzimmer · inkl. Abendessen + Frühstück · Achensee-Panorama<br>📞 +43 676 4852540 · <strong>sofort anrufen!</strong></div>
+        <div class="hotel-price">306 € für 3 Personen (von euch bestätigt)</div>
+      </div>
+
+      <h3 class="v-heading v-erfurter" style="display:none">Di · Pertisau (Erfurter-Variante)</h3>
+      <div class="hotel-card v-hotel v-erfurter" style="display:none">
+        <div class="hotel-name">Café-Pension Erika ⭐⭐⭐ (Bewertung 9,1)</div>
+        <div class="hotel-details">Naturparkstraße 51, Pertisau · inkl. Frühstück · Seenähe · Bike-freundlich</div>
+        <div class="hotel-price">~210 € für 3 Personen</div>
+      </div>
+
+      <h3 class="v-heading v-erfurter" style="display:none">Mi · Erfurter Hütte (Erfurter-Variante)</h3>
+      <div class="hotel-card hotel-highlight v-hotel v-erfurter" style="display:none">
+        <div class="hotel-name">⛺ Erfurter Hütte (1.834 m)</div>
+        <div class="hotel-details">Matrazenlager · Frühstück inkl. · Abendessen extra (~15 €/P)<br>📞 +43 5243 5517 · ✅ Plätze Mi→Do frei</div>
+        <div class="hotel-price">144 € Übernachtung + ~45 € Abendessen = 189 € gesamt</div>
+      </div>
+
+      <h3 class="v-heading v-rofan">Mi · Kufstein (Rofan-Variante)</h3>
+      <div class="hotel-card v-hotel v-rofan">
+        <div class="hotel-name">Hotel Andreas Hofer ⭐⭐⭐</div>
+        <div class="hotel-details">Kufstein Innenstadt · inkl. Frühstück · Festungs-Nähe · Innufer-Lage</div>
+        <div class="hotel-price">~180 € für 3 Personen</div>
+      </div>
+
+      <h3>Do + Sa · München</h3>
+      <div class="hotel-card">
+        <div class="hotel-name">Motel One München-Hauptbahnhof ⭐⭐⭐</div>
+        <div class="hotel-details">Schillerstraße 3 · kein Frühstück (optional +15 €/P) · Rooftopbar · U-Bahn direkt<br>Aktuell ab ~110 €/Nacht für Do · für Sa gleich mitbuchen!</div>
+        <div class="hotel-price">~220 € pro Nacht für 3 Personen · 2 Nächte = ~440 €</div>
+      </div>
+
+      <h3>Fr · Schliersee</h3>
+      <div class="hotel-card">
+        <div class="hotel-name">Hotel Hubertus Schliersee ⭐⭐⭐</div>
+        <div class="hotel-details">2 km südlich des Sees · inkl. Frühstück · Wanderwege Spitzingsee fußläufig · Budgetzimmer für Radfahrer</div>
+        <div class="hotel-price">~175 € für 3 Personen</div>
+      </div>
+    </div>
+
+    <div class="stage-nav">
+      <button onclick="switchTab('stage6')">← Zurück zu Sa</button>
+      <button onclick="switchTab('logistics')">Weiter zu Logistik →</button>
+    </div>
+
   </div>
 
   <!-- TAB: LOGISTICS -->
@@ -2520,6 +2806,12 @@ svg.leaflet-image-layer.leaflet-interactive path {
     document.getElementById('v-subtitle').textContent = VARIANTS[v].subtitle;
     document.getElementById('v-banner-title').textContent = VARIANTS[v].bannerTitle;
     document.getElementById('v-banner-sub').textContent = VARIANTS[v].bannerSub;
+
+    // Hotel-Headings in Kosten-Tab
+    document.querySelectorAll('.v-hotel.v-rofan').forEach(el => el.style.display = v === 'rofan' ? '' : 'none');
+    document.querySelectorAll('.v-hotel.v-erfurter').forEach(el => el.style.display = v === 'erfurter' ? '' : 'none');
+    document.querySelectorAll('.v-heading.v-rofan').forEach(el => el.style.display = v === 'rofan' ? '' : 'none');
+    document.querySelectorAll('.v-heading.v-erfurter').forEach(el => el.style.display = v === 'erfurter' ? '' : 'none');
 
     // Tabellen-Zeilen & Logistik
     document.querySelectorAll('.v-row.v-rofan').forEach(el => el.style.display = v === 'rofan' ? '' : 'none');
