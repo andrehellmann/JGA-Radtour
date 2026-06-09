@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JGA MTB Voralpen-Loop 2026 · Zwei Varianten</title>
+<title>JGA MTB Voralpen-Loop 2026 · Rofan-Hütte</title>
 <style>
 /* required styles */
 
@@ -1180,64 +1180,6 @@ svg.leaflet-image-layer.leaflet-interactive path {
   }
 
 
-  /* ── VARIANTEN-TOGGLE ──────────────────────────────────────────────────── */
-  .variant-toggle-bar {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    background: #f0faf5;
-    border: 2px solid var(--primary);
-    border-radius: 12px;
-    padding: 14px 20px;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
-  }
-
-  .vt-label {
-    font-weight: 700;
-    color: var(--primary);
-    font-size: 15px;
-    white-space: nowrap;
-  }
-
-  .vt-btn {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 18px;
-    border: 2px solid var(--border);
-    background: white;
-    color: var(--text);
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: 600;
-    transition: all 0.2s;
-    line-height: 1.3;
-  }
-
-  .vt-btn small {
-    font-size: 12px;
-    font-weight: 400;
-    color: var(--text-muted);
-    margin-top: 2px;
-  }
-
-  .vt-btn:hover:not(.active) {
-    border-color: var(--primary-light);
-    background: #f5fdf8;
-  }
-
-  .vt-btn.active {
-    background: var(--primary);
-    color: white;
-    border-color: var(--primary);
-  }
-
-  .vt-btn.active small {
-    color: rgba(255,255,255,0.8);
-  }
-
   /* ── KOSTEN-TAB ────────────────────────────────────────────────────────── */
   .cost-comparison {
     display: grid;
@@ -1307,7 +1249,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   /* Budget-Grid */
   .budget-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 16px;
     margin-top: 4px;
   }
@@ -1379,10 +1321,10 @@ svg.leaflet-image-layer.leaflet-interactive path {
   <div class="header">
     <div class="emoji">🚵‍♂️🍻🏔️</div>
     <h1>JGA MTB Voralpen-Loop 2026</h1>
-    <div class="subtitle"><span id="v-subtitle">München · Achensee · Rofan-Hütte · München · 24.–30. August 2026</span></div>
+    <div class="subtitle">München · Jachenau · Rofan-Hütte · München · 24.–30. August 2026</div>
     <div class="header-stats">
-      <div class="header-stat">📏 ~415 km</div>
-      <div class="header-stat">⛰️ ~6.800 hm</div>
+      <div class="header-stat">📏 ~500 km</div>
+      <div class="header-stat">⛰️ ~7.800 hm</div>
       <div class="header-stat">🛏️ 6 Übernachtungen</div>
       <div class="header-stat">👥 André · Nico · Basti</div>
     </div>
@@ -1392,30 +1334,18 @@ svg.leaflet-image-layer.leaflet-interactive path {
   <div class="concept-banner">
     <div class="concept-banner-icon">🔄</div>
     <div class="concept-banner-text">
-      <strong id="v-banner-title">Echte Loop-Tour · Rofan-Hütte Variante</strong>
-      <span id="v-banner-sub">Di direkt hoch zur Rofan-Hütte (1.840 m) – Mi entspannte Abfahrt via Inntal nach Kufstein.</span>
+      <strong>Echter Loop · Rofan-Hütte fix gebucht ✅</strong>
+      Mo Jachenau · Di Rofan-Hütte (gebucht!) · Mi Kufstein · Do München · Fr Schliersee · Sa Tegernsee
     </div>
   </div>
 
-  <!-- VARIANTEN-TOGGLE -->
-  <div class="variant-toggle-bar">
-    <span class="vt-label">Variante:</span>
-    <button class="vt-btn active" id="btn-rofan" onclick="setVariant('rofan')">
-      🏔️ Rofan-Hütte <small>Di→Mi · Privatzimmer</small>
-    </button>
-    <button class="vt-btn" id="btn-erfurter" onclick="setVariant('erfurter')">
-      ⛺ Erfurter Hütte <small>Mi→Do · Matrazenlager frei!</small>
-    </button>
-  </div>
 
   <!-- TABS -->
   <div class="tabs">
     <button class="tab active" data-tab="overview">📊 Übersicht & Karte</button>
-    <button class="tab" data-tab="stage1">Mo · Lenggries</button>
-    <button class="tab v-tab" data-tab="stage2" data-variant="rofan">Di · Rofan-Hütte 🌶️</button>
-    <button class="tab v-tab" data-tab="stage3" data-variant="rofan">Mi · Kufstein</button>
-    <button class="tab v-tab" data-tab="stage2e" data-variant="erfurter" style="display:none">Di · Achensee</button>
-    <button class="tab v-tab" data-tab="stage3e" data-variant="erfurter" style="display:none">Mi · Erfurter Hütte 🌶️</button>
+    <button class="tab" data-tab="stage1">Mo · Jachenau</button>
+    <button class="tab" data-tab="stage2">Di · Rofan-Hütte 🌶️</button>
+    <button class="tab" data-tab="stage3">Mi · Kufstein</button>
     <button class="tab" data-tab="stage4">Do · München</button>
     <button class="tab" data-tab="stage5">Fr · Schliersee</button>
     <button class="tab" data-tab="stage6">Sa · Tegernsee</button>
@@ -1472,58 +1402,43 @@ svg.leaflet-image-layer.leaflet-interactive path {
         <tbody>
           <tr>
             <td class="day-cell">Mo 24.08.</td>
-            <td>Anreise München → <strong>Lenggries</strong> (Isarradweg + erste Hügel)</td>
-            <td>80 km / 600 hm</td>
-            <td>Lenggries (Hotel)</td>
+            <td>Anreise München → <strong>Jachenau</strong> (Isartrails + Voralpen)</td>
+            <td>115 km / 1.000 hm</td>
+            <td>Gasthof Jachenau</td>
           </tr>
           <!-- Variante Rofan -->
-          <tr class="basti-row v-row v-rofan">
+          <tr class="basti-row">
             <td class="day-cell">Di 25.08. 🌶️</td>
-            <td>Lenggries → Sylvensteinsee → Achensee → <strong>Berggasthof Rofan</strong></td>
-            <td>75 km / 1.800 hm</td>
+            <td>Jachenau → Sylvensteinsee → Achensee → <strong>Berggasthof Rofan</strong></td>
+            <td>55 km / 1.400 hm <em style="color:var(--green);font-size:12px">30% Trail</em></td>
             <td><strong>🏔️ Rofan-Hütte Privatzimmer (Di→Mi)</strong></td>
           </tr>
-          <tr class="v-row v-rofan">
+          <tr>
             <td class="day-cell">Mi 26.08.</td>
-            <td>Rofan-Abfahrt → Inntal → <strong>Kufstein</strong></td>
-            <td>70 km / 600 hm</td>
+            <td>Rofan-Abfahrt → <strong>Kranzhorn-Variante</strong> → Kufstein</td>
+            <td>85 km / 900 hm <em style="color:var(--green);font-size:12px">35% Trail</em></td>
             <td>Kufstein (Hotel)</td>
           </tr>
-          <tr class="v-row v-rofan">
+          <tr>
             <td class="day-cell">Do 27.08.</td>
-            <td>Kufstein → Inntalradweg → Rosenheim → <strong>München</strong></td>
-            <td>80 km / 400 hm</td>
+            <td>Kufstein → Innauen-Trails → Rosenheim → <strong>München</strong></td>
+            <td>90 km / 500 hm <em style="color:var(--green);font-size:12px">20% Trail</em></td>
             <td>München (Hotel) · <strong>Basti raus</strong> 🚉</td>
           </tr>
           <!-- Variante Erfurter -->
-          <tr class="v-row v-erfurter" style="display:none">
-            <td class="day-cell">Di 25.08.</td>
-            <td>Lenggries → Sylvensteinsee → <strong>Achensee/Pertisau</strong></td>
-            <td>65 km / 1.200 hm</td>
-            <td>Pertisau (Hotel)</td>
-          </tr>
-          <tr class="basti-row v-row v-erfurter" style="display:none">
-            <td class="day-cell">Mi 26.08. 🌶️</td>
-            <td>Pertisau → Maurach → Rofan-Höhenweg → <strong>Erfurter Hütte</strong></td>
-            <td>40 km / 1.500 hm</td>
-            <td><strong>⛺ Erfurter Hütte Matrazenlager (Mi→Do)</strong></td>
-          </tr>
-          <tr class="v-row v-erfurter" style="display:none">
-            <td class="day-cell">Do 27.08.</td>
-            <td>Erfurter Hütte → Rofan-Abfahrt → Inntalradweg → <strong>München</strong></td>
-            <td>100 km / 600 hm</td>
-            <td>München (Hotel) · <strong>Basti raus</strong> 🚉</td>
-          </tr>
+          
+          
+          
           <tr class="andre-row">
             <td class="day-cell">Fr 28.08.</td>
             <td>München → Bayrischzell → Spitzingsattel → <strong>Schliersee</strong></td>
-            <td>70 km / 1.300 hm</td>
+            <td>70 km / 1.300 hm <em style="color:var(--green);font-size:12px">30% Trail</em></td>
             <td>Schliersee</td>
           </tr>
           <tr class="andre-row">
             <td class="day-cell">Sa 29.08.</td>
-            <td>Schliersee → Stümpfling → Tegernsee → <strong>München</strong></td>
-            <td>75 km / 1.300 hm</td>
+            <td>Schliersee → Stümpfling → Irschenberg-Schleife → <strong>München</strong></td>
+            <td>85 km / 1.400 hm <em style="color:var(--green);font-size:12px">40% Trail</em></td>
             <td>München (Hotel)</td>
           </tr>
           <tr>
@@ -1537,10 +1452,31 @@ svg.leaflet-image-layer.leaflet-interactive path {
     </div>
 
     <div class="card">
+      <h2>🚵 Trail-Anteil Übersicht</h2>
+      <p style="color:var(--text-muted); margin-bottom:16px;">~30% der Gesamtstrecke auf Trails/Schotter – Ziel erreicht.</p>
+      <table>
+        <thead>
+          <tr><th>Etappe</th><th>Distanz</th><th>Trail-Anteil</th><th>Trail-Highlights</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Mo</strong> München → Jachenau</td><td>115 km / 1.000 hm</td><td>~25% (~29 km)</td><td>Isartrails Westseite (Schäftlarn–Wolfratshausen)</td></tr>
+          <tr><td><strong>Di</strong> Jachenau → Rofan-Hütte</td><td>55 km / 1.400 hm</td><td>~30% (~17 km)</td><td>Forststraßen Jachenau + Rofan-Auffahrt Schotter</td></tr>
+          <tr><td><strong>Mi</strong> Rofan → Kufstein</td><td>85 km / 900 hm</td><td>~35% (~30 km)</td><td>Rofan-Abfahrt S1 + Kranzhorn-Flanke + Euzenau</td></tr>
+          <tr><td><strong>Do</strong> Kufstein → München</td><td>90 km / 500 hm</td><td>~20% (~18 km)</td><td>Innauen-Schotter + Mangfall-Waldwege</td></tr>
+          <tr><td><strong>Fr</strong> München → Schliersee</td><td>70 km / 1.300 hm</td><td>~30% (~21 km)</td><td>Spitzingsattel-Auffahrt + Brecherspitz-Trails</td></tr>
+          <tr><td><strong>Sa</strong> Schliersee → München</td><td>85 km / 1.400 hm</td><td>~40% (~34 km)</td><td>Stümpfling S2 + Taubenstein + Irschenberg-Schleife</td></tr>
+          <tr style="background:#f0faf5;font-weight:700;">
+            <td><strong>Gesamt</strong></td><td><strong>~500 km / ~7.800 hm</strong></td><td><strong>~30% (~149 km)</strong></td><td>–</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
       <h2>🎯 Tour-Konzept</h2>
       <p>Diese Tour ist ein <strong>echter Voralpen-Loop ab/zu München</strong> – jeden Tag fahrt ihr einfach weiter, ohne Zug-Gehoppel zwischendurch. Das Konzept:</p>
       <ul style="margin: 12px 0 12px 24px;">
-        <li><strong>Mo:</strong> Einrollen Isartal → Lenggries</li>
+        <li><strong>Mo:</strong> Isartal → Jachenau (100 km / 900 hm) – etwas weiter für einen entspannteren Dienstag</li>
         <li><strong>Di:</strong> Königsetappe – Sylvensteinsee + Achensee + Rofan-Hütte in einem Tag</li>
         <li><strong>Mi:</strong> Entspannter Genuss-Tag – Rofan-Abfahrt + Inntal → Kufstein</li>
         <li><strong>Do:</strong> Flach zurück nach München – Basti-Abschluss</li>
@@ -1551,7 +1487,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
         Sylvensteinsee · Achensee · Schliersee · Tegernsee + Rofan-Hütte mit Achensee-Blick + Spitzingsee-Stümpfling-Trail + Tegernseer Singletrails
       </div>
       <div class="basti-note">
-        <strong>🌶️ Dienstag ist der härteste Tag:</strong> Sylvensteinsee + Achenpass + Rofan-Auffahrt in einem Zug – ~75 km / 1.800 hm. Dafür ist Mittwoch eine entspannte Abfahrt mit viel bergab. Die <strong>Rofanseilbahn</strong> bleibt als Basti-Joker falls die Tagesform kippt.
+        <strong>🌶️ Dienstag machbarer dank Jachenau-Stop:</strong> Nur noch ~55 km / 1.400 hm – Sylvensteinsee + Achenpass + Rofan-Auffahrt. <strong>Rofanseilbahn</strong> als Joker bleibt weiter verfügbar.
       </div>
     </div>
   </div>
@@ -1561,14 +1497,14 @@ svg.leaflet-image-layer.leaflet-interactive path {
     <div class="card">
       <div class="stage-header">
         <div class="stage-title-block">
-          <h2>📅 Mo 24.08. · Anreise + Isar-Aufgleiten</h2>
-          <div class="stage-route">Karlsruhe → München → Bad Tölz → Lenggries</div>
+          <h2>📅 Mo 24.08. · Anreise + Isartal bis Jachenau</h2>
+          <div class="stage-route">Karlsruhe → München → Bad Tölz → Lenggries → Jachenau</div>
         </div>
       </div>
 
       <div class="stage-stats">
-        <div class="stage-stat"><div class="stage-stat-value">80 km</div><div class="stage-stat-label">Distanz</div></div>
-        <div class="stage-stat"><div class="stage-stat-value">600 hm</div><div class="stage-stat-label">Höhenmeter</div></div>
+        <div class="stage-stat"><div class="stage-stat-value">115 km</div><div class="stage-stat-label">Distanz</div></div>
+        <div class="stage-stat"><div class="stage-stat-value">1.000 hm</div><div class="stage-stat-label">Höhenmeter</div></div>
         <div class="stage-stat"><div class="stage-stat-value">5-6h</div><div class="stage-stat-label">Fahrzeit</div></div>
         <div class="stage-stat"><div class="stage-stat-value">⭐⭐</div><div class="stage-stat-label">Anspruch</div></div>
       </div>
@@ -1577,33 +1513,35 @@ svg.leaflet-image-layer.leaflet-interactive path {
       <p>Karlsruhe → München mit dem Zug (ICE ~3h 30min, Fahrradplatz buchen!). Treffen mit Basti am München Hbf. Start gegen 10–11 Uhr.</p>
 
       <h3>🚵 Route</h3>
-      <p>Direkt aus dem Münchner Hauptbahnhof raus, dann auf den <strong>Isarradweg</strong> Richtung Süden. Lange flach durch die Stadt, dann durchs Isartal mit zunehmender Bergkulisse. Über Wolfratshausen, Bad Tölz nach Lenggries – ab Bad Tölz wird's hügeliger.</p>
+      <p>Statt einfachem Asphalt-Radweg nehmt ihr ab Schäftlarn die <strong>Isartrails Westseite</strong> – einer der längsten Singletrails Deutschlands (~30 km) entlang der Isar bis zur Pupplinger Au bei Wolfratshausen. Dann weiter über Naturpfade, Bad Tölz und Lenggries ins <strong>Jachenau-Tal</strong>. Die Trails kosten etwas Zeit, belohnen aber mit dem besten Fluss-Trail Bayerns gleich am ersten Tag.</p>
 
       <div class="stage-details">
         <div class="stage-info-block">
           <h4>📍 Schlüsselstellen</h4>
           <ul>
             <li>München Hbf (520 m) – Start</li>
-            <li>Pullach / Großhesseloher Brücke</li>
-            <li>Wolfratshausen (~580 m)</li>
+            <li>Schäftlarn – Einstieg Isartrails</li>
+            <li>Isartrail Westseite (~15 km Singletrail)</li>
+            <li>Pupplinger Au / Wolfratshausen (~580 m)</li>
             <li>Bad Tölz (650 m) – Mittagspause</li>
-            <li>Lenggries (680 m) – Übernachtung</li>
+            <li>Lenggries (680 m) – kurze Pause</li>
+            <li><strong>Jachenau</strong> (810 m) – Übernachtung</li>
           </ul>
         </div>
         <div class="stage-info-block">
           <h4>🍻 Highlights</h4>
           <ul>
-            <li>Isarauen mit Bademöglichkeit</li>
-            <li>Bad Tölz Altstadt (Marktstraße)</li>
-            <li>Erste Voralpenblicke ab Bad Tölz</li>
-            <li>Brauereigaststätte in Lenggries</li>
+            <li>🏆 Isartrail Westseite – einer der längsten Singletrails Deutschlands</li>
+            <li>Pupplinger Au – Schwimmmöglichkeit in der Isar</li>
+            <li>Bad Tölz Altstadt – Mittagspause</li>
+            <li>Jachenau – einsamstes Voralpen-Tal Bayerns</li>
           </ul>
         </div>
       </div>
 
       <div class="highlights">
-        <h4>🛏️ Übernachtung Lenggries</h4>
-        <em>Hotel zur Post</em>, <em>Arabella Brauneck Hotel</em>, <em>Hotel am Schloss</em>. Gute Verfügbarkeit, günstig bis mittelpreisig.
+        <h4>🛏️ Übernachtung: Gasthof Jachenau ⭐⭐⭐ (8,4 / 10)</h4>
+        Dorf 8½ · Frühstücksbuffet · Biergarten · bayrische Küche · Bike-freundlich<br><strong>📞 (08043) 910-0</strong> · Ruhetag Dienstag – wir kommen Montag, perfekt! · ~150 € für die Gruppe
       </div>
 
       <div class="stage-nav">
@@ -1614,7 +1552,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   </div>
 
   <!-- TAB: STAGE 2 - TUESDAY (KÖNIGSETAPPE) -->
-  <div class="tab-content v-panel v-rofan" id="stage2">
+  <div class="tab-content" id="stage2">
     <div class="card">
       <div class="stage-header">
         <div class="stage-title-block">
@@ -1624,14 +1562,14 @@ svg.leaflet-image-layer.leaflet-interactive path {
       </div>
 
       <div class="stage-stats">
-        <div class="stage-stat"><div class="stage-stat-value">75 km</div><div class="stage-stat-label">Distanz</div></div>
-        <div class="stage-stat"><div class="stage-stat-value">1.800 hm</div><div class="stage-stat-label">Höhenmeter</div></div>
+        <div class="stage-stat"><div class="stage-stat-value">55 km</div><div class="stage-stat-label">Distanz</div></div>
+        <div class="stage-stat"><div class="stage-stat-value">1.400 hm</div><div class="stage-stat-label">Höhenmeter</div></div>
         <div class="stage-stat"><div class="stage-stat-value">7-8h</div><div class="stage-stat-label">Fahrzeit</div></div>
         <div class="stage-stat"><div class="stage-stat-value">⭐⭐⭐⭐</div><div class="stage-stat-label">Anspruch</div></div>
       </div>
 
       <div class="basti-note">
-        <strong>🌶️ Härtester Tag – aber machbar:</strong> Drei landschaftliche Highlights in einem Tag. Taktik: Früh starten (~8 Uhr), Mittagspause am Sylvensteinsee, am Achensee kurz eintauchen. <strong>Joker:</strong> Rofanseilbahn ab Maurach für den letzten Anstieg – spart ~600 hm.
+        <strong>🌶️ Sehr gut machbar:</strong> Dank Jachenau-Stopp gestern nur noch ~55 km / 1.400 hm. Früh starten (~8 Uhr), Mittagspause am Sylvensteinsee, kurz in den Achensee. <strong>Joker:</strong> Rofanseilbahn ab Maurach spart die letzten ~600 hm.
       </div>
 
       <h3>🚵 Vormittag: Jachenau & Sylvensteinsee</h3>
@@ -1644,8 +1582,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
         <div class="stage-info-block">
           <h4>📍 Schlüsselstellen</h4>
           <ul>
-            <li>Lenggries (680 m) – Start 8:00 Uhr</li>
-            <li>Jachenau (810 m) – Einkehr</li>
+            <li><strong>Jachenau</strong> (810 m) – Start 8:00 Uhr</li>
             <li>Vorderriß (820 m)</li>
             <li>Sylvensteinsee (763 m) – Mittag</li>
             <li>Achenpass (941 m) – Grenze DE/AT</li>
@@ -1681,80 +1618,13 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
   
 
-<!-- TAB: STAGE 2E - TUESDAY ERFURTER -->
-  <div class="tab-content v-panel v-erfurter" id="stage2e" style="display:none">
+<!-- TAB: STAGE 3 - WEDNESDAY (GENUSS-ETAPPE) -->
+  <div class="tab-content" id="stage3">
     <div class="card">
       <div class="stage-header">
         <div class="stage-title-block">
-          <h2>📅 Di 25.08. · Sylvensteinsee & Achensee</h2>
-          <div class="stage-route">Lenggries → Vorderriß → Sylvensteinsee → Achenkirch → Pertisau</div>
-        </div>
-      </div>
-
-      <div class="stage-stats">
-        <div class="stage-stat"><div class="stage-stat-value">65 km</div><div class="stage-stat-label">Distanz</div></div>
-        <div class="stage-stat"><div class="stage-stat-value">1.200 hm</div><div class="stage-stat-label">Höhenmeter</div></div>
-        <div class="stage-stat"><div class="stage-stat-value">6-7h</div><div class="stage-stat-label">Fahrzeit</div></div>
-        <div class="stage-stat"><div class="stage-stat-value">⭐⭐⭐</div><div class="stage-stat-label">Anspruch</div></div>
-      </div>
-
-      <h3>🚵 Route</h3>
-      <p>Aus Lenggries Auffahrt über das Brauneckgebiet, dann Abfahrt durch die <strong>Jachenau</strong> – einsame Voralpen-Idylle. Über Vorderriß zur <strong>Sylvensteinsee-Talsperre</strong> (Foto-Stop!), dann über die Grenze nach Österreich. Über den <strong>Achenpass</strong> (941 m) nach Achenkirch und am Ostufer des Achensees nach Pertisau.</p>
-
-      <div class="stage-details">
-        <div class="stage-info-block">
-          <h4>📍 Schlüsselstellen</h4>
-          <ul>
-            <li>Lenggries (680 m) – Start</li>
-            <li>Brauneck-Vorderhang (1.000 m)</li>
-            <li>Jachenau (810 m)</li>
-            <li>Vorderriß (820 m)</li>
-            <li>Sylvensteinsee (763 m) – Pause</li>
-            <li>Achenpass (941 m) – Grenze AT</li>
-            <li>Achenkirch (929 m)</li>
-            <li>Pertisau (929 m) – Übernachtung</li>
-          </ul>
-        </div>
-        <div class="stage-info-block">
-          <h4>🍻 Einkehr</h4>
-          <ul>
-            <li><strong>Jachenau Klosterwirt</strong> – Bayrisch traditionell</li>
-            <li><strong>Gasthof Post Vorderriß</strong></li>
-            <li><strong>Achenkirch</strong> – schöne Cafés</li>
-            <li>Schwimmen im Achensee am Abend!</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="highlights">
-        <h4>✨ Highlights</h4>
-        <ul style="margin-left: 16px;">
-          <li>Türkisblauer Sylvensteinsee – einer der schönsten Stauseen Bayerns</li>
-          <li>Jachenau – einsamste Voralpenregion</li>
-          <li>Achenpass-Übergang mit Grenz-Feeling</li>
-          <li>Achensee = "Tiroler Meer" mit kristallklarem Wasser</li>
-        </ul>
-      </div>
-
-      <div class="highlights">
-        <h4>🛏️ Übernachtung Pertisau am Achensee</h4>
-        <em>Hotel Karlwirt</em>, <em>Furtherwirt</em>, <em>Posthotel Achenkirch</em> (etwas außerhalb). Pertisau ist DER Bike-Ort am Achensee – Hotels mit Bike-Service und Garagen. Abends im Achensee schwimmen!
-      </div>
-
-      <div class="stage-nav">
-        <button onclick="switchTab('stage1')">← Zurück zu Mo</button>
-        <button onclick="switchTab('stage3e')">Weiter zu Mi · Erfurter Hütte →</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- TAB: STAGE 3 - WEDNESDAY (GENUSS-ETAPPE) -->
-  <div class="tab-content v-panel v-rofan" id="stage3">
-    <div class="card">
-      <div class="stage-header">
-        <div class="stage-title-block">
-          <h2>📅 Mi 26.08. · Rofan-Abfahrt & Inntal-Gleiten</h2>
-          <div class="stage-route">Berggasthof Rofan → Kramsach → Inntalradweg → Kufstein</div>
+          <h2>📅 Mi 26.08. · Rofan-Abfahrt & Kranzhorn-Variante</h2>
+          <div class="stage-route">Berggasthof Rofan → Kramsach → Kranzhorn-Flanke → Inntal → Kufstein</div>
         </div>
       </div>
 
@@ -1766,25 +1636,25 @@ svg.leaflet-image-layer.leaflet-interactive path {
       </div>
 
       <div class="highlights">
-        <h4>😌 Der verdiente Erholungstag nach dem Dienstag</h4>
-        Frühstück mit Bergpanorama und Achensee-Blick, dann ~1.000 hm Trail-Abfahrt ins Inntal. Danach flacher Inntalradweg bis Kufstein – einer der schönsten Radwege Tirols. Kufstein am Abend: Altstadt, Inn-Ufer, gutes Bier.
+        Frühstück auf der Hütte mit Achensee-Blick, dann Trail-Abfahrt ins Inntal. Statt direktem Inntalradweg nehmt ihr den Umweg über die <strong>Kranzhorn-Flanke</strong>: Waldwege und Trails über den Samerberg mit Panorama auf Kaisergebirge und Inntal. Kufstein am Abend: Altstadt, Festung, gutes Bier.
       </div>
 
       <h3>🌅 Morgen: Rofan-Trail-Abfahrt</h3>
-      <p>Frühstück auf der Hütte (Sonnenaufgang!). Dann Aufbruch auf den <strong>Rofan-Trail</strong> Richtung Kramsach – ~1.000 hm bergab auf Schotterwegen und S1-Trails. Kein Stress, kein Zeitdruck.</p>
+      <p>Frühstück auf der Hütte (Sonnenaufgang!). Dann Aufbruch auf den <strong>Rofan-Trail</strong> Richtung Kramsach – ~1.000 hm bergab auf Schotterwegen und S1-Trails.</p>
 
-      <h3>🚵 Nachmittag: Inntalradweg</h3>
-      <p>In Kramsach auf den <strong>Inntalradweg</strong> – großteils flach, direkt am Inn entlang. Über Rattenberg (älteste Stadt Österreichs, kurzer Stopp!) nach Kufstein.</p>
+      <h3>🚵 Nachmittag: Kranzhorn-Flanke</h3>
+      <p>Ab Kramsach statt direktem Inntalradweg: Auffahrt über Dandlberg auf die <strong>Kranzhorn-Flanke</strong> (Samerberg-Region). Waldwege und ein feiner Singletrail durch die Euzenau. Panorama auf Kaisergebirge und Inntal. Abstieg auf Waldwegen zurück ans Innufer, dann direkt nach Kufstein.</p>
 
       <div class="stage-details">
         <div class="stage-info-block">
           <h4>📍 Schlüsselstellen</h4>
           <ul>
             <li>Berggasthof Rofan (1.840 m) – Frühstück</li>
-            <li>Mauritzalm Trail-Einstieg</li>
+            <li>Rofan-Trail-Abfahrt (S1, ~1.000 hm)</li>
             <li>Kramsach (520 m) – Inntal</li>
-            <li>Rattenberg (519 m) – Altstadt-Stopp</li>
-            <li>Brixlegg (520 m)</li>
+            <li>Rattenberg – kurzer Stopp</li>
+            <li>Auffahrt Dandlberg / Samerberg</li>
+            <li>Kranzhorn-Flanke + Euzenau (Trail S1)</li>
             <li><strong>Kufstein</strong> (499 m) – Übernachtung</li>
           </ul>
         </div>
@@ -1792,7 +1662,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
           <h4>🍻 Einkehr</h4>
           <ul>
             <li><strong>Rattenberg</strong> – älteste Stadt Österreichs</li>
-            <li><strong>Brixlegg</strong> – Kaffeepause</li>
+            <li><strong>Kranzhornhütte</strong> – Panoramaeinkehr Inntal</li>
             <li><strong>Kufstein Festung</strong> – Abendblick</li>
             <li><strong>Auracher Löchl</strong> – Traditionslokal Kufstein</li>
           </ul>
@@ -1814,96 +1684,29 @@ svg.leaflet-image-layer.leaflet-interactive path {
   
 
 <!-- TAB: STAGE 3 - WEDNESDAY (ERFURTER HÜTTE) -->
-  <div class="tab-content" id="stage3">
-    <div class="card">
-      <div class="stage-header">
-        <div class="stage-title-block">
-          <h2>📅 Mi 26.08. · Rofan-Höhenweg & Erfurter Hütte 🌶️</h2>
-          <div class="stage-route">Pertisau → Maurach → Rofanseilbahn → Rofan-Trails → Erfurter Hütte</div>
-        </div>
-      </div>
-
-      <div class="stage-stats">
-        <div class="stage-stat"><div class="stage-stat-value">40 km</div><div class="stage-stat-label">Distanz</div></div>
-        <div class="stage-stat"><div class="stage-stat-value">1.500 hm</div><div class="stage-stat-label">Höhenmeter</div></div>
-        <div class="stage-stat"><div class="stage-stat-value">5-6h</div><div class="stage-stat-label">Fahrzeit</div></div>
-        <div class="stage-stat"><div class="stage-stat-value">⭐⭐⭐</div><div class="stage-stat-label">Anspruch</div></div>
-      </div>
-
-      <div class="basti-note">
-        <strong>🌶️ Basti-Joker:</strong> Rofanseilbahn ab Maurach spart ~900 hm Eigenanstieg – flexibel je nach Tagesform. Die Trails am Höhenweg sind S1–S2, gut fahrbar. Erfurter Hütte ist das Ziel: 1.834 m, Matrazenlager für alle drei bereits gesichert.
-      </div>
-
-      <h3>🌅 Vormittag: Achensee → Maurach → Rofan</h3>
-      <p>Vom Hotel in Pertisau am <strong>Achensee-Westufer</strong> nach Maurach. Dort Entscheidung: Forststraße über die Bayreuther Hütte hochkurbeln (~900 hm, 2h) oder <strong>Rofanseilbahn</strong> nehmen (10 min). Oben beginnt die Rofan-Hochfläche auf ~1.800 m.</p>
-
-      <h3>🏔️ Nachmittag: Rofan-Höhenweg zur Erfurter Hütte</h3>
-      <p>Auf dem <strong>Tiroler Adlerweg / E4-Fernwanderweg</strong> entlang der Rofan-Hochfläche – MTB-tauglich auf Schotter und S1-Trails. Gigantische Blicke auf Achensee, Karwendel und Zillertaler Alpen. Die <strong>Erfurter Hütte</strong> liegt direkt an der Bergstation, das Ziel ist kaum zu verfehlen.</p>
-
-      <div class="stage-details">
-        <div class="stage-info-block">
-          <h4>📍 Schlüsselstellen</h4>
-          <ul>
-            <li>Pertisau (929 m) – Start</li>
-            <li>Achensee-Westufer</li>
-            <li>Maurach (957 m) – Rofanseilbahn Option</li>
-            <li>Bergstation Rofanseilbahn (1.834 m)</li>
-            <li>Bayreuther Hütte (1.620 m) – Einkehr</li>
-            <li>Mauritzalm / Krahnsattel</li>
-            <li><strong>Erfurter Hütte (1.834 m)</strong> – Übernachtung</li>
-          </ul>
-        </div>
-        <div class="stage-info-block">
-          <h4>🍽️ Einkehr-Highlights</h4>
-          <ul>
-            <li><strong>Bayreuther Hütte</strong> – urig, Tiroler Küche</li>
-            <li><strong>Mauritzalm</strong> – Almidylle</li>
-            <li><strong>Berggasthof Rofan</strong> – Tageseinkehr Terrasse</li>
-            <li><strong>Erfurter Hütte</strong> – Abendessen, Sonnenuntergang</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="highlights">
-        <h4>🛏️ Übernachtung: Erfurter Hütte (1.834 m) · Mi→Do ✅ Plätze frei!</h4>
-        <p>Direkt neben der Bergstation der Rofanseilbahn, 50 m vom Berggasthof Rofan. <strong>Matrazenlager für Mi→Do bereits verfügbar</strong> – jetzt buchen! Bewertung: 4,7 ⭐ (1.161 Bewertungen). Saubere Schlafräume, gutes Frühstück, freundliches Team. Hüttenschlafsack mitbringen!</p>
-        <a href="mailto:huette@erfurterhuette.at" class="external-link">erfurterhuette@aon.at</a>
-        <p style="margin-top:8px; font-size:13px;">📞 <strong>+43 5243 5517</strong> · oder <strong>+43 664 5146833</strong></p>
-      </div>
-
-      <div class="warning">
-        <strong>⚠️ Hüttenschlafsack Pflicht!</strong> Matrazenlager = eigener Schlafsack notwendig. Handtuch mitnehmen. Duschen kostenpflichtig (~2 €/Token). Bargeld einplanen – keine Kartenzahlung.
-      </div>
-
-      <div class="stage-nav">
-        <button onclick="switchTab('stage2e')">← Zurück zu Di</button>
-        <button onclick="switchTab('stage4')">Weiter zu Do · München →</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- TAB: STAGE 4 - THURSDAY -->
+    <!-- TAB: STAGE 4 - THURSDAY -->
   <div class="tab-content" id="stage4">
     <div class="card">
       <div class="stage-header">
         <div class="stage-title-block">
-          <h2>📅 Do 27.08. · Kufstein → München · Basti-Abschluss 🚉</h2>
-          <div class="stage-route">Kufstein → Inntalradweg → Rosenheim → München</div>
+          <h2>📅 Do 27.08. · Innauen-Trails → München · Basti-Abschluss 🚉</h2>
+          <div class="stage-route">Kufstein → Innauen-Schotter → Rosenheim → Mangfall-Waldweg → München</div>
         </div>
       </div>
 
       <div class="stage-stats">
-        <div class="stage-stat"><div class="stage-stat-value">80 km</div><div class="stage-stat-label">Distanz</div></div>
-        <div class="stage-stat"><div class="stage-stat-value">400 hm</div><div class="stage-stat-label">Höhenmeter</div></div>
+        <div class="stage-stat"><div class="stage-stat-value">90 km</div><div class="stage-stat-label">Distanz</div></div>
+        <div class="stage-stat"><div class="stage-stat-value">500 hm</div><div class="stage-stat-label">Höhenmeter</div></div>
         <div class="stage-stat"><div class="stage-stat-value">5-6h</div><div class="stage-stat-label">Fahrzeit</div></div>
         <div class="stage-stat"><div class="stage-stat-value">⭐⭐</div><div class="stage-stat-label">Anspruch</div></div>
+        <div class="stage-stat"><div class="stage-stat-value">~20%</div><div class="stage-stat-label">Trail-Anteil</div></div>
       </div>
 
       <h3>🌅 Morgen: Kufstein Festungs-Runde</h3>
-      <p>Ausgeschlafen starten – kein früher Hütten-Aufbruch heute. Kurze Runde zur Kufstein-Festung, dann Abfahrt auf den Inntalradweg Richtung Deutschland.</p>
+      <p>Ausgeschlafen starten. Kurze Runde zur Kufstein-Festung, dann ab auf die Innufer-Trails Richtung Deutschland.</p>
 
-      <h3>🚵 Inntalradweg & Mangfall-Radweg nach München</h3>
-      <p>Über die Grenze bei Kiefersfelden, dann am Inn entlang über <strong>Rosenheim</strong> auf den <strong>Mangfall-Radweg</strong> nach München. Überwiegend flach, gut ausgeschildert – im Flachland kommt man richtig in Fahrt. Ankunft München ~16–17 Uhr.</p>
+      <h3>🚵 Innauen-Trails & Mangfall-Waldweg nach München</h3>
+      <p>Der Inntalradweg ist auf weiten Strecken <strong>nicht asphaltiert</strong> – Schotterwege und Naturtracks durch die Innauen. Ab Rosenheim wechselt ihr auf die <strong>Westseite Mangfalltal</strong>: Waldwege und ruhige Forststraßen statt Radweg-Asphalt. Flach, gut in Fahrt, naturbelassener als der Standard-Innradweg. Ankunft München ~16–17 Uhr.</p>
 
       <div class="stage-details">
         <div class="stage-info-block">
@@ -2073,7 +1876,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
       <p style="color:var(--text-muted); margin-bottom:20px;">Basis: 3 Personen · August 2026 · Preise recherchiert Mai 2026 · Abendessen inkl. 1–2 Bier/Person</p>
 
       <!-- VARIANTEN-GEGENÜBERSTELLUNG -->
-      <div class="cost-comparison">
+      <div class="cost-comparison" style="grid-template-columns:1fr;">
         <div class="cost-col cost-col-rofan">
           <div class="cost-col-header">🏔️ Rofan-Hütte Variante<br><small>Di→Mi Privatzimmer</small></div>
           <table class="cost-table">
@@ -2094,37 +1897,13 @@ svg.leaflet-image-layer.leaflet-interactive path {
               <tr><td>Sa München (JGA-Abschluss)</td><td>120 €</td><td>40 €</td></tr>
               <tr class="cost-section"><td colspan="3">➕ Optional</td></tr>
               <tr class="cost-muted"><td>Frühstück München 2× (15 €/P)</td><td>90 €</td><td>30 €</td></tr>
-              <tr class="cost-total"><td><strong>Gesamt (ohne Optional)</strong></td><td><strong>1.731 €</strong></td><td><strong>577 €</strong></td></tr>
-              <tr class="cost-total-incl"><td><strong>Gesamt (mit Frühstück München)</strong></td><td><strong>1.821 €</strong></td><td><strong>607 €</strong></td></tr>
+              <tr class="cost-total"><td><strong>Gesamt (ohne Optional)</strong></td><td><strong>1.261 €</strong></td><td><strong>420 €</strong></td></tr>
+              <tr class="cost-total-incl"><td><strong>Gesamt (Bastis Wohnung gratis)</strong></td><td><strong>1.261 €</strong></td><td><strong>420 €</strong></td></tr>
             </tbody>
           </table>
         </div>
 
-        <div class="cost-col cost-col-erfurter">
-          <div class="cost-col-header">⛺ Erfurter Hütte Variante<br><small>Mi→Do Matrazenlager</small></div>
-          <table class="cost-table">
-            <thead><tr><th>Posten</th><th>Gruppe</th><th>p.P.</th></tr></thead>
-            <tbody>
-              <tr class="cost-section"><td colspan="3">📍 Übernachtungen</td></tr>
-              <tr><td>Mo Lenggries<br><small>Posthotel Kolberbräu inkl. Frühstück</small></td><td>180 €</td><td>60 €</td></tr>
-              <tr><td>Di Pertisau/Achensee<br><small>Café-Pension Erika inkl. Frühstück</small></td><td>210 €</td><td>70 €</td></tr>
-              <tr class="cost-highlight"><td>Mi→Do Erfurter Hütte<br><small>Matrazenlager + Frühstück (3 × 48 €)</small></td><td>144 €</td><td>48 €</td></tr>
-              <tr><td>Do+Sa München<br><small>Motel One Hbf (2 Nächte, kein Frühstück)</small></td><td>440 €</td><td>147 €</td></tr>
-              <tr><td>Fr Schliersee<br><small>Hotel Hubertus inkl. Frühstück</small></td><td>175 €</td><td>58 €</td></tr>
-              <tr class="cost-section"><td colspan="3">🍽️ Abendessen</td></tr>
-              <tr><td>Mo Lenggries</td><td>75 €</td><td>25 €</td></tr>
-              <tr><td>Di Pertisau<br><small>Karlwirt o.ä.</small></td><td>75 €</td><td>25 €</td></tr>
-              <tr><td>Mi Erfurter Hütte<br><small>⚠️ oft extra, ~15 €/P</small></td><td>45 €</td><td>15 €</td></tr>
-              <tr><td>Do München<br><small>Augustiner Stammhaus</small></td><td>100 €</td><td>33 €</td></tr>
-              <tr><td>Fr Schliersee</td><td>75 €</td><td>25 €</td></tr>
-              <tr><td>Sa München (JGA-Abschluss)</td><td>120 €</td><td>40 €</td></tr>
-              <tr class="cost-section"><td colspan="3">➕ Optional</td></tr>
-              <tr class="cost-muted"><td>Frühstück München 2× (15 €/P)</td><td>90 €</td><td>30 €</td></tr>
-              <tr class="cost-total"><td><strong>Gesamt (ohne Optional)</strong></td><td><strong>1.639 €</strong></td><td><strong>546 €</strong></td></tr>
-              <tr class="cost-total-incl"><td><strong>Gesamt (mit Frühstück München)</strong></td><td><strong>1.729 €</strong></td><td><strong>576 €</strong></td></tr>
-            </tbody>
-          </table>
-        </div>
+
       </div>
     </div>
 
@@ -2151,16 +1930,14 @@ svg.leaflet-image-layer.leaflet-interactive path {
       <div class="budget-grid">
         <div class="budget-box budget-rofan">
           <div class="budget-label">🏔️ Rofan-Variante</div>
-          <div class="budget-amount">~830–860 €</div>
-          <div class="budget-sub">577 € Unterkunft+Abendessen<br>+ ~253 € Zusatzkosten<br>+ ~30 € Puffer</div>
-        </div>
-        <div class="budget-box budget-erfurter">
-          <div class="budget-label">⛺ Erfurter-Variante</div>
-          <div class="budget-amount">~800–830 €</div>
-          <div class="budget-sub">546 € Unterkunft+Abendessen<br>+ ~253 € Zusatzkosten<br>+ ~30 € Puffer</div>
+          <div class="budget-amount">~670–700 €</div>
+          <div class="budget-sub">420 € Unterkunft+Abendessen<br>+ ~253 € Zusatzkosten<br>+ ~30 € Puffer</div>
         </div>
         <div class="budget-box budget-diff">
-          <div class="budget-label">📊 Differenz</div>
+          <div class="budget-label">✅ Rofan-Hütte gebucht</div>
+          <div class="budget-amount">306 € fix</div>
+          <div class="budget-sub">Privatzimmer + Abendessen + Frühstück<br>Di 25.08. → Mi 26.08. · +43 676 4852540</div>
+        </div>
           <div class="budget-amount">~31 €/P</div>
           <div class="budget-sub">Rofan-Hütte (Privatzimmer) etwas teurer<br>Erfurter (Matrazenlager) günstiger<br>aber eine Nacht weniger Komfort</div>
         </div>
@@ -2168,7 +1945,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
       <div class="highlights" style="margin-top:20px;">
         <h4>💡 Fazit</h4>
-        Beide Varianten liegen mit ~800–860 € pro Person eng beieinander. Die <strong>Rofan-Hütte ist komfortabler</strong> (Privatzimmer, Halbpension) bei marginal höherem Preis. Die <strong>Erfurter Hütte spart ~30 €/Person</strong>, dafür schläft ihr im Matrazenlager – was aber zum JGA-Feeling durchaus passt! Der größte Kostenhebel sind die <strong>Mittagspausen und Kaffeestopps</strong> unterwegs – hier könnt ihr 50–100 € pro Gruppe sparen, wenn ihr gezielter einkehrt.
+        Gesamtbudget ~670–700 € pro Person – Bastis Wohnung spart euch ~147 €/Person! Die Rofan-Hütte (306 € / 102 € p.P.) ist fix gebucht. Größter variabler Kostenhebel: <strong>Mittagspausen und Kaffeestopps</strong> – hier lassen sich 50–100 € pro Gruppe sparen.
       </div>
     </div>
 
@@ -2176,36 +1953,24 @@ svg.leaflet-image-layer.leaflet-interactive path {
     <div class="card">
       <h2>🛏️ Konkrete Buchungsempfehlungen</h2>
 
-      <h3>Mo · Lenggries</h3>
+      <h3>Mo · Jachenau</h3>
       <div class="hotel-card">
-        <div class="hotel-name">Posthotel & Gasthaus Kolberbräu ⭐⭐⭐</div>
-        <div class="hotel-details">Marktstraße 13 · ab ~68 €/Nacht inkl. Frühstück · Biergarten · zentral · Bike-Stellplatz</div>
-        <div class="hotel-price">~180 € für 3 Personen (2 DZ + Zustellbett)</div>
+        <div class="hotel-name">Gasthof Jachenau ⭐⭐⭐ (8,4 / 10)</div>
+        <div class="hotel-details">Dorf 8½, Jachenau · Frühstücksbuffet · Biergarten · bayrische Küche · Bike-freundlich<br>
+        📞 (08043) 910-0 · <strong>Ruhetag Dienstag</strong> – wir kommen Montag, passt perfekt!</div>
+        <div class="hotel-price">~150 € für 3 Personen</div>
       </div>
 
-      <h3 class="v-heading v-rofan">Di · Rofan-Hütte (Rofan-Variante)</h3>
-      <div class="hotel-card hotel-highlight v-hotel v-rofan">
-        <div class="hotel-name">🏔️ Berggasthof Rofan ⭐⭐⭐ (1.840 m)</div>
-        <div class="hotel-details">Privatzimmer · inkl. Abendessen + Frühstück · Achensee-Panorama<br>📞 +43 676 4852540 · <strong>sofort anrufen!</strong></div>
-        <div class="hotel-price">306 € für 3 Personen (von euch bestätigt)</div>
+      <h3>Di · Rofan-Hütte ✅</h3>
+      <div class="hotel-card hotel-highlight">
+        <div class="hotel-name">🏔️ Berggasthof Rofan (1.840 m) – bereits gebucht!</div>
+        <div class="hotel-details">Direkt an der Rofanseilbahn-Bergstation · Privatzimmer mit Achensee-Panorama<br>
+        Abendessen + Frühstück inklusive · 📞 +43 676 4852540</div>
+        <div class="hotel-price">306 € für 3 Personen – fix gebucht ✅</div>
       </div>
 
-      <h3 class="v-heading v-erfurter" style="display:none">Di · Pertisau (Erfurter-Variante)</h3>
-      <div class="hotel-card v-hotel v-erfurter" style="display:none">
-        <div class="hotel-name">Café-Pension Erika ⭐⭐⭐ (Bewertung 9,1)</div>
-        <div class="hotel-details">Naturparkstraße 51, Pertisau · inkl. Frühstück · Seenähe · Bike-freundlich</div>
-        <div class="hotel-price">~210 € für 3 Personen</div>
-      </div>
-
-      <h3 class="v-heading v-erfurter" style="display:none">Mi · Erfurter Hütte (Erfurter-Variante)</h3>
-      <div class="hotel-card hotel-highlight v-hotel v-erfurter" style="display:none">
-        <div class="hotel-name">⛺ Erfurter Hütte (1.834 m)</div>
-        <div class="hotel-details">Matrazenlager · Frühstück inkl. · Abendessen extra (~15 €/P)<br>📞 +43 5243 5517 · ✅ Plätze Mi→Do frei</div>
-        <div class="hotel-price">144 € Übernachtung + ~45 € Abendessen = 189 € gesamt</div>
-      </div>
-
-      <h3 class="v-heading v-rofan">Mi · Kufstein (Rofan-Variante)</h3>
-      <div class="hotel-card v-hotel v-rofan">
+      <h3>Mi · Kufstein</h3>
+      <div class="hotel-card">
         <div class="hotel-name">Hotel Andreas Hofer ⭐⭐⭐</div>
         <div class="hotel-details">Kufstein Innenstadt · inkl. Frühstück · Festungs-Nähe · Innufer-Lage</div>
         <div class="hotel-price">~180 € für 3 Personen</div>
@@ -2213,18 +1978,18 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
       <h3>Do + Sa · München</h3>
       <div class="hotel-card">
-        <div class="hotel-name">Motel One München-Hauptbahnhof ⭐⭐⭐</div>
-        <div class="hotel-details">Schillerstraße 3 · kein Frühstück (optional +15 €/P) · Rooftopbar · U-Bahn direkt<br>Aktuell ab ~110 €/Nacht für Do · für Sa gleich mitbuchen!</div>
-        <div class="hotel-price">~220 € pro Nacht für 3 Personen · 2 Nächte = ~440 €</div>
+        <div class="hotel-name">🏠 Bastis Wohnung</div>
+        <div class="hotel-details">Kostenlos · kein Buchen nötig · perfekt für den JGA-Abschlussabend</div>
+        <div class="hotel-price">0 € – danke Basti! 🍺</div>
       </div>
 
       <h3>Fr · Schliersee</h3>
       <div class="hotel-card">
         <div class="hotel-name">Hotel Hubertus Schliersee ⭐⭐⭐</div>
-        <div class="hotel-details">2 km südlich des Sees · inkl. Frühstück · Wanderwege Spitzingsee fußläufig · Budgetzimmer für Radfahrer</div>
+        <div class="hotel-details">2 km südlich des Sees · inkl. Frühstück · Wanderwege Spitzingsee fußläufig · Budgetzimmer für Radfahrer<br>
+        <a href="https://www.hotel-hubertus-schliersee.de" target="_blank" style="color:var(--primary)">hotel-hubertus-schliersee.de</a></div>
         <div class="hotel-price">~175 € für 3 Personen</div>
       </div>
-    </div>
 
     <div class="stage-nav">
       <button onclick="switchTab('stage6')">← Zurück zu Sa</button>
@@ -2263,13 +2028,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
           <tr><th>Tag</th><th>Ort</th><th>Empfehlung</th><th>Priorität</th></tr>
         </thead>
         <tbody>
-          <tr><td>Mo</td><td>Lenggries</td><td>Hotel zur Post / Arabella Brauneck</td><td>Mittel</td></tr>
-          <!-- Rofan-Variante -->
-          <tr class="basti-row v-row v-rofan"><td><strong>Di</strong></td><td><strong>Rofan-Hütte (1.840m)</strong></td><td><strong>🏔️ Berggasthof Rofan Privatzimmer (Di→Mi)</strong></td><td><strong>🚨 HOCH – sofort!</strong></td></tr>
-          <tr class="v-row v-rofan"><td>Mi</td><td>Kufstein</td><td>Hotel Andreas Hofer / Gasthof Bärenbad</td><td>Mittel</td></tr>
-          <!-- Erfurter-Variante -->
-          <tr class="v-row v-erfurter" style="display:none"><td>Di</td><td>Pertisau/Achensee</td><td>Hotel Karlwirt / Furtherwirt</td><td>Mittel</td></tr>
-          <tr class="basti-row v-row v-erfurter" style="display:none"><td><strong>Mi</strong></td><td><strong>Erfurter Hütte (1.834m)</strong></td><td><strong>⛺ Erfurter Hütte Matrazenlager (Mi→Do) · +43 5243 5517</strong></td><td><strong>✅ Plätze frei – jetzt buchen!</strong></td></tr>
+          <tr><td>Mo</td><td>Jachenau</td><td>Gasthof Jachenau · (08043) 910-0</td><td>Mittel</td></tr>
+          <tr class="basti-row"><td><strong>Di</strong></td><td><strong>Rofan-Hütte (1.840m)</strong></td><td><strong>🏔️ Berggasthof Rofan Privatzimmer (Di→Mi)</strong></td><td><strong>🚨 HOCH – sofort!</strong></td></tr>
+          <tr><td>Mi</td><td>Kufstein</td><td>Hotel Andreas Hofer / Gasthof Bärenbad</td><td>Mittel</td></tr>
+          
+          
           <tr><td>Do</td><td>München</td><td>Motel One Hbf</td><td>Mittel</td></tr>
           <tr><td>Fr</td><td>Schliersee</td><td>Arabella Spitzingsee / Wassmann</td><td>Mittel</td></tr>
           <tr><td>Sa</td><td>München</td><td>gleiches Hotel wie Do</td><td>Niedrig</td></tr>
@@ -2313,8 +2076,8 @@ svg.leaflet-image-layer.leaflet-interactive path {
     <div class="card">
       <h2>📋 To-Do bis Ende Mai 2026</h2>
       <div class="checklist">
-        <div class="check-item"><input type="checkbox" id="t1"><label for="t1"><strong>SOFORT:</strong> Berggasthof Rofan buchen (Di 25.08. → Mi 26.08., Privatzimmer) · +43 676 4852540</label></div>
-        <div class="check-item"><input type="checkbox" id="t2"><span class="v-span v-rofan"><label for="t2">Hotels buchen: Mo Lenggries · Mi Kufstein · Do+Sa München · Fr Schliersee</label></span><span class="v-span v-erfurter" style="display:none"><label for="t2">Hotels buchen: Mo Lenggries · Di Pertisau · Do+Sa München · Fr Schliersee</label></span></div>
+        <div class="check-item"><input type="checkbox" id="t1" checked><label for="t1">✅ <strong>GEBUCHT:</strong> Berggasthof Rofan · Di 25.08. → Mi 26.08. · +43 676 4852540</label></div>
+        <div class="check-item"><input type="checkbox" id="t2"><label for="t2">Hotels buchen: Mo Jachenau · Mi Kufstein · Do+Sa München · Fr Schliersee</label></div>
         <div class="check-item"><input type="checkbox" id="t3"><label for="t3">ICE-Fahrradplatz Karlsruhe→München (Mo) + Rückfahrt (So)</label></div>
         <div class="check-item"><input type="checkbox" id="t4"><label for="t4">Räder zum Service / Bremsbeläge prüfen</label></div>
         <div class="check-item"><input type="checkbox" id="t5"><label for="t5">GPX-Tracks für alle Etappen in Komoot erstellen</label></div>
@@ -2412,7 +2175,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
       color: '#15803d',
       dayNum: 1,
       type: 'with_basti',
-      title: 'Mo · München → Lenggries',
+      title: 'Mo · München → Jachenau',
       track: [
         [48.1351, 11.5820], // München Hbf
         [48.1100, 11.5680], // Sendlinger Tor
@@ -2428,7 +2191,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
         [47.8100, 11.5700], // Wackersberg
         [47.7800, 11.5750], // Arzbach
         [47.7350, 11.5800], // Lenggries Nord
-        [47.6800, 11.5700]  // Lenggries
+        [47.6800, 11.5700], // Lenggries
+        [47.7100, 11.5900], // Abzweig Jachenau
+        [47.6900, 11.6100], // Jachenau Tal
+        [47.6700, 11.6300], // Jachenau Mitte
+        [47.6550, 11.6500]  // Jachenau (810m)
       ],
       trainSegments: []
     },
@@ -2436,13 +2203,10 @@ svg.leaflet-image-layer.leaflet-interactive path {
       color: '#15803d',
       dayNum: 2,
       type: 'with_basti',
-      title: 'Di · Lenggries → Achensee → Rofan-Hütte 🌶️',
+      title: 'Di · Jachenau → Sylvensteinsee → Rofan-Hütte 🌶️',
       track: [
-        [47.6800, 11.5700], // Lenggries
-        [47.6700, 11.5650], // Lenggries Süd
-        [47.6500, 11.5700], // Brauneck-Hang
-        [47.6300, 11.5900], // Hochalm
-        [47.6100, 11.6200], // Jachenau Eingang
+        [47.6550, 11.6500], // Jachenau (810m)
+        [47.6300, 11.6600], // Jachenau Süd
         [47.5900, 11.6500], // Jachenau Ort
         [47.5700, 11.6800], // Vorderriß-Richtung
         [47.5500, 11.7100], // Vorderriß
@@ -2477,13 +2241,15 @@ svg.leaflet-image-layer.leaflet-interactive path {
         [47.4280, 11.8350], // Bayreuther Hütte
         [47.4220, 11.8100], // Forststraße bergab
         [47.4200, 11.7900], // Rofan-Tal
-        [47.4150, 11.7950], // Kramsach-Richtung
         [47.4900, 11.8800], // Kramsach Inntal (520m)
         [47.5100, 11.9200], // Rattenberg
-        [47.5200, 11.9600], // Brixlegg
-        [47.5400, 12.0200], // Radfeld
-        [47.5600, 12.0800], // Kundl
-        [47.5836, 12.1614]  // Kufstein
+        [47.5836, 12.1614], // Kufstein
+        [47.6200, 12.1800], // Auffahrt Dandlberg
+        [47.6600, 12.1500], // Samerberg-Region
+        [47.7000, 12.1200], // Euzenau / Kranzhorn-Flanke (Trail)
+        [47.7300, 12.1000], // Waldweg Abstieg
+        [47.7600, 12.1200], // Inn-Ufer zurück
+        [47.5836, 12.1614]  // Kufstein Abend
       ],
       trainSegments: []
     },
@@ -2497,17 +2263,18 @@ svg.leaflet-image-layer.leaflet-interactive path {
         [47.6300, 12.1800], // Niederaudorf
         [47.7000, 12.1700], // Oberaudorf
         [47.7500, 12.1500], // Kiefersfelden (Grenze AT/DE)
-        [47.7900, 12.1300], // Brannenburg
-        [47.8200, 12.1200], // Raubling
-        [47.8600, 12.1200], // Rosenheim
-        [47.9000, 12.0500], // Stephanskirchen
-        [47.9300, 11.9900], // Bruckmühl
-        [47.9600, 11.9200], // Agatharied
-        [47.9800, 11.8500], // Miesbach-Richtung
-        [48.0100, 11.8000], // Hausham
-        [48.0400, 11.7500], // Warngau
-        [48.0700, 11.7000], // Holzkirchen
-        [48.1000, 11.6500], // Oberhaching
+        [47.7700, 12.1100], // Inn-Westufer Schotter
+        [47.7900, 12.0900], // Innauen-Trail
+        [47.8100, 12.0800], // Innufer Naturweg
+        [47.8400, 12.0700], // Raubling Süd
+        [47.8600, 12.0900], // Rosenheim
+        [47.8900, 11.9800], // Mangfall-Westseite
+        [47.9200, 11.9200], // Waldweg Westseite
+        [47.9500, 11.8800], // Forststraße
+        [47.9800, 11.8200], // Miesbach-Richtung
+        [48.0200, 11.7800], // Waldweg
+        [48.0600, 11.7200], // Holzkirchen West
+        [48.0900, 11.6700], // Oberhaching
         [48.1200, 11.6200], // München Süd
         [48.1351, 11.5820]  // München Hbf
       ],
@@ -2647,7 +2414,10 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
   // ===== HIGHLIGHT-POIs =====
   const pois = [
+    [48.0700, 11.4950, '🏆 Isartrail West', 'Mo Singletrail-Einstieg ab Schäftlarn'],
+    [47.9800, 11.5100, '🌊 Pupplinger Au', 'Mo Schwimmpause Isar'],
     [47.8550, 11.5600, '🍻 Bad Tölz', 'Mo Mittagspause Altstadt'],
+    [47.6550, 11.6500, '🛏️ Gasthof Jachenau', 'Mo Übernachtung · (08043) 910-0'],
     [47.5700, 11.6900, '💧 Sylvensteinsee', 'Di Foto-Stop türkis'],
     [47.5650, 11.6300, '🏔️ Achenpass', 'Di 941m Grenze DE/AT'],
     [47.4400, 11.7350, '🏊 Achensee Pertisau', 'Di Übernachtung + Schwimmen'],
@@ -2655,6 +2425,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     [47.5836, 12.1614, '⛰️ Kufstein Festung', 'Do Mittag'],
     [47.6680, 11.8650, '🏊 Spitzingsee', 'Fr Schwimm-Pause'],
     [47.6900, 11.7700, '🚡 Stümpfling-Trail', 'Sa S2-Klassiker'],
+    [47.7400, 12.0000, '🌲 Irschenberg-Schleife', 'Sa Waldweg · Kaisergebirge-Panorama'],
     [47.7100, 11.6900, '🏊 Tegernsee Bad Wiessee', 'Sa Pause + Schwimmen']
   ];
 
@@ -2698,199 +2469,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   const allCoordsInit = Object.values(trackData).flatMap(d => d.track);
   map.fitBounds(allCoordsInit, { padding: [40, 40] });
 
-  // ===== VARIANTEN-TOGGLE =====
-  const VARIANTS = {
-    rofan: {
-      subtitle: 'München · Achensee · Rofan-Hütte · München · 24.–30. August 2026',
-      bannerTitle: 'Echte Loop-Tour · Rofan-Hütte Variante',
-      bannerSub: 'Di direkt hoch zur Rofan-Hütte (1.840 m) – Mi entspannte Abfahrt via Inntal nach Kufstein.',
-      trackData: {
-        tuesday: {
-          title: 'Di · Lenggries → Achensee → Rofan-Hütte 🌶️',
-          track: [
-            [47.6800, 11.5700],[47.6700, 11.5650],[47.6500, 11.5700],
-            [47.6300, 11.5900],[47.6100, 11.6200],[47.5900, 11.6500],
-            [47.5700, 11.6800],[47.5500, 11.7100],[47.5700, 11.6900],
-            [47.5800, 11.6800],[47.5750, 11.6500],[47.5650, 11.6300],
-            [47.5500, 11.6500],[47.5400, 11.6800],[47.5200, 11.7000],
-            [47.5000, 11.7100],[47.4750, 11.7200],[47.4400, 11.7350],
-            [47.4300, 11.7700],[47.4200, 11.7900],[47.4220, 11.8100],
-            [47.4280, 11.8350],[47.4350, 11.8600],[47.4360, 11.8920]
-          ]
-        },
-        wednesday: {
-          title: 'Mi · Rofan-Abfahrt → Inntal → Kufstein',
-          track: [
-            [47.4360, 11.8920],[47.4350, 11.8700],[47.4320, 11.8550],
-            [47.4280, 11.8350],[47.4220, 11.8100],[47.4200, 11.7900],
-            [47.4150, 11.7950],[47.4900, 11.8800],[47.5100, 11.9200],
-            [47.5200, 11.9600],[47.5400, 12.0200],[47.5600, 12.0800],
-            [47.5836, 12.1614]
-          ]
-        },
-        thursday: {
-          title: 'Do · Kufstein → München · Basti-Abschluss',
-          track: [
-            [47.5836, 12.1614],[47.6300, 12.1800],[47.7000, 12.1700],
-            [47.7500, 12.1500],[47.7900, 12.1300],[47.8200, 12.1200],
-            [47.8600, 12.1200],[47.9000, 12.0500],[47.9300, 11.9900],
-            [47.9600, 11.9200],[47.9800, 11.8500],[48.0100, 11.8000],
-            [48.0400, 11.7500],[48.0700, 11.7000],[48.1000, 11.6500],
-            [48.1200, 11.6200],[48.1351, 11.5820]
-          ]
-        }
-      },
-      pois: [
-        [47.4360, 11.8920, '🛏️ Berggasthof Rofan', 'Di→Mi · Privatzimmer · +43 676 4852540'],
-        [47.5836, 12.1614, '⛰️ Kufstein', 'Mi Übernachtung · Festungsblick']
-      ]
-    },
-    erfurter: {
-      subtitle: 'München · Achensee · Erfurter Hütte · München · 24.–30. August 2026',
-      bannerTitle: 'Echte Loop-Tour · Erfurter Hütte Variante',
-      bannerSub: 'Ursprünglicher Rhythmus: Di Pertisau, Mi Rofan-Berge & Erfurter Hütte (Mi→Do), Do Abfahrt München.',
-      trackData: {
-        tuesday: {
-          title: 'Di · Lenggries → Achensee/Pertisau',
-          track: [
-            [47.6800, 11.5700],[47.6700, 11.5650],[47.6500, 11.5700],
-            [47.6300, 11.5900],[47.6100, 11.6200],[47.5900, 11.6500],
-            [47.5700, 11.6800],[47.5500, 11.7100],[47.5700, 11.6900],
-            [47.5800, 11.6800],[47.5750, 11.6500],[47.5650, 11.6300],
-            [47.5500, 11.6500],[47.5400, 11.6800],[47.5200, 11.7000],
-            [47.5000, 11.7100],[47.4750, 11.7200],[47.4500, 11.7300],
-            [47.4400, 11.7350]
-          ]
-        },
-        wednesday: {
-          title: 'Mi · Rofan-Höhenweg & Erfurter Hütte 🌶️',
-          track: [
-            [47.4400, 11.7350],[47.4380, 11.7450],[47.4350, 11.7550],
-            [47.4300, 11.7700],[47.4200, 11.7900],[47.4150, 11.7950],
-            [47.4180, 11.8100],[47.4220, 11.8250],[47.4280, 11.8350],
-            [47.4320, 11.8500],[47.4350, 11.8650],[47.4370, 11.8780],
-            [47.4390, 11.8870],[47.4416, 11.7633]
-          ]
-        },
-        thursday: {
-          title: 'Do · Erfurter Hütte → Inntalradweg → München',
-          track: [
-            [47.4416, 11.7633],[47.4390, 11.8000],[47.4500, 11.8600],
-            [47.4600, 11.8900],[47.4700, 11.9000],[47.4800, 11.8900],
-            [47.4900, 11.8800],[47.5000, 11.8700],[47.5100, 11.8800],
-            [47.5836, 12.1614],[47.6500, 12.1700],[47.7300, 12.1700],
-            [47.7700, 12.1500],[47.7900, 12.1300],[47.8500, 12.1200],
-            [47.8600, 12.1100],[47.9000, 12.0500],[47.9300, 11.9900],
-            [47.9700, 11.9300],[48.0100, 11.8000],[48.0500, 11.7500],
-            [48.0800, 11.7000],[48.1100, 11.6500],[48.1351, 11.5820]
-          ]
-        }
-      },
-      pois: [
-        [47.4400, 11.7350, '🏊 Pertisau/Achensee', 'Di Übernachtung + Schwimmen'],
-        [47.4416, 11.7633, '🛏️ Erfurter Hütte', 'Mi→Do · Matrazenlager frei · +43 5243 5517']
-      ]
-    }
-  };
 
-  let currentVariant = 'rofan';
-
-  function setVariant(v) {
-    currentVariant = v;
-
-    // Toggle-Buttons
-    document.getElementById('btn-rofan').classList.toggle('active', v === 'rofan');
-    document.getElementById('btn-erfurter').classList.toggle('active', v === 'erfurter');
-
-    // Dynamische Texte
-    document.getElementById('v-subtitle').textContent = VARIANTS[v].subtitle;
-    document.getElementById('v-banner-title').textContent = VARIANTS[v].bannerTitle;
-    document.getElementById('v-banner-sub').textContent = VARIANTS[v].bannerSub;
-
-    // Hotel-Headings in Kosten-Tab
-    document.querySelectorAll('.v-hotel.v-rofan').forEach(el => el.style.display = v === 'rofan' ? '' : 'none');
-    document.querySelectorAll('.v-hotel.v-erfurter').forEach(el => el.style.display = v === 'erfurter' ? '' : 'none');
-    document.querySelectorAll('.v-heading.v-rofan').forEach(el => el.style.display = v === 'rofan' ? '' : 'none');
-    document.querySelectorAll('.v-heading.v-erfurter').forEach(el => el.style.display = v === 'erfurter' ? '' : 'none');
-
-    // Tabellen-Zeilen & Logistik
-    document.querySelectorAll('.v-row.v-rofan').forEach(el => el.style.display = v === 'rofan' ? '' : 'none');
-    document.querySelectorAll('.v-row.v-erfurter').forEach(el => el.style.display = v === 'erfurter' ? '' : 'none');
-    document.querySelectorAll('.v-span.v-rofan').forEach(el => el.style.display = v === 'rofan' ? '' : 'none');
-    document.querySelectorAll('.v-span.v-erfurter').forEach(el => el.style.display = v === 'erfurter' ? '' : 'none');
-
-    // Tab-Buttons in der Tab-Leiste
-    document.querySelectorAll('.v-tab').forEach(btn => {
-      const show = btn.dataset.variant === v;
-      btn.style.display = show ? '' : 'none';
-      if (!show && btn.classList.contains('active')) {
-        btn.classList.remove('active');
-      }
-    });
-
-    // Tab-Inhalte (stage2/stage2e, stage3/stage3e)
-    document.querySelectorAll('.v-panel').forEach(el => {
-      const isRofan = el.classList.contains('v-rofan');
-      el.style.display = (isRofan === (v === 'rofan')) ? '' : 'none';
-      if (el.style.display === 'none') el.classList.remove('active');
-    });
-
-    // Aktuellen Tab-Zustand prüfen: wenn stage2/stage3 aktiv, auf richtige Variante umschalten
-    const activeTab = document.querySelector('.tab-content.active');
-    if (activeTab) {
-      const id = activeTab.id;
-      if (id === 'stage2' && v === 'erfurter') switchTab('stage2e');
-      else if (id === 'stage2e' && v === 'rofan') switchTab('stage2');
-      else if (id === 'stage3' && v === 'erfurter') switchTab('stage3e');
-      else if (id === 'stage3e' && v === 'rofan') switchTab('stage3');
-    }
-
-    // Karte aktualisieren
-    updateMapForVariant(v);
-  }
-
-  function updateMapForVariant(v) {
-    const vdata = VARIANTS[v];
-
-    // Alte Varianten-Layer entfernen
-    ['tuesday', 'wednesday', 'thursday'].forEach(day => {
-      if (layerGroups[day]) {
-        map.removeLayer(layerGroups[day]);
-        delete layerGroups[day];
-      }
-    });
-
-    // Varianten-POIs entfernen
-    if (window.variantPoiLayer) {
-      map.removeLayer(window.variantPoiLayer);
-    }
-
-    // Neue Tracks rendern
-    ['tuesday', 'wednesday', 'thursday'].forEach(day => {
-      const baseData = trackData[day];
-      const override = vdata.trackData[day];
-      const merged = Object.assign({}, baseData, override);
-      // Temporär trackData überschreiben
-      trackData[day] = merged;
-      renderTrack(day);
-      layerGroups[day].addTo(map);
-      // Zurücksetzen
-      trackData[day] = baseData;
-    });
-
-    // Varianten-POIs
-    window.variantPoiLayer = L.layerGroup();
-    vdata.pois.forEach(([lat, lng, name, info]) => {
-      L.marker([lat, lng], {
-        icon: L.divIcon({
-          className: 'custom-marker',
-          html: `<div class="day-marker poi">★</div>`,
-          iconSize: [22, 22], iconAnchor: [11, 11]
-        })
-      }).bindPopup(`<strong>${name}</strong><br>${info}`).addTo(window.variantPoiLayer);
-    });
-    window.variantPoiLayer.addTo(map);
-  }
 
 
 </script>
