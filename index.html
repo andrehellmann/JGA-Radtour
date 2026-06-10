@@ -1297,6 +1297,73 @@ svg.leaflet-image-layer.leaflet-interactive path {
     border: 1px solid var(--primary);
   }
 
+
+  /* ── ZEITPLAN ──────────────────────────────────────────────────────────── */
+  .schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 13px;
+  }
+  .schedule-table th {
+    background: var(--primary);
+    color: white;
+    padding: 9px 12px;
+    text-align: left;
+  }
+  .schedule-table td {
+    padding: 9px 12px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  .schedule-table tr.sched-key td {
+    background: #fef9e7;
+    font-weight: 700;
+  }
+  .schedule-table tr.sched-key td:first-child {
+    color: var(--primary);
+    font-size: 15px;
+  }
+  .schedule-table td .hint {
+    display: block;
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 2px;
+  }
+  .schedule-summary {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    color: white;
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin: 20px 0;
+  }
+  .schedule-summary h4 {
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+  .schedule-summary table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  .schedule-summary td {
+    padding: 5px 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+  }
+  .schedule-summary td:first-child { font-weight: 700; width: 60px; }
+  .schedule-summary tr:last-child td { border-bottom: none; font-weight: 700; }
+
+  .trail-badge {
+    display: inline-block;
+    background: var(--green);
+    color: white;
+    font-size: 11px;
+    padding: 2px 7px;
+    border-radius: 8px;
+    margin-left: 6px;
+    font-weight: 600;
+  }
+
   .footer {
     text-align: center;
     padding: 24px 0;
@@ -1321,9 +1388,9 @@ svg.leaflet-image-layer.leaflet-interactive path {
   <div class="header">
     <div class="emoji">🚵‍♂️🍻🏔️</div>
     <h1>JGA MTB Voralpen-Loop 2026</h1>
-    <div class="subtitle">München · Jachenau · Rofan-Hütte · München · 24.–30. August 2026</div>
+    <div class="subtitle">Zirler Str. 40 München · Jachenau · Rofan-Hütte · 24.–30. August 2026</div>
     <div class="header-stats">
-      <div class="header-stat">📏 ~500 km</div>
+      <div class="header-stat">📏 ~520 km</div>
       <div class="header-stat">⛰️ ~7.800 hm</div>
       <div class="header-stat">🛏️ 6 Übernachtungen</div>
       <div class="header-stat">👥 André · Nico · Basti</div>
@@ -1335,7 +1402,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     <div class="concept-banner-icon">🔄</div>
     <div class="concept-banner-text">
       <strong>Echter Loop · Rofan-Hütte fix gebucht ✅</strong>
-      Mo Jachenau · Di Rofan-Hütte (gebucht!) · Mi Kufstein · Do München · Fr Schliersee · Sa Tegernsee
+      Mo Jachenau · Di Rofan-Hütte ✅ · Mi Kufstein · Do München · Fr Gindelalmschneid → Schliersee · Sa Drei-Seen-Trails → Heimfahrt
     </div>
   </div>
 
@@ -1431,14 +1498,14 @@ svg.leaflet-image-layer.leaflet-interactive path {
           
           <tr class="andre-row">
             <td class="day-cell">Fr 28.08.</td>
-            <td>München → Bayrischzell → Spitzingsattel → <strong>Schliersee</strong></td>
-            <td>70 km / 1.300 hm <em style="color:var(--green);font-size:12px">30% Trail</em></td>
+            <td>Zirler Str. 40 → Gindelalmschneid → <strong>Schliersee</strong> via Tegernsee</td>
+            <td>80 km / 1.500 hm <em style="color:var(--green);font-size:12px">45% Trail</em></td>
             <td>Schliersee</td>
           </tr>
           <tr class="andre-row">
             <td class="day-cell">Sa 29.08.</td>
-            <td>Schliersee → Stümpfling → Irschenberg-Schleife → <strong>München</strong></td>
-            <td>85 km / 1.400 hm <em style="color:var(--green);font-size:12px">40% Trail</em></td>
+            <td>Schliersee → Drei-Seen-Trails → Stümpfling → <strong>Zirler Str. 40</strong></td>
+            <td>90 km / 1.500 hm <em style="color:var(--green);font-size:12px">50% Trail</em></td>
             <td>München (Hotel)</td>
           </tr>
           <tr>
@@ -1463,13 +1530,34 @@ svg.leaflet-image-layer.leaflet-interactive path {
           <tr><td><strong>Di</strong> Jachenau → Rofan-Hütte</td><td>55 km / 1.400 hm</td><td>~30% (~17 km)</td><td>Forststraßen Jachenau + Rofan-Auffahrt Schotter</td></tr>
           <tr><td><strong>Mi</strong> Rofan → Kufstein</td><td>85 km / 900 hm</td><td>~35% (~30 km)</td><td>Rofan-Abfahrt S1 + Kranzhorn-Flanke + Euzenau</td></tr>
           <tr><td><strong>Do</strong> Kufstein → München</td><td>90 km / 500 hm</td><td>~20% (~18 km)</td><td>Innauen-Schotter + Mangfall-Waldwege</td></tr>
-          <tr><td><strong>Fr</strong> München → Schliersee</td><td>70 km / 1.300 hm</td><td>~30% (~21 km)</td><td>Spitzingsattel-Auffahrt + Brecherspitz-Trails</td></tr>
-          <tr><td><strong>Sa</strong> Schliersee → München</td><td>85 km / 1.400 hm</td><td>~40% (~34 km)</td><td>Stümpfling S2 + Taubenstein + Irschenberg-Schleife</td></tr>
+          <tr><td><strong>Fr</strong> Zirler Str. → Gindelalmschneid → Schliersee</td><td>80 km / 1.500 hm</td><td>~45% (~36 km)</td><td>Gindelalmschneid S1-2 · Tegernsee-Übergang · Bahn Schliersee</td></tr>
+          <tr><td><strong>Sa</strong> Schliersee → Drei-Seen-Trails → Zirler Str. 40</td><td>90 km / 1.500 hm</td><td>~50% (~45 km)</td><td>Drei-Seen-Trail S2 · Valepp · Stümpfling · Irschenberg</td></tr>
           <tr style="background:#f0faf5;font-weight:700;">
-            <td><strong>Gesamt</strong></td><td><strong>~500 km / ~7.800 hm</strong></td><td><strong>~30% (~149 km)</strong></td><td>–</td>
+            <td><strong>Gesamt</strong></td><td><strong>~520 km / ~8.200 hm</strong></td><td><strong>~35% (~182 km)</strong></td><td>–</td>
           </tr>
         </tbody>
       </table>
+    </div>
+
+    <div class="card">
+      <h2>⏰ Gesamt-Zeitplan</h2>
+      <table class="schedule-table">
+        <thead><tr><th>Tag</th><th>Strecke</th><th>Start</th><th>Ankunft</th><th>km / hm</th></tr></thead>
+        <tbody>
+          <tr class="sched-key"><td>So 23.08.</td><td>Anreise Karlsruhe → Zirler Str. 40</td><td>Nachmittag</td><td>~21–22h</td><td>Auto</td></tr>
+          <tr class="sched-key"><td>Mo 24.08.</td><td>Zirler Str. 40 → Jachenau</td><td><strong>07:00 ⚠️</strong></td><td>16:45</td><td>118 / 1.050</td></tr>
+          <tr><td>Di 25.08.</td><td>Jachenau → Rofan-Hütte ✅</td><td>07:30</td><td>17:00</td><td>55 / 1.400</td></tr>
+          <tr><td>Mi 26.08.</td><td>Rofan-Hütte → Kufstein</td><td>08:30</td><td>17:30</td><td>85 / 900</td></tr>
+          <tr><td>Do 27.08.</td><td>Kufstein → Zirler Str. 40</td><td>08:00</td><td>17:00</td><td>93 / 500</td></tr>
+          <tr class="sched-key"><td>Fr 28.08.</td><td>Zirler Str. 40 → Gindelalmschneid → Schliersee</td><td>08:30</td><td>16:30</td><td>80 / 1.500</td></tr>
+          <tr class="sched-key"><td>Sa 29.08.</td><td>Schliersee → Stümpfling → Zirler Str. 40</td><td><strong>07:30 ⚠️</strong></td><td>17:30</td><td>90 / 1.500</td></tr>
+          <tr class="sched-key"><td>Sa Abend</td><td>Heimfahrt Zirler Str. → Karlsruhe</td><td>~19:30</td><td>~22:00</td><td>Auto</td></tr>
+          <tr><td colspan="2"><strong>Gesamt auf dem Rad</strong></td><td></td><td></td><td><strong>~521 km / ~7.850 hm</strong></td></tr>
+        </tbody>
+      </table>
+      <div class="warning" style="margin-top:12px;">
+        <strong>⚠️ Zwei kritische Startzeiten:</strong> Mo 07:00 (längster Tag, kein Spielraum) und Sa 07:30 (Bergbahnen ab 8:30h + Heimfahrt am Abend).
+      </div>
     </div>
 
     <div class="card">
@@ -1609,6 +1697,32 @@ svg.leaflet-image-layer.leaflet-interactive path {
         <p style="margin-top:8px; font-size:13px;">📞 <strong>+43 676 4852540</strong> – jetzt buchen!</p>
       </div>
 
+
+      <h3>⏰ Zeitplan</h3>
+      <table class="schedule-table">
+        <thead><tr><th>Zeit</th><th>Punkt</th><th>km</th></tr></thead>
+        <tbody>
+          <tr class="sched-key"><td>07:30</td><td>🚴 Abfahrt Jachenau<span class="hint">Gel einwerfen · langer Anstieg heute</span></td><td style="white-space:nowrap">0</td></tr>
+          <tr><td>09:00</td><td>🌊 Sylvensteinsee<span class="hint">Brunnen Parkplatz · Pflicht-Foto · 15 Min</span></td><td style="white-space:nowrap">~20</td></tr>
+          <tr class="sched-key"><td>09:45</td><td>🍽️ Gasthof Post Vorderriß<span class="hint">Frühstück/Pause · vor dem Achenpass tanken</span></td><td style="white-space:nowrap">~25</td></tr>
+          <tr><td>11:00</td><td>⏸ Achenpass (941 m)<span class="hint">Gel · Grenzfoto · 10 Min</span></td><td style="white-space:nowrap">~35</td></tr>
+          <tr><td>12:00</td><td>🌊 Achenkirch – Wasser<span class="hint">Dorfbrunnen auffüllen</span></td><td style="white-space:nowrap">~45</td></tr>
+          <tr><td>12:30</td><td>🏊 Schwimmpause Achensee<span class="hint">20 Min · Koffein-Gel vor 1.000 hm Auffahrt</span></td><td style="white-space:nowrap">~52</td></tr>
+          <tr><td>13:30</td><td>Maurach – Seilbahn-Entscheidung<span class="hint">Rofanseilbahn = Joker (spart 600 hm)</span></td><td style="white-space:nowrap"></td></tr>
+          <tr><td>15:30</td><td>🌊 Bayreuther Hütte (1.350 m)<span class="hint">Letztes Wasser! Flaschen voll machen</span></td><td style="white-space:nowrap">~63</td></tr>
+          <tr class="sched-key"><td>17:00</td><td>🛏️ Berggasthof Rofan (1.840 m)<span class="hint">Sonnenuntergang Achensee · Zimmer beziehen</span></td><td style="white-space:nowrap">~70</td></tr>
+          <tr><td>19:00</td><td>🍻 Abendessen auf der Hütte<span class="hint">Inkl. in Buchung ✅ · Küche bis ~20:30h</span></td><td style="white-space:nowrap"></td></tr>
+        </tbody>
+      </table>
+      <div class="schedule-summary">
+        <h4>📊 Tages-Bilanz</h4>
+        <table>
+          <tr><td>🚵 Fahrzeit:</td><td>~5,5h</td></tr>
+          <tr><td>⏱️ Gesamttag:</td><td>~7,5h</td></tr>
+          <tr><td>💡 Hinweis:</td><td>🏔️ Hütten-Abend genießen – ihr habt's verdient!</td></tr>
+        </table>
+      </div>
+
       <div class="stage-nav">
         <button onclick="switchTab('stage1')">← Zurück zu Mo</button>
         <button onclick="switchTab('stage3')">Weiter zu Mi · Kufstein →</button>
@@ -1672,6 +1786,31 @@ svg.leaflet-image-layer.leaflet-interactive path {
       <div class="highlights">
         <h4>🛏️ Übernachtung Kufstein</h4>
         <em>Hotel Andreas Hofer</em>, <em>Gasthof Bärenbad</em>, <em>Pension Inntal</em>. Kufstein ist eine der schönsten Alpen-Kleinstädte – Festung beleuchtet, Inn-Ufer gemütlich.
+      </div>
+
+
+      <h3>⏰ Zeitplan</h3>
+      <table class="schedule-table">
+        <thead><tr><th>Zeit</th><th>Punkt</th><th>km</th></tr></thead>
+        <tbody>
+          <tr><td>07:30</td><td>🌅 Frühstück Rofan-Hütte<span class="hint">Sonnenaufgang über dem Achensee – nicht verpassen!</span></td><td style="white-space:nowrap"></td></tr>
+          <tr class="sched-key"><td>08:30</td><td>🚴 Abfahrt Rofan-Hütte<span class="hint">Koffein-Gel · S1-Trail Rofan-Abfahrt beginnt</span></td><td style="white-space:nowrap">0</td></tr>
+          <tr><td>10:00</td><td>🌊 Kramsach – Inntal<span class="hint">Bäckerei/Brunnen · Wasser vor Kranzhorn</span></td><td style="white-space:nowrap">~15</td></tr>
+          <tr><td>10:45</td><td>🍽️ Café Rattenberg<span class="hint">Älteste Stadt Österreichs · Kuchen · 20 Min</span></td><td style="white-space:nowrap">~22</td></tr>
+          <tr><td>12:30</td><td>Kranzhorn-Auffahrt Dandlberg<span class="hint">Forststraße Anstieg Samerberg-Region</span></td><td style="white-space:nowrap">~35</td></tr>
+          <tr class="sched-key"><td>14:00</td><td>🍽️ Kranzhornalm (1.230 m)<span class="hint">+43 5373 8137 · Mai–Nov tägl., Aug bis 20:30h · 45 Min</span></td><td style="white-space:nowrap">~42</td></tr>
+          <tr><td>16:00</td><td>Abstieg Waldweg + Inn<span class="hint">Euzenau-Trail · Innufer zurück</span></td><td style="white-space:nowrap"></td></tr>
+          <tr class="sched-key"><td>17:30</td><td>🛏️ Kufstein – Hotel<span class="hint">Zimmer beziehen · Festungsblick</span></td><td style="white-space:nowrap">~85</td></tr>
+          <tr><td>19:30</td><td>🍻 Auracher Löchl Kufstein<span class="hint">Traditionslokal Altstadt</span></td><td style="white-space:nowrap"></td></tr>
+        </tbody>
+      </table>
+      <div class="schedule-summary">
+        <h4>📊 Tages-Bilanz</h4>
+        <table>
+          <tr><td>🚵 Fahrzeit:</td><td>~6h</td></tr>
+          <tr><td>⏱️ Gesamttag:</td><td>~9h</td></tr>
+          <tr><td>💡 Hinweis:</td><td>😌 Entspanntester Tag nach Di – Kranzhorn als schöner Bonus</td></tr>
+        </table>
       </div>
 
       <div class="stage-nav">
@@ -1741,6 +1880,29 @@ svg.leaflet-image-layer.leaflet-interactive path {
         Bahnhofnah: <em>Motel One München-Hauptbahnhof</em>, <em>Premier Inn</em>, <em>aletto</em>. Praktisch für Basti-Abreise und Fr-Bahn-Anschluss.
       </div>
 
+
+      <h3>⏰ Zeitplan</h3>
+      <table class="schedule-table">
+        <thead><tr><th>Zeit</th><th>Punkt</th><th>km</th></tr></thead>
+        <tbody>
+          <tr class="sched-key"><td>08:00</td><td>🚴 Abfahrt Kufstein<span class="hint">Kein Stress – überwiegend flach heute</span></td><td style="white-space:nowrap">0</td></tr>
+          <tr><td>10:30</td><td>Kiefersfelden – Grenze DE/AT<span class="hint">Innauen-Trails beginnen</span></td><td style="white-space:nowrap">~25</td></tr>
+          <tr><td>11:30</td><td>🍽️ Café Rosenheim<span class="hint">Kaffeepause · letzte Stadt vor München · 20 Min</span></td><td style="white-space:nowrap">~45</td></tr>
+          <tr><td>14:00</td><td>Mangfall-Waldwege<span class="hint">Naturbelassener Abschnitt</span></td><td style="white-space:nowrap">~65</td></tr>
+          <tr><td>15:30</td><td>Holzkirchen<span class="hint">Letzter Stopp vor München</span></td><td style="white-space:nowrap">~78</td></tr>
+          <tr class="sched-key"><td>17:00</td><td>🏠 Zirler Str. 40 – Bastis Wohnung<span class="hint">Duschen · Bier verdient 🍺</span></td><td style="white-space:nowrap">~93</td></tr>
+          <tr><td>19:30</td><td>🍻 Basti-Abschlussabend<span class="hint">Letzter gemeinsamer Abend zu dritt</span></td><td style="white-space:nowrap"></td></tr>
+        </tbody>
+      </table>
+      <div class="schedule-summary">
+        <h4>📊 Tages-Bilanz</h4>
+        <table>
+          <tr><td>🚵 Fahrzeit:</td><td>~6h</td></tr>
+          <tr><td>⏱️ Gesamttag:</td><td>~8h</td></tr>
+          <tr><td>💡 Hinweis:</td><td>🚉 Basti kann danach jederzeit weiterreisen</td></tr>
+        </table>
+      </div>
+
       <div class="stage-nav">
         <button onclick="switchTab('stage3')">← Zurück zu Mi</button>
         <button onclick="switchTab('stage5')">Weiter zu Fr · Schliersee →</button>
@@ -1753,112 +1915,181 @@ svg.leaflet-image-layer.leaflet-interactive path {
     <div class="card">
       <div class="stage-header">
         <div class="stage-title-block">
-          <h2>📅 Fr 28.08. · Trails Richtung Schliersee</h2>
-          <div class="stage-route">München → Holzkirchen → Schliersee → Spitzingsattel → Schliersee</div>
+          <h2>📅 Fr 28.08. · Gindelalmschneid & Tegernsee-Übergang <span class="trail-badge">45% Trail</span></h2>
+          <div class="stage-route">Zirler Str. 40 → Hausham → Gindelalmschneid → Tegernsee → Bahn → Schliersee</div>
         </div>
       </div>
 
       <div class="stage-stats">
-        <div class="stage-stat"><div class="stage-stat-value">70 km</div><div class="stage-stat-label">Distanz</div></div>
-        <div class="stage-stat"><div class="stage-stat-value">1.300 hm</div><div class="stage-stat-label">Höhenmeter</div></div>
+        <div class="stage-stat"><div class="stage-stat-value">80 km</div><div class="stage-stat-label">Distanz</div></div>
+        <div class="stage-stat"><div class="stage-stat-value">1.500 hm</div><div class="stage-stat-label">Höhenmeter</div></div>
         <div class="stage-stat"><div class="stage-stat-value">6-7h</div><div class="stage-stat-label">Fahrzeit</div></div>
         <div class="stage-stat"><div class="stage-stat-value">⭐⭐⭐⭐</div><div class="stage-stat-label">Anspruch</div></div>
+        <div class="stage-stat"><div class="stage-stat-value">~45%</div><div class="stage-stat-label">Trail-Anteil</div></div>
+      </div>
+
+      <div class="basti-note">
+        <strong>🎉 Erster Tag nur ihr zwei!</strong> Kein Zeitdruck durch Gruppenlogistik – fahrt euer eigenes Tempo. Der Gindelalmschneid-Übergang ist der schönste S1-Trail der Tour mit 360°-Panorama auf München und die gesamten Voralpen.
       </div>
 
       <h3>🚵 Route</h3>
-      <p>Aus München südwärts via Holzkirchen-Strecke (Mangfall-Radweg + Forstwege) bis Hausham/Schliersee – das sind ~50 km im Wesentlichen flach/leicht hügelig. Ab Schliersee dann der Trail-Teil: Auffahrt Richtung <strong>Spitzingsattel</strong> und Spitzingsee mit Schwimm-Pause. Trail-Loop über die <strong>Brecherspitz-Hänge</strong> zurück nach Schliersee.</p>
+      <p>Von Zirler Str. auf bekanntem Weg südwärts via Holzkirchen bis Hausham. Dort beginnt das Trail-Highlight des Tages: Auffahrt über die <strong>Gindelalmen</strong> (Forststraße + Schotter) zur <strong>Gindelalmschneid (1.335 m)</strong> – 360°-Blick auf München, Tegernsee und Schliersee gleichzeitig. Trail-Abfahrt S1–S2 hinunter nach <strong>Tegernsee</strong>. Kurze Badepause am See, dann <strong>Bahn Tegernsee → Schliersee</strong> (10 min) – spart euch 20 km langweiligen Rückweg.</p>
 
       <div class="stage-details">
         <div class="stage-info-block">
           <h4>📍 Schlüsselstellen</h4>
           <ul>
-            <li>München (520 m) – Start</li>
-            <li>Holzkirchen (685 m)</li>
-            <li>Hausham (780 m)</li>
-            <li>Schliersee (781 m) – Trail-Start</li>
-            <li>Spitzingsattel (1.450 m)</li>
-            <li>Spitzingsee (1.086 m) – Schwimmen</li>
-            <li>Schliersee (781 m) – Übernachtung</li>
+            <li>Zirler Str. 40 (520 m) – Start</li>
+            <li>Holzkirchen / Hausham (~700 m)</li>
+            <li>Gindelalmen-Auffahrt</li>
+            <li><strong>Gindelalmschneid (1.335 m)</strong> – Panorama-Top</li>
+            <li>Trail-Abfahrt S1-S2 nach Tegernsee</li>
+            <li>Tegernsee (724 m) – Badepause</li>
+            <li>Bahn Tegernsee → Schliersee (10 Min)</li>
+            <li>Schliersee – Hotel</li>
           </ul>
         </div>
         <div class="stage-info-block">
           <h4>🍻 Einkehr</h4>
           <ul>
-            <li><strong>Holzkirchner Biergarten</strong></li>
-            <li><strong>Albert-Link-Hütte</strong> am Spitzingsee</li>
-            <li><strong>Bauer in der Au</strong></li>
-            <li>Abend-Pizza am Schliersee</li>
+            <li><strong>Hausham</strong> – Bäckerei · Wasser vor Auffahrt</li>
+            <li><strong>Neureuth-Hütte</strong> – auf dem Gindelalmschneid-Weg</li>
+            <li><strong>Gindelalmschneid</strong> – kein Gasthof aber bestes Panorama</li>
+            <li><strong>Tegernsee</strong> – Café am Seeufer · Schwimmen</li>
           </ul>
         </div>
       </div>
 
       <div class="highlights">
-        <h4>🛏️ Übernachtung Schliersee</h4>
-        <em>Arabella Alpenhotel Spitzingsee</em>, <em>Hotel Schliersee</em>, <em>Gasthof Wassmann</em>. Direkt am See.
-      </div>
-
-      <div class="stage-nav">
-        <button onclick="switchTab('stage4')">← Zurück zu Do</button>
-        <button onclick="switchTab('stage6')">Weiter zu Sa · Tegernsee →</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- TAB: STAGE 6 - SATURDAY -->
-  <div class="tab-content" id="stage6">
-    <div class="card">
-      <div class="stage-header">
-        <div class="stage-title-block">
-          <h2>📅 Sa 29.08. · Stümpfling, Tegernsee & Heim</h2>
-          <div class="stage-route">Schliersee → Stümpfling-Trail → Tegernsee → Holzkirchen → München</div>
-        </div>
-      </div>
-
-      <div class="stage-stats">
-        <div class="stage-stat"><div class="stage-stat-value">75 km</div><div class="stage-stat-label">Distanz</div></div>
-        <div class="stage-stat"><div class="stage-stat-value">1.300 hm</div><div class="stage-stat-label">Höhenmeter</div></div>
-        <div class="stage-stat"><div class="stage-stat-value">6-7h</div><div class="stage-stat-label">Fahrzeit</div></div>
-        <div class="stage-stat"><div class="stage-stat-value">⭐⭐⭐⭐</div><div class="stage-stat-label">Anspruch</div></div>
-      </div>
-
-      <h3>🚡 Trail-Highlight zum Abschluss</h3>
-      <p>Morgens vom Schliersee aus Auffahrt zur <strong>Stümpfling-Sesselbahn</strong> (oder eigene Auffahrt für die Hardcore-Fraktion). Klassischer <strong>Stümpfling-Trail</strong> (S2) nach Bad Wiessee – dabei wechselt ihr vom Schliersee-Tal ins Tegernsee-Tal. Tegernsee-Genuss am Bad Wiesseer Ufer, dann Auffahrt Richtung Holzkirchen und entspannt zurück nach München.</p>
-
-      <div class="stage-details">
-        <div class="stage-info-block">
-          <h4>🏔️ Trail-Plan</h4>
-          <ul>
-            <li>Schliersee (781 m) – Start</li>
-            <li>Stümpfling-Bahn rauf (1.500 m)</li>
-            <li>Stümpfling-Trail S2 nach Bad Wiessee</li>
-            <li>Tegernsee-Ufer (725 m) – Pause/Schwimmen</li>
-            <li>Auffahrt Gmund/Holzkirchen (685 m)</li>
-            <li>Mangfall-Radweg nach München</li>
-          </ul>
-        </div>
-        <div class="stage-info-block">
-          <h4>🍻 Abschluss in München</h4>
-          <ul>
-            <li>Ankunft München ~17 Uhr</li>
-            <li>Duschen im Hotel</li>
-            <li>Augustiner-Stammhaus</li>
-            <li>JGA-Abschluss-Bier</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="highlights">
-        <h4>✨ Highlights</h4>
+        <h4>✨ Trail-Highlights</h4>
         <ul style="margin-left: 16px;">
-          <li>Stümpfling-Trail = bayerischer MTB-Klassiker</li>
-          <li>Tegernsee-Ufer in Bad Wiessee</li>
-          <li>Übergang von zwei der schönsten Voralpenseen</li>
+          <li>🏆 <strong>Gindelalmschneid (1.335 m)</strong> – 360° Panorama: München, Tegernsee, Schliersee, Voralpen auf einen Blick</li>
+          <li>Trail-Abfahrt S1–S2 von der Schneid nach Tegernsee (~600 hm bergab)</li>
+          <li>Clevere Bahn-Nutzung: Kein sinnloser Rückweg – Bahn zurück nach Schliersee</li>
         </ul>
       </div>
 
       <div class="highlights">
-        <h4>🛏️ Übernachtung München (gleiches Hotel wie Do)</h4>
-        Hotel direkt für Sa mitbuchen.
+        <h4>🛏️ Übernachtung Schliersee</h4>
+        <em>Hotel Hubertus Schliersee</em> · Abend am See · morgen früh direkt auf die Trails
+      </div>
+      <h3>⏰ Zeitplan</h3>
+      <table class="schedule-table">
+        <thead><tr><th>Zeit</th><th>Punkt</th><th>km</th></tr></thead>
+        <tbody>
+          <tr class="sched-key"><td>08:30</td><td>🚴 Abfahrt Zirler Str. 40<span class="hint">Gel einwerfen · erster Tag zu zweit!</span></td><td style="white-space:nowrap">0</td></tr>
+          <tr><td>10:30</td><td>🌊 Hausham – Wasser + Bäckerei<span class="hint">Vor Gindelalmschneid-Auffahrt (~600 hm) auffüllen</span></td><td style="white-space:nowrap">~38</td></tr>
+          <tr><td>11:30</td><td>Gindelalmen-Auffahrt<span class="hint">Forststraße + Schotter · gemütlich hochkurbeln</span></td><td style="white-space:nowrap">~50</td></tr>
+          <tr class="sched-key"><td>13:00</td><td>🏔️ Gindelalmschneid (1.335 m)<span class="hint">360°-Panorama · Mittagspause · Foto-Stop 30 Min</span></td><td style="white-space:nowrap">~60</td></tr>
+          <tr><td>14:00</td><td>Trail-Abfahrt S1-S2<span class="hint">~600 hm bergab nach Tegernsee</span></td><td style="white-space:nowrap">~62</td></tr>
+          <tr><td>15:00</td><td>🏊 Tegernsee – Badepause<span class="hint">Seeufer · Café · 30–45 Min</span></td><td style="white-space:nowrap">~70</td></tr>
+          <tr><td>16:00</td><td>🚆 Bahn Tegernsee → Schliersee<span class="hint">10 Min · spart 20 km Rückweg</span></td><td style="white-space:nowrap"></td></tr>
+          <tr class="sched-key"><td>16:30</td><td>🛏️ Schliersee – Hotel<span class="hint">Einchecken · Abend am See</span></td><td style="white-space:nowrap">~80</td></tr>
+          <tr><td>19:00</td><td>🍻 Abendessen Schliersee<span class="hint">Seerestaurant oder Bauer in der Au</span></td><td style="white-space:nowrap"></td></tr>
+        </tbody>
+      </table>
+      <div class="schedule-summary">
+        <h4>📊 Tages-Bilanz</h4>
+        <table>
+          <tr><td>🚵 Fahrzeit:</td><td>~5,5h Fahren + Bahn</td></tr>
+          <tr><td>⏱️ Gesamttag:</td><td>~8h</td></tr>
+          <tr><td>💡 Hinweis:</td><td>🚆 Bahn Tegernsee→Schliersee nutzen – kein sinnloser Rückweg!</td></tr>
+        </table>
+      </div>
+
+      <div class="stage-nav">
+        <button onclick="switchTab('stage4')">← Zurück zu Do</button>
+        <button onclick="switchTab('stage6')">Weiter zu Sa · München →</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-content" id="stage6">
+    <div class="card">
+      <div class="stage-header">
+        <div class="stage-title-block">
+          <h2>📅 Sa 29.08. · Drei-Seen-Trails & Stümpfling <span class="trail-badge">50% Trail</span></h2>
+          <div class="stage-route">Schliersee → Valepp → Spitzingsee → Stümpfling → Irschenberg → Zirler Str. 40</div>
+        </div>
+      </div>
+
+      <div class="stage-stats">
+        <div class="stage-stat"><div class="stage-stat-value">90 km</div><div class="stage-stat-label">Distanz</div></div>
+        <div class="stage-stat"><div class="stage-stat-value">1.500 hm</div><div class="stage-stat-label">Höhenmeter</div></div>
+        <div class="stage-stat"><div class="stage-stat-value">6,5-7h</div><div class="stage-stat-label">Fahrzeit</div></div>
+        <div class="stage-stat"><div class="stage-stat-value">⭐⭐⭐⭐</div><div class="stage-stat-label">Anspruch</div></div>
+        <div class="stage-stat"><div class="stage-stat-value">~50%</div><div class="stage-stat-label">Trail-Anteil</div></div>
+      </div>
+
+      <div class="basti-note">
+        <strong>🏁 Letzter Tag – in umgekehrter Richtung:</strong> Statt Trails bergauf fahrt ihr heute die klassische Drei-Seen-Tour-Variante <em>gegen den Uhrzeigersinn</em> – damit laufen die S2-Trails fast ausschließlich bergab. Mehr Spaß, weniger Leiden nach 5 Tagen in den Beinen. Abends Heimfahrt nach Karlsruhe.
+      </div>
+
+      <h3>🚵 Route</h3>
+      <p>Start Schliersee, Auffahrt durch das <strong>Valepp-Tal</strong> (ruhige Forststraße) hinauf zum <strong>Spitzingsee</strong>. Von dort klassischer <strong>Stümpfling-Trail S2</strong> – bergab, nicht bergauf. Zweite Bergbahn-Runde <strong>Taubenstein</strong>, dann Trail-Abfahrt. Über die <strong>Irschenberg-Schleife</strong> (Waldweg mit Kaisergebirge-Panorama) zurück nach München via Mangfall-Waldwege. Ankommen, Räder ins Auto, Heimfahrt.</p>
+
+      <div class="stage-details">
+        <div class="stage-info-block">
+          <h4>📍 Schlüsselstellen</h4>
+          <ul>
+            <li>Schliersee (781 m) – Start</li>
+            <li>Valepp-Tal Auffahrt</li>
+            <li>Spitzingsee (1.086 m)</li>
+            <li>Stümpfling-Bahn + Trail S2</li>
+            <li>Albert-Link-Hütte – Mittagspause</li>
+            <li>Taubenstein-Bahn + Trail</li>
+            <li>Irschenberg-Waldwege</li>
+            <li>Zirler Str. 40 – ZIEL 🏁</li>
+          </ul>
+        </div>
+        <div class="stage-info-block">
+          <h4>🍻 Einkehr</h4>
+          <ul>
+            <li><strong>Spitzingsee</strong> – Albert-Link-Hütte Terrasse</li>
+            <li><strong>Albert-Link-Hütte</strong> – Mittagspause nach Stümpfling</li>
+            <li><strong>Irschenberg</strong> – Waldgasthof auf dem Weg</li>
+            <li>München: kein Abendessen mehr – Heimfahrt!</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="highlights">
+        <h4>✨ Trail-Highlights</h4>
+        <ul style="margin-left: 16px;">
+          <li>🏆 <strong>Stümpfling-Trail S2</strong> – bayerischer MTB-Klassiker, komplett bergab</li>
+          <li><strong>Taubenstein-Trail</strong> – zweiter Klassiker, abwechslungsreicher S2</li>
+          <li>Valepp-Tal – stilles Voralpenidyll als ruhiger Einstieg</li>
+          <li>Irschenberg – Waldwege mit Panoramablick aufs Kaisergebirge</li>
+        </ul>
+      </div>
+
+      <div class="warning">
+        <strong>⚠️ Sa früh starten:</strong> Bergbahnen (Stümpfling, Taubenstein) fahren ab ~8:30h. Letzte Talfahrt meist 17:00h – plant nach dem letzten Trail noch ~3h Rückweg nach München ein. Heimfahrt nach Karlsruhe ~2,5h.
+      </div>
+      <h3>⏰ Zeitplan</h3>
+      <table class="schedule-table">
+        <thead><tr><th>Zeit</th><th>Punkt</th><th>km</th></tr></thead>
+        <tbody>
+          <tr class="sched-key"><td>07:30</td><td>🚴 Abfahrt Schliersee<span class="hint">Früh raus! Trails + Heimfahrt heute</span></td><td style="white-space:nowrap">0</td></tr>
+          <tr><td>09:00</td><td>Spitzingsee via Valepp<span class="hint">Ruhige Forststraße aufwärts · keine Hektik</span></td><td style="white-space:nowrap">~18</td></tr>
+          <tr><td>09:30</td><td>🚡 Stümpfling-Bahn rauf<span class="hint">Bergbahn ab ~8:30h · MTB mitnehmen</span></td><td style="white-space:nowrap">~22</td></tr>
+          <tr class="sched-key"><td>10:00</td><td>🏆 Stümpfling-Trail S2<span class="hint">Klasssiker bergab · genießen!</span></td><td style="white-space:nowrap">~25</td></tr>
+          <tr><td>10:45</td><td>🍽️ Albert-Link-Hütte – Mittagspause<span class="hint">Vor Taubenstein-Runde tanken · 30–40 Min</span></td><td style="white-space:nowrap">~30</td></tr>
+          <tr><td>11:30</td><td>🚡 Taubenstein-Bahn rauf<span class="hint">Zweite Bergbahn-Runde</span></td><td style="white-space:nowrap"></td></tr>
+          <tr class="sched-key"><td>12:00</td><td>Taubenstein-Trail S2<span class="hint">Letzter großer Trail der Tour</span></td><td style="white-space:nowrap">~38</td></tr>
+          <tr><td>13:30</td><td>Bayrischzell / Irschenberg<span class="hint">⏸ Koffein-Gel · Irschenberg-Waldweg folgt</span></td><td style="white-space:nowrap">~48</td></tr>
+          <tr><td>15:30</td><td>Mangfall-Waldwege München<span class="hint">Entspannter Ausklang</span></td><td style="white-space:nowrap">~68</td></tr>
+          <tr class="sched-key"><td>17:30</td><td>🏁 Zirler Str. 40 – ZIEL!<span class="hint">🎉 ~520 km geschafft! Duschen · Räder ins Auto</span></td><td style="white-space:nowrap">~90</td></tr>
+          <tr><td>19:30</td><td>🚗 Heimfahrt Karlsruhe<span class="hint">~2,5h · Ankunft ~22:00h</span></td><td style="white-space:nowrap"></td></tr>
+        </tbody>
+      </table>
+      <div class="schedule-summary">
+        <h4>📊 Tages-Bilanz</h4>
+        <table>
+          <tr><td>🚵 Fahrzeit:</td><td>~6,5h</td></tr>
+          <tr><td>⏱️ Gesamttag:</td><td>~10h</td></tr>
+          <tr><td>💡 Hinweis:</td><td>🚗 Heimfahrt einplanen – Sa früh starten ist Pflicht!</td></tr>
+        </table>
       </div>
 
       <div class="stage-nav">
@@ -1868,7 +2099,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     </div>
   </div>
 
-  <!-- TAB: COSTS -->
+    <!-- TAB: COSTS -->
   <div class="tab-content" id="costs">
 
     <div class="card">
