@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude - JGA MTB Voralpen-Loop 2026" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
   <metadata>
-    <name>Mi 26.08. ALTERNATIVE - flach via Inntal</name>
+    <name>Mi ALTERNATIVE flach via Inntal</name>
     <desc>Mi 26.08. ALTERNATIVE - flach via Inntal | 51.7 km | 227 hm | Rofanseilbahn Talstation -&gt; Jenbach -&gt; Kramsach -&gt; Inntal-Radweg -&gt; Kufstein (flach, ohne Brandenberger Tal)</desc>
     <time>2026-08-26T05:00:00Z</time>
   </metadata>
@@ -42,7 +42,7 @@
     <sym>Lodging</sym>
   </wpt>
   <trk>
-    <name>Mi 26.08. ALTERNATIVE - flach via Inntal</name>
+    <name>Mi ALTERNATIVE flach via Inntal</name>
     <desc>Mi 26.08. ALTERNATIVE - flach via Inntal | 51.7 km | 227 hm | Rofanseilbahn Talstation -&gt; Jenbach -&gt; Kramsach -&gt; Inntal-Radweg -&gt; Kufstein (flach, ohne Brandenberger Tal)</desc>
     <type>MTB</type>
     <trkseg>
