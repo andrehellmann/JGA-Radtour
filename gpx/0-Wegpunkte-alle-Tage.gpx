@@ -104,7 +104,7 @@
     <sym>Summit</sym>
   </wpt>
   <wpt lat="47.527620" lon="11.705600">
-    <ele>914</ele>
+    <ele>910</ele>
     <name>Achenkirch</name>
     <desc>[km 34.7] Am Dienstag ist hier kein Betrieb verifiziert offen (SeeEck Mo+Di zu). Durchfahren, Achensee-Ostufer nehmen.</desc>
     <sym>Information</sym>
@@ -112,31 +112,31 @@
   <wpt lat="47.422830" lon="11.750950">
     <ele>970</ele>
     <name>MPREIS Maurach WASSER+FOOD</name>
-    <desc>[km 50.2] Dorfstrasse 24, Maurach. Di 7:30-19:00, Baeckerei-Cafe bis 18:30. LETZTE Auffuellstelle - auf der Rofan-Auffahrt gibt es KEIN verifiziertes Wasser. Mind. 2,5-3 l mitnehmen plus Elektrolyte.</desc>
+    <desc>[km 49.1] Dorfstrasse 24, Maurach. Di 7:30-19:00, Baeckerei-Cafe bis 18:30. LETZTE Auffuellstelle - auf der Rofan-Auffahrt gibt es KEIN verifiziertes Wasser. Mind. 2,5-3 l mitnehmen plus Elektrolyte.</desc>
     <sym>Convenience Store</sym>
   </wpt>
   <wpt lat="47.424270" lon="11.751260">
     <ele>975</ele>
     <name>Rofanseilbahn JOKER</name>
-    <desc>[km 50.3] Talstation Maurach. 13.06.-13.09. taeglich 08:00-17:30. Bergfahrt 26,00 EUR, Sportgeraet 10,50 EUR. MTB-Mitnahme NICHT dokumentiert - vorher klaeren: +43 5243 5292. Spart die letzten 851 hm.</desc>
+    <desc>[km 49.2] Talstation Maurach. 13.06.-13.09. taeglich 08:00-17:30. Bergfahrt 26,00 EUR, Sportgeraet 10,50 EUR. MTB-Mitnahme NICHT dokumentiert - vorher klaeren: +43 5243 5292. Spart die letzten 851 hm.</desc>
     <sym>Tram Stop</sym>
   </wpt>
   <wpt lat="47.430850" lon="11.760930">
     <ele>1276</ele>
     <name>RAMPE 20-36 PROZENT</name>
-    <desc>[km 52.7] Ab hier die Dauersteigung zum Rofan: 2,1 km Wegstrecke steiler als 20 Prozent, steilste 250 m mit 36 Prozent kurz vor dem Ziel. Der Weg ist zu 4,5 von 5,2 km Forstweg - Schieben auf Schotter, nicht auf Bergpfad. 166 m sind Pfad, 1,4 km sind als Bergwanderweg (SAC T2) getaggt, und ca. 309 m tragen bicycle=no. Es gibt KEINE offizielle Radroute aufs Rofan-Plateau - jedes Routingprofil trifft dieselbe Verbotsstrecke. Mit Gepaeck realistisch 60-90 min fuer die letzten 3 km. JOKER: Seilbahn ab Maurach.</desc>
+    <desc>[km 51.7] Ab hier die Dauersteigung zum Rofan: 2,1 km Wegstrecke steiler als 20 Prozent, steilste 250 m mit 36 Prozent kurz vor dem Ziel. Der Weg ist zu 4,5 von 5,2 km Forstweg - Schieben auf Schotter, nicht auf Bergpfad. 166 m sind Pfad, 1,4 km sind als Bergwanderweg (SAC T2) getaggt, und ca. 309 m tragen bicycle=no. Es gibt KEINE offizielle Radroute aufs Rofan-Plateau - jedes Routingprofil trifft dieselbe Verbotsstrecke. Mit Gepaeck realistisch 60-90 min fuer die letzten 3 km. JOKER: Seilbahn ab Maurach.</desc>
     <sym>Danger Area</sym>
   </wpt>
   <wpt lat="47.441640" lon="11.762970">
     <ele>1824</ele>
     <name>ZIEL Berggasthof Rofan 1840 m</name>
-    <desc>[km 55.5] Neben Bergstation Rofanseilbahn, 5 Gehmin von der Erfurter Huette. Tel +43 676 4852540. Ruhetag Donnerstag (fuer uns irrelevant). Halbpension/Duschen/Check-in nicht publiziert - anrufen.</desc>
+    <desc>[km 54.4] Neben Bergstation Rofanseilbahn, 5 Gehmin von der Erfurter Huette. Tel +43 676 4852540. Ruhetag Donnerstag (fuer uns irrelevant). Halbpension/Duschen/Check-in nicht publiziert - anrufen.</desc>
     <sym>Lodging</sym>
   </wpt>
   <wpt lat="47.441640" lon="11.762970">
     <ele>1825</ele>
     <name>START Berggasthof Rofan</name>
-    <desc>[km 0.0] Abfahrt 08:30. Erst 5 km Abfahrt vom Plateau nach Maurach (-850 hm). Wer die Abfahrt nicht fahren will: Seilbahn-Talfahrt 19,50 EUR ab 08:00. Heute 74 km / 865 hm - der Trail-Tag.</desc>
+    <desc>[km 0.0] Abfahrt 08:30. Erst 5 km Abfahrt vom Plateau nach Maurach (-850 hm). Wer die Abfahrt nicht fahren will: Seilbahn-Talfahrt 19,50 EUR ab 08:00. Heute 74 km / 853 hm - der Trail-Tag.</desc>
     <sym>Lodging</sym>
   </wpt>
   <wpt lat="47.424270" lon="11.751260">
@@ -182,7 +182,7 @@
     <sym>Restaurant</sym>
   </wpt>
   <wpt lat="47.613840" lon="12.188780">
-    <ele>486</ele>
+    <ele>490</ele>
     <name>Kiefersfelden</name>
     <desc>[km 68.8] km 69. Abfahrt ins Inntal erledigt. Ab hier flach am Inn suedwaerts nach Kufstein.</desc>
     <sym>Information</sym>
@@ -190,19 +190,19 @@
   <wpt lat="47.583010" lon="12.170800">
     <ele>491</ele>
     <name>Kufstein Trinkbrunnen Stadtplatz</name>
-    <desc>[km 73.8] 29 oeffentliche Trinkbrunnen in Kufstein (Stadtplatz, Innpromenade, Stadtpark). Kostenlos auffuellen - auch morgen frueh vor der Abfahrt.</desc>
+    <desc>[km 73.7] 29 oeffentliche Trinkbrunnen in Kufstein (Stadtplatz, Innpromenade, Stadtpark). Kostenlos auffuellen - auch morgen frueh vor der Abfahrt.</desc>
     <sym>Drinking Water</sym>
   </wpt>
   <wpt lat="47.582530" lon="12.172280">
     <ele>491</ele>
     <name>ZIEL Hotel Andreas Hofer</name>
-    <desc>[km 73.8] Georg-Pirmoser-Str. 8, Kufstein. Tel +43 5372 6980. Abgesperrter Fahrradraum vorhanden, Bett+Bike-zertifiziert. Tiefgarage 15 EUR. Fruehstuecksbeginn NICHT publiziert - fuer Abfahrt 07:00 anrufen.</desc>
+    <desc>[km 74.2] Georg-Pirmoser-Str. 8, Kufstein. Tel +43 5372 6980. Abgesperrter Fahrradraum vorhanden, Bett+Bike-zertifiziert. Tiefgarage 15 EUR. Fruehstuecksbeginn NICHT publiziert - fuer Abfahrt 07:00 anrufen.</desc>
     <sym>Lodging</sym>
   </wpt>
   <wpt lat="47.424270" lon="11.751260">
     <ele>975</ele>
     <name>START Rofanseilbahn Talstation</name>
-    <desc>[km 0.0] SCHLECHTWETTER-/MUEDE-BEINE-ALTERNATIVE fuer Mittwoch: mit der Seilbahn runter (Talfahrt 19,50 EUR, Betrieb 08:00-17:30, +43 5243 5292), dann flach am Inn nach Kufstein. Ca. 52 km / 227 hm statt 74 km / 865 hm ueber Kaiserhaus und Thiersee. Kein Brandenberger Tal, kein Bike Trail Tirol.</desc>
+    <desc>[km 0.0] SCHLECHTWETTER-/MUEDE-BEINE-ALTERNATIVE fuer Mittwoch: mit der Seilbahn runter (Talfahrt 19,50 EUR, Betrieb 08:00-17:30, +43 5243 5292), dann flach am Inn nach Kufstein. Ca. 52 km / 227 hm statt 74 km / 853 hm ueber Kaiserhaus und Thiersee. Kein Brandenberger Tal, kein Bike Trail Tirol.</desc>
     <sym>Tram Stop</sym>
   </wpt>
   <wpt lat="47.495000" lon="12.000000">
@@ -214,7 +214,7 @@
   <wpt lat="47.582530" lon="12.172280">
     <ele>491</ele>
     <name>START/ZIEL Hotel Andreas Hofer</name>
-    <desc>[km 0.0] RESERVE-OPTION, nicht Teil der Hauptplanung. Der Mittwoch fuehrt jetzt schon ueber Kaiserhaus und Thiersee (74 km / 865 hm) - diese Zusatzrunde passt nur, wenn ein Tag ausfaellt oder jemand am Donnerstag nicht nach Muenchen zurueckfaehrt. 44 km / 1.107 hm. Kranzhornalm hat MITTWOCH RUHETAG.</desc>
+    <desc>[km 0.0] RESERVE-OPTION, nicht Teil der Hauptplanung. Der Mittwoch fuehrt jetzt schon ueber Kaiserhaus und Thiersee (74 km / 853 hm) - diese Zusatzrunde passt nur, wenn ein Tag ausfaellt oder jemand am Donnerstag nicht nach Muenchen zurueckfaehrt. 44 km / 1.107 hm. Kranzhornalm hat MITTWOCH RUHETAG.</desc>
     <sym>Lodging</sym>
   </wpt>
   <wpt lat="47.627720" lon="12.214640">

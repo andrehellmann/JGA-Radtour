@@ -2,13 +2,13 @@
 <gpx version="1.1" creator="Claude - JGA MTB Voralpen-Loop 2026" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
   <metadata>
     <name>3 Mi 26.08. Rofan - Kufstein</name>
-    <desc>Mi 26.08. - Kaiserhaus &amp; Bike Trail Tirol | 73.8 km | 865 hm | Berggasthof Rofan -&gt; Maurach -&gt; Jenbach -&gt; Kramsach -&gt; Kaiserklamm -&gt; Kaiserhaus -&gt; Landl -&gt; Thiersee -&gt; Kufstein</desc>
+    <desc>Mi 26.08. - Kaiserhaus &amp; Bike Trail Tirol | 74.2 km | 853 hm | Berggasthof Rofan -&gt; Maurach -&gt; Jenbach -&gt; Kramsach -&gt; Kaiserklamm -&gt; Kaiserhaus -&gt; Landl -&gt; Thiersee -&gt; Kufstein</desc>
     <time>2026-08-26T05:00:00Z</time>
   </metadata>
   <wpt lat="47.441640" lon="11.762970">
     <ele>1825</ele>
     <name>START Berggasthof Rofan</name>
-    <desc>[km 0.0] Abfahrt 08:30. Erst 5 km Abfahrt vom Plateau nach Maurach (-850 hm). Wer die Abfahrt nicht fahren will: Seilbahn-Talfahrt 19,50 EUR ab 08:00. Heute 74 km / 865 hm - der Trail-Tag.</desc>
+    <desc>[km 0.0] Abfahrt 08:30. Erst 5 km Abfahrt vom Plateau nach Maurach (-850 hm). Wer die Abfahrt nicht fahren will: Seilbahn-Talfahrt 19,50 EUR ab 08:00. Heute 74 km / 853 hm - der Trail-Tag.</desc>
     <sym>Lodging</sym>
   </wpt>
   <wpt lat="47.424270" lon="11.751260">
@@ -54,7 +54,7 @@
     <sym>Restaurant</sym>
   </wpt>
   <wpt lat="47.613840" lon="12.188780">
-    <ele>486</ele>
+    <ele>490</ele>
     <name>Kiefersfelden</name>
     <desc>[km 68.8] km 69. Abfahrt ins Inntal erledigt. Ab hier flach am Inn suedwaerts nach Kufstein.</desc>
     <sym>Information</sym>
@@ -62,18 +62,18 @@
   <wpt lat="47.583010" lon="12.170800">
     <ele>491</ele>
     <name>Kufstein Trinkbrunnen Stadtplatz</name>
-    <desc>[km 73.8] 29 oeffentliche Trinkbrunnen in Kufstein (Stadtplatz, Innpromenade, Stadtpark). Kostenlos auffuellen - auch morgen frueh vor der Abfahrt.</desc>
+    <desc>[km 73.7] 29 oeffentliche Trinkbrunnen in Kufstein (Stadtplatz, Innpromenade, Stadtpark). Kostenlos auffuellen - auch morgen frueh vor der Abfahrt.</desc>
     <sym>Drinking Water</sym>
   </wpt>
   <wpt lat="47.582530" lon="12.172280">
     <ele>491</ele>
     <name>ZIEL Hotel Andreas Hofer</name>
-    <desc>[km 73.8] Georg-Pirmoser-Str. 8, Kufstein. Tel +43 5372 6980. Abgesperrter Fahrradraum vorhanden, Bett+Bike-zertifiziert. Tiefgarage 15 EUR. Fruehstuecksbeginn NICHT publiziert - fuer Abfahrt 07:00 anrufen.</desc>
+    <desc>[km 74.2] Georg-Pirmoser-Str. 8, Kufstein. Tel +43 5372 6980. Abgesperrter Fahrradraum vorhanden, Bett+Bike-zertifiziert. Tiefgarage 15 EUR. Fruehstuecksbeginn NICHT publiziert - fuer Abfahrt 07:00 anrufen.</desc>
     <sym>Lodging</sym>
   </wpt>
   <trk>
     <name>3 Mi 26.08. Rofan - Kufstein</name>
-    <desc>Mi 26.08. - Kaiserhaus &amp; Bike Trail Tirol | 73.8 km | 865 hm | Berggasthof Rofan -&gt; Maurach -&gt; Jenbach -&gt; Kramsach -&gt; Kaiserklamm -&gt; Kaiserhaus -&gt; Landl -&gt; Thiersee -&gt; Kufstein</desc>
+    <desc>Mi 26.08. - Kaiserhaus &amp; Bike Trail Tirol | 74.2 km | 853 hm | Berggasthof Rofan -&gt; Maurach -&gt; Jenbach -&gt; Kramsach -&gt; Kaiserklamm -&gt; Kaiserhaus -&gt; Landl -&gt; Thiersee -&gt; Kufstein</desc>
     <type>MTB</type>
     <trkseg>
       <trkpt lat="47.441740" lon="11.763070"><ele>1825</ele></trkpt>
@@ -804,66 +804,63 @@
       <trkpt lat="47.619000" lon="12.179930"><ele>498</ele></trkpt>
       <trkpt lat="47.619154" lon="12.182589"><ele>495</ele></trkpt>
       <trkpt lat="47.619160" lon="12.182690"><ele>495</ele></trkpt>
-      <trkpt lat="47.618710" lon="12.184040"><ele>493</ele></trkpt>
+      <trkpt lat="47.618970" lon="12.183490"><ele>494</ele></trkpt>
       <trkpt lat="47.618350" lon="12.184620"><ele>492</ele></trkpt>
+      <trkpt lat="47.617910" lon="12.184930"><ele>492</ele></trkpt>
       <trkpt lat="47.617370" lon="12.185450"><ele>491</ele></trkpt>
-      <trkpt lat="47.616339" lon="12.187637"><ele>488</ele></trkpt>
+      <trkpt lat="47.616293" lon="12.187587"><ele>488</ele></trkpt>
+      <trkpt lat="47.616180" lon="12.187810"><ele>488</ele></trkpt>
       <trkpt lat="47.616140" lon="12.188060"><ele>488</ele></trkpt>
-      <trkpt lat="47.615430" lon="12.188280"><ele>488</ele></trkpt>
-      <trkpt lat="47.615350" lon="12.188930"><ele>486</ele></trkpt>
-      <trkpt lat="47.615130" lon="12.189220"><ele>486</ele></trkpt>
-      <trkpt lat="47.613648" lon="12.190732"><ele>484</ele></trkpt>
-      <trkpt lat="47.612166" lon="12.192244"><ele>482</ele></trkpt>
-      <trkpt lat="47.612150" lon="12.192260"><ele>482</ele></trkpt>
-      <trkpt lat="47.610832" lon="12.194076"><ele>480</ele></trkpt>
-      <trkpt lat="47.609660" lon="12.195690"><ele>478</ele></trkpt>
-      <trkpt lat="47.608930" lon="12.194720"><ele>478</ele></trkpt>
-      <trkpt lat="47.608520" lon="12.194750"><ele>477</ele></trkpt>
-      <trkpt lat="47.607300" lon="12.195580"><ele>476</ele></trkpt>
-      <trkpt lat="47.606760" lon="12.195670"><ele>477</ele></trkpt>
-      <trkpt lat="47.606600" lon="12.195500"><ele>478</ele></trkpt>
-      <trkpt lat="47.606450" lon="12.194900"><ele>476</ele></trkpt>
-      <trkpt lat="47.606080" lon="12.194590"><ele>476</ele></trkpt>
-      <trkpt lat="47.605880" lon="12.194710"><ele>477</ele></trkpt>
-      <trkpt lat="47.605880" lon="12.196090"><ele>477</ele></trkpt>
-      <trkpt lat="47.604820" lon="12.196230"><ele>479</ele></trkpt>
-      <trkpt lat="47.604800" lon="12.196440"><ele>480</ele></trkpt>
-      <trkpt lat="47.604523" lon="12.193804"><ele>479</ele></trkpt>
-      <trkpt lat="47.604440" lon="12.193020"><ele>479</ele></trkpt>
-      <trkpt lat="47.604330" lon="12.193020"><ele>481</ele></trkpt>
-      <trkpt lat="47.604290" lon="12.193400"><ele>481</ele></trkpt>
-      <trkpt lat="47.604100" lon="12.193450"><ele>482</ele></trkpt>
-      <trkpt lat="47.603600" lon="12.192460"><ele>485</ele></trkpt>
-      <trkpt lat="47.603060" lon="12.191770"><ele>487</ele></trkpt>
-      <trkpt lat="47.601435" lon="12.190627"><ele>486</ele></trkpt>
-      <trkpt lat="47.600770" lon="12.190160"><ele>486</ele></trkpt>
-      <trkpt lat="47.599760" lon="12.189010"><ele>487</ele></trkpt>
-      <trkpt lat="47.599260" lon="12.187970"><ele>489</ele></trkpt>
-      <trkpt lat="47.598860" lon="12.187840"><ele>488</ele></trkpt>
-      <trkpt lat="47.597617" lon="12.185912"><ele>491</ele></trkpt>
-      <trkpt lat="47.597570" lon="12.185840"><ele>491</ele></trkpt>
-      <trkpt lat="47.597030" lon="12.185480"><ele>492</ele></trkpt>
-      <trkpt lat="47.595607" lon="12.183849"><ele>483</ele></trkpt>
-      <trkpt lat="47.595520" lon="12.183750"><ele>482</ele></trkpt>
-      <trkpt lat="47.594970" lon="12.182440"><ele>486</ele></trkpt>
-      <trkpt lat="47.595000" lon="12.181960"><ele>490</ele></trkpt>
-      <trkpt lat="47.594700" lon="12.181410"><ele>494</ele></trkpt>
-      <trkpt lat="47.594320" lon="12.181790"><ele>494</ele></trkpt>
-      <trkpt lat="47.593920" lon="12.181300"><ele>493</ele></trkpt>
-      <trkpt lat="47.593330" lon="12.181790"><ele>493</ele></trkpt>
-      <trkpt lat="47.593050" lon="12.180920"><ele>491</ele></trkpt>
-      <trkpt lat="47.592910" lon="12.179920"><ele>489</ele></trkpt>
-      <trkpt lat="47.592270" lon="12.179830"><ele>489</ele></trkpt>
-      <trkpt lat="47.590567" lon="12.178974"><ele>488</ele></trkpt>
-      <trkpt lat="47.588863" lon="12.178118"><ele>487</ele></trkpt>
-      <trkpt lat="47.588170" lon="12.177770"><ele>487</ele></trkpt>
-      <trkpt lat="47.587780" lon="12.176740"><ele>487</ele></trkpt>
-      <trkpt lat="47.586054" lon="12.175992"><ele>488</ele></trkpt>
-      <trkpt lat="47.585980" lon="12.175960"><ele>488</ele></trkpt>
-      <trkpt lat="47.584531" lon="12.174380"><ele>489</ele></trkpt>
-      <trkpt lat="47.584430" lon="12.174270"><ele>489</ele></trkpt>
-      <trkpt lat="47.582759" lon="12.173283"><ele>492</ele></trkpt>
-      <trkpt lat="47.582450" lon="12.173100"><ele>492</ele></trkpt>
+      <trkpt lat="47.615190" lon="12.188350"><ele>489</ele></trkpt>
+      <trkpt lat="47.614680" lon="12.187630"><ele>490</ele></trkpt>
+      <trkpt lat="47.614270" lon="12.186820"><ele>490</ele></trkpt>
+      <trkpt lat="47.614150" lon="12.186730"><ele>490</ele></trkpt>
+      <trkpt lat="47.612621" lon="12.188135"><ele>487</ele></trkpt>
+      <trkpt lat="47.612540" lon="12.188210"><ele>487</ele></trkpt>
+      <trkpt lat="47.612270" lon="12.188320"><ele>485</ele></trkpt>
+      <trkpt lat="47.611540" lon="12.188090"><ele>485</ele></trkpt>
+      <trkpt lat="47.609990" lon="12.187030"><ele>486</ele></trkpt>
+      <trkpt lat="47.609820" lon="12.187420"><ele>485</ele></trkpt>
+      <trkpt lat="47.609670" lon="12.188310"><ele>483</ele></trkpt>
+      <trkpt lat="47.608960" lon="12.188920"><ele>483</ele></trkpt>
+      <trkpt lat="47.608090" lon="12.189990"><ele>480</ele></trkpt>
+      <trkpt lat="47.607820" lon="12.189330"><ele>480</ele></trkpt>
+      <trkpt lat="47.606745" lon="12.187192"><ele>481</ele></trkpt>
+      <trkpt lat="47.606120" lon="12.185950"><ele>481</ele></trkpt>
+      <trkpt lat="47.605790" lon="12.186300"><ele>481</ele></trkpt>
+      <trkpt lat="47.605350" lon="12.186610"><ele>478</ele></trkpt>
+      <trkpt lat="47.605250" lon="12.185740"><ele>479</ele></trkpt>
+      <trkpt lat="47.604710" lon="12.183910"><ele>480</ele></trkpt>
+      <trkpt lat="47.604160" lon="12.182410"><ele>479</ele></trkpt>
+      <trkpt lat="47.603340" lon="12.180600"><ele>480</ele></trkpt>
+      <trkpt lat="47.602880" lon="12.179780"><ele>479</ele></trkpt>
+      <trkpt lat="47.601572" lon="12.177950"><ele>479</ele></trkpt>
+      <trkpt lat="47.601150" lon="12.177360"><ele>479</ele></trkpt>
+      <trkpt lat="47.599755" lon="12.175677"><ele>479</ele></trkpt>
+      <trkpt lat="47.598359" lon="12.173994"><ele>480</ele></trkpt>
+      <trkpt lat="47.596964" lon="12.172311"><ele>480</ele></trkpt>
+      <trkpt lat="47.595810" lon="12.170920"><ele>480</ele></trkpt>
+      <trkpt lat="47.594573" lon="12.168984"><ele>480</ele></trkpt>
+      <trkpt lat="47.593336" lon="12.167048"><ele>480</ele></trkpt>
+      <trkpt lat="47.593120" lon="12.166710"><ele>480</ele></trkpt>
+      <trkpt lat="47.592570" lon="12.166080"><ele>480</ele></trkpt>
+      <trkpt lat="47.592110" lon="12.165680"><ele>480</ele></trkpt>
+      <trkpt lat="47.591700" lon="12.165420"><ele>480</ele></trkpt>
+      <trkpt lat="47.591230" lon="12.165270"><ele>480</ele></trkpt>
+      <trkpt lat="47.589433" lon="12.165369"><ele>479</ele></trkpt>
+      <trkpt lat="47.589420" lon="12.165370"><ele>479</ele></trkpt>
+      <trkpt lat="47.587990" lon="12.165610"><ele>480</ele></trkpt>
+      <trkpt lat="47.588190" lon="12.167190"><ele>481</ele></trkpt>
+      <trkpt lat="47.586418" lon="12.167649"><ele>480</ele></trkpt>
+      <trkpt lat="47.584830" lon="12.168060"><ele>480</ele></trkpt>
+      <trkpt lat="47.583660" lon="12.168140"><ele>480</ele></trkpt>
+      <trkpt lat="47.583580" lon="12.169170"><ele>487</ele></trkpt>
+      <trkpt lat="47.583270" lon="12.170820"><ele>491</ele></trkpt>
+      <trkpt lat="47.583220" lon="12.170860"><ele>491</ele></trkpt>
+      <trkpt lat="47.582040" lon="12.170490"><ele>491</ele></trkpt>
+      <trkpt lat="47.581810" lon="12.170480"><ele>490</ele></trkpt>
+      <trkpt lat="47.581370" lon="12.172060"><ele>491</ele></trkpt>
+      <trkpt lat="47.582560" lon="12.172690"><ele>491</ele></trkpt>
       <trkpt lat="47.582650" lon="12.172350"><ele>491</ele></trkpt>
     </trkseg>
   </trk>
