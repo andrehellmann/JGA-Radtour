@@ -2,7 +2,7 @@
 <gpx version="1.1" creator="Claude - JGA MTB Voralpen-Loop 2026" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
   <metadata>
     <name>Mi 26.08. - Rofan-Abfahrt &amp; Inntal</name>
-    <desc>Mi 26.08. - Rofan-Abfahrt &amp; Inntal | 58.8 km | 806 hm | Berggasthof Rofan -&gt; Bayreuther Huette -&gt; Kramsach -&gt; Inntal-Radweg -&gt; Kufstein</desc>
+    <desc>Mi 26.08. - Rofan-Abfahrt &amp; Inntal | 51.8 km | 709 hm | Berggasthof Rofan -&gt; Bayreuther Huette -&gt; Kramsach -&gt; Inntal-Radweg -&gt; Kufstein</desc>
     <time>2026-08-26T05:00:00Z</time>
   </metadata>
   <wpt lat="47.441640" lon="11.762970">
@@ -20,30 +20,30 @@
   <wpt lat="47.447560" lon="11.873660">
     <ele>525</ele>
     <name>Kramsach Hotel Jagdhof</name>
-    <desc>[km 24.8] Laend 65, Kramsach. Tel +43 5337 62287. Einziger Betrieb in Kramsach mit &#x27;kein Ruhetag&#x27; - Uhrzeiten aber unklar, anrufen. MITTWOCH ZU: Seehof Reintalersee, Landgasthof Gappen, Cafe Central.</desc>
+    <desc>[km 17.8] Laend 65, Kramsach. Tel +43 5337 62287. Einziger Betrieb in Kramsach mit &#x27;kein Ruhetag&#x27; - Uhrzeiten aber unklar, anrufen. MITTWOCH ZU: Seehof Reintalersee, Landgasthof Gappen, Cafe Central.</desc>
     <sym>Restaurant</sym>
   </wpt>
   <wpt lat="47.495000" lon="12.000000">
     <ele>633</ele>
     <name>Inntal-Radweg</name>
-    <desc>[km 39.1] Ab hier flach am Inn nordwaerts. Jause: Bichlbaeck Ebbs/Niederndorf - aber nur bis 13:00/14:00 offen.</desc>
+    <desc>[km 32.1] Ab hier flach am Inn nordwaerts. Jause: Bichlbaeck Ebbs/Niederndorf - aber nur bis 13:00/14:00 offen.</desc>
     <sym>Bike Trail</sym>
   </wpt>
   <wpt lat="47.583010" lon="12.170800">
     <ele>491</ele>
     <name>Kufstein Trinkbrunnen Stadtplatz</name>
-    <desc>[km 58.3] 29 oeffentliche Trinkbrunnen in Kufstein (Stadtplatz, Innpromenade, Stadtpark). Kostenlos auffuellen - auch morgen frueh vor der Abfahrt.</desc>
+    <desc>[km 51.4] 29 oeffentliche Trinkbrunnen in Kufstein (Stadtplatz, Innpromenade, Stadtpark). Kostenlos auffuellen - auch morgen frueh vor der Abfahrt.</desc>
     <sym>Drinking Water</sym>
   </wpt>
   <wpt lat="47.582530" lon="12.172280">
     <ele>491</ele>
     <name>ZIEL Hotel Andreas Hofer</name>
-    <desc>[km 58.8] Georg-Pirmoser-Str. 8, Kufstein. Tel +43 5372 6980. Abgesperrter Fahrradraum vorhanden, Bett+Bike-zertifiziert. Tiefgarage 15 EUR. Fruehstuecksbeginn NICHT publiziert - fuer Abfahrt 08:00 anrufen.</desc>
+    <desc>[km 51.8] Georg-Pirmoser-Str. 8, Kufstein. Tel +43 5372 6980. Abgesperrter Fahrradraum vorhanden, Bett+Bike-zertifiziert. Tiefgarage 15 EUR. Fruehstuecksbeginn NICHT publiziert - fuer Abfahrt 08:00 anrufen.</desc>
     <sym>Lodging</sym>
   </wpt>
   <trk>
     <name>Mi 26.08. - Rofan-Abfahrt &amp; Inntal</name>
-    <desc>Mi 26.08. - Rofan-Abfahrt &amp; Inntal | 58.8 km | 806 hm | Berggasthof Rofan -&gt; Bayreuther Huette -&gt; Kramsach -&gt; Inntal-Radweg -&gt; Kufstein</desc>
+    <desc>Mi 26.08. - Rofan-Abfahrt &amp; Inntal | 51.8 km | 709 hm | Berggasthof Rofan -&gt; Bayreuther Huette -&gt; Kramsach -&gt; Inntal-Radweg -&gt; Kufstein</desc>
     <type>MTB</type>
     <trkseg>
       <trkpt lat="47.441740" lon="11.763070"><ele>1825</ele></trkpt>
@@ -109,7 +109,7 @@
       <trkpt lat="47.446920" lon="11.793920"><ele>1835</ele></trkpt>
       <trkpt lat="47.446210" lon="11.794130"><ele>1832</ele></trkpt>
       <trkpt lat="47.445320" lon="11.793770"><ele>1823</ele></trkpt>
-      <trkpt lat="47.444390" lon="11.793760"><ele>1812</ele></trkpt>
+      <trkpt lat="47.444260" lon="11.793680"><ele>1809</ele></trkpt>
       <trkpt lat="47.443810" lon="11.792980"><ele>1795</ele></trkpt>
       <trkpt lat="47.443110" lon="11.792670"><ele>1783</ele></trkpt>
       <trkpt lat="47.443460" lon="11.792400"><ele>1776</ele></trkpt>
@@ -130,8 +130,10 @@
       <trkpt lat="47.441370" lon="11.789290"><ele>1588</ele></trkpt>
       <trkpt lat="47.441300" lon="11.788660"><ele>1580</ele></trkpt>
       <trkpt lat="47.441040" lon="11.789000"><ele>1578</ele></trkpt>
-      <trkpt lat="47.440440" lon="11.789170"><ele>1569</ele></trkpt>
-      <trkpt lat="47.439053" lon="11.790864"><ele>1561</ele></trkpt>
+      <trkpt lat="47.440500" lon="11.789130"><ele>1571</ele></trkpt>
+      <trkpt lat="47.440340" lon="11.789410"><ele>1568</ele></trkpt>
+      <trkpt lat="47.440010" lon="11.789570"><ele>1562</ele></trkpt>
+      <trkpt lat="47.439460" lon="11.790480"><ele>1554</ele></trkpt>
       <trkpt lat="47.438680" lon="11.791320"><ele>1559</ele></trkpt>
       <trkpt lat="47.438290" lon="11.792760"><ele>1578</ele></trkpt>
       <trkpt lat="47.438400" lon="11.793060"><ele>1585</ele></trkpt>
@@ -143,7 +145,7 @@
       <trkpt lat="47.438830" lon="11.800100"><ele>1641</ele></trkpt>
       <trkpt lat="47.438560" lon="11.800450"><ele>1639</ele></trkpt>
       <trkpt lat="47.438930" lon="11.800870"><ele>1645</ele></trkpt>
-      <trkpt lat="47.439100" lon="11.801710"><ele>1647</ele></trkpt>
+      <trkpt lat="47.439100" lon="11.801640"><ele>1647</ele></trkpt>
       <trkpt lat="47.438530" lon="11.802590"><ele>1642</ele></trkpt>
       <trkpt lat="47.438610" lon="11.803500"><ele>1638</ele></trkpt>
       <trkpt lat="47.438260" lon="11.803820"><ele>1632</ele></trkpt>
@@ -151,7 +153,7 @@
       <trkpt lat="47.438160" lon="11.804780"><ele>1621</ele></trkpt>
       <trkpt lat="47.438080" lon="11.805290"><ele>1621</ele></trkpt>
       <trkpt lat="47.437650" lon="11.806160"><ele>1618</ele></trkpt>
-      <trkpt lat="47.437600" lon="11.806630"><ele>1619</ele></trkpt>
+      <trkpt lat="47.437610" lon="11.806760"><ele>1617</ele></trkpt>
       <trkpt lat="47.437780" lon="11.807400"><ele>1622</ele></trkpt>
       <trkpt lat="47.437850" lon="11.808520"><ele>1622</ele></trkpt>
       <trkpt lat="47.439300" lon="11.809940"><ele>1615</ele></trkpt>
@@ -292,83 +294,11 @@
       <trkpt lat="47.450680" lon="11.863790"><ele>581</ele></trkpt>
       <trkpt lat="47.450380" lon="11.863310"><ele>580</ele></trkpt>
       <trkpt lat="47.449990" lon="11.863040"><ele>575</ele></trkpt>
-      <trkpt lat="47.449760" lon="11.862950"><ele>574</ele></trkpt>
-      <trkpt lat="47.449680" lon="11.863170"><ele>570</ele></trkpt>
+      <trkpt lat="47.449660" lon="11.863050"><ele>572</ele></trkpt>
       <trkpt lat="47.450660" lon="11.864570"><ele>556</ele></trkpt>
       <trkpt lat="47.450520" lon="11.865190"><ele>551</ele></trkpt>
       <trkpt lat="47.450890" lon="11.865910"><ele>543</ele></trkpt>
-      <trkpt lat="47.452120" lon="11.865010"><ele>544</ele></trkpt>
-      <trkpt lat="47.453760" lon="11.864680"><ele>539</ele></trkpt>
-      <trkpt lat="47.454900" lon="11.864200"><ele>539</ele></trkpt>
-      <trkpt lat="47.455480" lon="11.864320"><ele>541</ele></trkpt>
-      <trkpt lat="47.457130" lon="11.865380"><ele>541</ele></trkpt>
-      <trkpt lat="47.457270" lon="11.865470"><ele>541</ele></trkpt>
-      <trkpt lat="47.458210" lon="11.865590"><ele>546</ele></trkpt>
-      <trkpt lat="47.459290" lon="11.867200"><ele>549</ele></trkpt>
-      <trkpt lat="47.460690" lon="11.866150"><ele>555</ele></trkpt>
-      <trkpt lat="47.462448" lon="11.865587"><ele>562</ele></trkpt>
-      <trkpt lat="47.462690" lon="11.865510"><ele>563</ele></trkpt>
-      <trkpt lat="47.463050" lon="11.865530"><ele>565</ele></trkpt>
-      <trkpt lat="47.464260" lon="11.866010"><ele>568</ele></trkpt>
-      <trkpt lat="47.464930" lon="11.866480"><ele>567</ele></trkpt>
-      <trkpt lat="47.466470" lon="11.866860"><ele>565</ele></trkpt>
-      <trkpt lat="47.467690" lon="11.867980"><ele>566</ele></trkpt>
-      <trkpt lat="47.468600" lon="11.868370"><ele>566</ele></trkpt>
-      <trkpt lat="47.469580" lon="11.869130"><ele>567</ele></trkpt>
-      <trkpt lat="47.469760" lon="11.869140"><ele>568</ele></trkpt>
-      <trkpt lat="47.470380" lon="11.868540"><ele>568</ele></trkpt>
-      <trkpt lat="47.471340" lon="11.866780"><ele>570</ele></trkpt>
-      <trkpt lat="47.471900" lon="11.866270"><ele>570</ele></trkpt>
-      <trkpt lat="47.472540" lon="11.866120"><ele>572</ele></trkpt>
-      <trkpt lat="47.473050" lon="11.866240"><ele>571</ele></trkpt>
-      <trkpt lat="47.474769" lon="11.867021"><ele>570</ele></trkpt>
-      <trkpt lat="47.474790" lon="11.867030"><ele>570</ele></trkpt>
-      <trkpt lat="47.475750" lon="11.866920"><ele>571</ele></trkpt>
-      <trkpt lat="47.476150" lon="11.866590"><ele>579</ele></trkpt>
-      <trkpt lat="47.476430" lon="11.866560"><ele>580</ele></trkpt>
-      <trkpt lat="47.476320" lon="11.866210"><ele>587</ele></trkpt>
-      <trkpt lat="47.475930" lon="11.866420"><ele>589</ele></trkpt>
-      <trkpt lat="47.474700" lon="11.866170"><ele>607</ele></trkpt>
-      <trkpt lat="47.474260" lon="11.865520"><ele>619</ele></trkpt>
-      <trkpt lat="47.473840" lon="11.865430"><ele>624</ele></trkpt>
-      <trkpt lat="47.474260" lon="11.865170"><ele>630</ele></trkpt>
-      <trkpt lat="47.473840" lon="11.865430"><ele>624</ele></trkpt>
-      <trkpt lat="47.474260" lon="11.865520"><ele>619</ele></trkpt>
-      <trkpt lat="47.474700" lon="11.866170"><ele>607</ele></trkpt>
-      <trkpt lat="47.475930" lon="11.866420"><ele>589</ele></trkpt>
-      <trkpt lat="47.476320" lon="11.866210"><ele>587</ele></trkpt>
-      <trkpt lat="47.476430" lon="11.866560"><ele>580</ele></trkpt>
-      <trkpt lat="47.476150" lon="11.866590"><ele>579</ele></trkpt>
-      <trkpt lat="47.475750" lon="11.866920"><ele>571</ele></trkpt>
-      <trkpt lat="47.474790" lon="11.867030"><ele>570</ele></trkpt>
-      <trkpt lat="47.473071" lon="11.866249"><ele>571</ele></trkpt>
-      <trkpt lat="47.473050" lon="11.866240"><ele>571</ele></trkpt>
-      <trkpt lat="47.472540" lon="11.866120"><ele>572</ele></trkpt>
-      <trkpt lat="47.471900" lon="11.866270"><ele>570</ele></trkpt>
-      <trkpt lat="47.471340" lon="11.866780"><ele>570</ele></trkpt>
-      <trkpt lat="47.470380" lon="11.868540"><ele>568</ele></trkpt>
-      <trkpt lat="47.469760" lon="11.869140"><ele>568</ele></trkpt>
-      <trkpt lat="47.469450" lon="11.869110"><ele>567</ele></trkpt>
-      <trkpt lat="47.468600" lon="11.868370"><ele>566</ele></trkpt>
-      <trkpt lat="47.467690" lon="11.867980"><ele>566</ele></trkpt>
-      <trkpt lat="47.466470" lon="11.866860"><ele>565</ele></trkpt>
-      <trkpt lat="47.464930" lon="11.866480"><ele>567</ele></trkpt>
-      <trkpt lat="47.464260" lon="11.866010"><ele>568</ele></trkpt>
-      <trkpt lat="47.463050" lon="11.865530"><ele>565</ele></trkpt>
-      <trkpt lat="47.462690" lon="11.865510"><ele>563</ele></trkpt>
-      <trkpt lat="47.460932" lon="11.866073"><ele>556</ele></trkpt>
-      <trkpt lat="47.460690" lon="11.866150"><ele>555</ele></trkpt>
-      <trkpt lat="47.459290" lon="11.867200"><ele>549</ele></trkpt>
-      <trkpt lat="47.459080" lon="11.867030"><ele>550</ele></trkpt>
-      <trkpt lat="47.458280" lon="11.865640"><ele>546</ele></trkpt>
-      <trkpt lat="47.457270" lon="11.865470"><ele>541</ele></trkpt>
-      <trkpt lat="47.455606" lon="11.864460"><ele>539</ele></trkpt>
-      <trkpt lat="47.455210" lon="11.864220"><ele>538</ele></trkpt>
-      <trkpt lat="47.454900" lon="11.864200"><ele>539</ele></trkpt>
-      <trkpt lat="47.453550" lon="11.864740"><ele>538</ele></trkpt>
-      <trkpt lat="47.452370" lon="11.864920"><ele>543</ele></trkpt>
-      <trkpt lat="47.451180" lon="11.865590"><ele>544</ele></trkpt>
-      <trkpt lat="47.450520" lon="11.866350"><ele>543</ele></trkpt>
+      <trkpt lat="47.450290" lon="11.866730"><ele>542</ele></trkpt>
       <trkpt lat="47.449960" lon="11.867660"><ele>539</ele></trkpt>
       <trkpt lat="47.449660" lon="11.867820"><ele>540</ele></trkpt>
       <trkpt lat="47.448740" lon="11.869400"><ele>537</ele></trkpt>

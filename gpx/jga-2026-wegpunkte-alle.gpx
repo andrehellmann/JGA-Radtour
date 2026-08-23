@@ -4,7 +4,7 @@
   <wpt lat="48.109270" lon="11.512450">
     <ele>545</ele>
     <name>START Muenchen-Sendling</name>
-    <desc>[km 0.0] Start/Ziel in Muenchen-Sendling. Abfahrt 07:00 - laengster Tag, kein Spielraum.</desc>
+    <desc>[km 0.0] Start/Ziel in Muenchen-Sendling. Abfahrt 07:30. 78 km mit 569 hm - der leichte Anreisetag.</desc>
     <sym>Residence</sym>
   </wpt>
   <wpt lat="48.068500" lon="11.542700">
@@ -31,28 +31,34 @@
     <desc>[km 36.4] Isar-Schwimmpause. Naturschutzgebiet: nur bestehende Zugaenge, Kiesinseln meiden (Vogelschutz), Feuer/Rauchen verboten.</desc>
     <sym>Swimming Area</sym>
   </wpt>
-  <wpt lat="47.813530" lon="11.637130">
-    <ele>720</ele>
-    <name>Kloster Reutberg</name>
-    <desc>[km 71.3] Braeustueberl mit Blick auf die Benediktenwand. Oeffnungszeiten nicht verifiziert - vorher pruefen.</desc>
+  <wpt lat="47.761300" lon="11.558930">
+    <ele>657</ele>
+    <name>Bad Toelz Kolberbraeu MITTAG</name>
+    <desc>[km 61.3] Posthotel Kolberbraeu, Marktstr. 29. Kein Ruhetag, warme Kueche 11:00-21:00 durchgehend. Tel +49 8041 7688-0. Montagssicher. Alternativ Baeckerei Buettner, Marktstr. 50, Mo-Fr 6:45-18:00.</desc>
     <sym>Restaurant</sym>
   </wpt>
-  <wpt lat="47.761300" lon="11.558930">
-    <ele>655</ele>
-    <name>Bad Toelz Kolberbraeu MITTAG</name>
-    <desc>[km 81.9] Posthotel Kolberbraeu, Marktstr. 29. Kein Ruhetag, warme Kueche 11:00-21:00 durchgehend. Tel +49 8041 7688-0. Montagssicher. Alternativ Baeckerei Buettner, Marktstr. 50, Mo-Fr 6:45-18:00.</desc>
-    <sym>Restaurant</sym>
+  <wpt lat="47.734690" lon="11.547480">
+    <ele>742</ele>
+    <name>Wackersberg HOEHENWEG</name>
+    <desc>[km 65.0] Ab hier der ausgeschilderte Hoehenweg statt des flachen Isarradwegs: Feld- und Waldwege ueber die welligen Wiesen von Wackersberg, Blick auf Benediktenwand und Brauneck. Kostet ca. 250 hm mehr als das Isarufer.</desc>
+    <sym>Scenic Area</sym>
+  </wpt>
+  <wpt lat="47.696280" lon="11.558730">
+    <ele>671</ele>
+    <name>Schlegldorf</name>
+    <desc>[km 70.7] Hoehenweg-Abschnitt Richtung Lenggries. Schotter und Naturwege.</desc>
+    <sym>Bike Trail</sym>
   </wpt>
   <wpt lat="47.683160" lon="11.576400">
     <ele>678</ele>
     <name>Lenggries</name>
-    <desc>[km 92.9] Letzte Einkaufsmoeglichkeit vor Fleck. Kurze Pause.</desc>
+    <desc>[km 73.4] Letzte Einkaufsmoeglichkeit vor Fleck. Kurze Pause.</desc>
     <sym>Convenience Store</sym>
   </wpt>
   <wpt lat="47.651410" lon="11.589200">
     <ele>692</ele>
     <name>ZIEL Landgasthof zum Papyrer</name>
-    <desc>[km 97.3] Fleck 5, 83661 Lenggries-Hohenreuth. Tel 08042 5633077. ACHTUNG: Quellen widersprechen sich zum Ruhetag Montag - VORHER ANRUFEN. Fruehstueck 08:00-09:30 zubuchbar. Kueche Mai-Sept 11:00-22:00, warm bis 21:00.</desc>
+    <desc>[km 77.7] Fleck 5, 83661 Lenggries-Hohenreuth. Tel 08042 5633077. ACHTUNG: Quellen widersprechen sich zum Ruhetag Montag - VORHER ANRUFEN. Fruehstueck 08:00-09:30 zubuchbar. Kueche Mai-Sept 11:00-22:00, warm bis 21:00.</desc>
     <sym>Lodging</sym>
   </wpt>
   <wpt lat="47.651410" lon="11.589200">
@@ -73,34 +79,34 @@
     <desc>[km 11.7] Ludwig-Ganghofer-Str. 8, Lenggries-Fall. Restaurant/Biergarten 12:00-22:00, Kueche bis 21:00, kein Ruhetag. Tel +49 8045 130. WICHTIG: Jachenau und Vorderriss sind Mo+Di geschlossen - das hier ist der Mittagsanker.</desc>
     <sym>Restaurant</sym>
   </wpt>
-  <wpt lat="47.597510" lon="11.636150">
-    <ele>901</ele>
-    <name>Achenpass 941 m</name>
-    <desc>[km 25.7] Grenze DE/AT. Riegel vor der Passhoehe. Danach Achental Richtung Achenkirch.</desc>
+  <wpt lat="47.565550" lon="11.683340">
+    <ele>931</ele>
+    <name>Achenpass 931 m</name>
+    <desc>[km 28.7] Grenze DE/AT. Riegel vor der Passhoehe. Danach Achental Richtung Achenkirch.</desc>
     <sym>Summit</sym>
   </wpt>
   <wpt lat="47.527620" lon="11.705600">
     <ele>914</ele>
     <name>Achenkirch</name>
-    <desc>[km 38.3] Am Dienstag ist hier kein Betrieb verifiziert offen (SeeEck Mo+Di zu). Durchfahren, Achensee-Ostufer nehmen.</desc>
+    <desc>[km 34.5] Am Dienstag ist hier kein Betrieb verifiziert offen (SeeEck Mo+Di zu). Durchfahren, Achensee-Ostufer nehmen.</desc>
     <sym>Information</sym>
   </wpt>
   <wpt lat="47.422830" lon="11.750950">
     <ele>973</ele>
     <name>MPREIS Maurach WASSER+FOOD</name>
-    <desc>[km 52.4] Dorfstrasse 24, Maurach. Di 7:30-19:00, Baeckerei-Cafe bis 18:30. LETZTE Auffuellstelle - auf der Rofan-Auffahrt gibt es KEIN verifiziertes Wasser. Mind. 2,5-3 l mitnehmen plus Elektrolyte.</desc>
+    <desc>[km 48.6] Dorfstrasse 24, Maurach. Di 7:30-19:00, Baeckerei-Cafe bis 18:30. LETZTE Auffuellstelle - auf der Rofan-Auffahrt gibt es KEIN verifiziertes Wasser. Mind. 2,5-3 l mitnehmen plus Elektrolyte.</desc>
     <sym>Convenience Store</sym>
   </wpt>
   <wpt lat="47.424270" lon="11.751260">
     <ele>973</ele>
     <name>Rofanseilbahn JOKER</name>
-    <desc>[km 52.4] Talstation Maurach. 13.06.-13.09. taeglich 08:00-17:30. Bergfahrt 26,00 EUR, Sportgeraet 10,50 EUR. MTB-Mitnahme NICHT dokumentiert - vorher klaeren: +43 5243 5292. Spart die letzten 851 hm.</desc>
+    <desc>[km 48.6] Talstation Maurach. 13.06.-13.09. taeglich 08:00-17:30. Bergfahrt 26,00 EUR, Sportgeraet 10,50 EUR. MTB-Mitnahme NICHT dokumentiert - vorher klaeren: +43 5243 5292. Spart die letzten 851 hm.</desc>
     <sym>Tram Stop</sym>
   </wpt>
   <wpt lat="47.441640" lon="11.762970">
     <ele>1824</ele>
     <name>ZIEL Berggasthof Rofan 1840 m</name>
-    <desc>[km 57.6] Neben Bergstation Rofanseilbahn, 5 Gehmin von der Erfurter Huette. Tel +43 676 4852540. Ruhetag Donnerstag (fuer uns irrelevant). Halbpension/Duschen/Check-in nicht publiziert - anrufen.</desc>
+    <desc>[km 53.8] Neben Bergstation Rofanseilbahn, 5 Gehmin von der Erfurter Huette. Tel +43 676 4852540. Ruhetag Donnerstag (fuer uns irrelevant). Halbpension/Duschen/Check-in nicht publiziert - anrufen.</desc>
     <sym>Lodging</sym>
   </wpt>
   <wpt lat="47.441640" lon="11.762970">
@@ -118,25 +124,25 @@
   <wpt lat="47.447560" lon="11.873660">
     <ele>525</ele>
     <name>Kramsach Hotel Jagdhof</name>
-    <desc>[km 24.8] Laend 65, Kramsach. Tel +43 5337 62287. Einziger Betrieb in Kramsach mit &#x27;kein Ruhetag&#x27; - Uhrzeiten aber unklar, anrufen. MITTWOCH ZU: Seehof Reintalersee, Landgasthof Gappen, Cafe Central.</desc>
+    <desc>[km 17.8] Laend 65, Kramsach. Tel +43 5337 62287. Einziger Betrieb in Kramsach mit &#x27;kein Ruhetag&#x27; - Uhrzeiten aber unklar, anrufen. MITTWOCH ZU: Seehof Reintalersee, Landgasthof Gappen, Cafe Central.</desc>
     <sym>Restaurant</sym>
   </wpt>
   <wpt lat="47.495000" lon="12.000000">
     <ele>633</ele>
     <name>Inntal-Radweg</name>
-    <desc>[km 39.1] Ab hier flach am Inn nordwaerts. Jause: Bichlbaeck Ebbs/Niederndorf - aber nur bis 13:00/14:00 offen.</desc>
+    <desc>[km 32.1] Ab hier flach am Inn nordwaerts. Jause: Bichlbaeck Ebbs/Niederndorf - aber nur bis 13:00/14:00 offen.</desc>
     <sym>Bike Trail</sym>
   </wpt>
   <wpt lat="47.583010" lon="12.170800">
     <ele>491</ele>
     <name>Kufstein Trinkbrunnen Stadtplatz</name>
-    <desc>[km 58.3] 29 oeffentliche Trinkbrunnen in Kufstein (Stadtplatz, Innpromenade, Stadtpark). Kostenlos auffuellen - auch morgen frueh vor der Abfahrt.</desc>
+    <desc>[km 51.4] 29 oeffentliche Trinkbrunnen in Kufstein (Stadtplatz, Innpromenade, Stadtpark). Kostenlos auffuellen - auch morgen frueh vor der Abfahrt.</desc>
     <sym>Drinking Water</sym>
   </wpt>
   <wpt lat="47.582530" lon="12.172280">
     <ele>491</ele>
     <name>ZIEL Hotel Andreas Hofer</name>
-    <desc>[km 58.8] Georg-Pirmoser-Str. 8, Kufstein. Tel +43 5372 6980. Abgesperrter Fahrradraum vorhanden, Bett+Bike-zertifiziert. Tiefgarage 15 EUR. Fruehstuecksbeginn NICHT publiziert - fuer Abfahrt 08:00 anrufen.</desc>
+    <desc>[km 51.8] Georg-Pirmoser-Str. 8, Kufstein. Tel +43 5372 6980. Abgesperrter Fahrradraum vorhanden, Bett+Bike-zertifiziert. Tiefgarage 15 EUR. Fruehstuecksbeginn NICHT publiziert - fuer Abfahrt 08:00 anrufen.</desc>
     <sym>Lodging</sym>
   </wpt>
   <wpt lat="47.424270" lon="11.751260">
