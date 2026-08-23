@@ -23,16 +23,34 @@
     <desc>[km 9.9] Kirchplatz 2, Pullach. Mo-Fr ab 07:00 (Sommerzeiten 17.08.-13.09.: bis 14:00). Tel +49 89 7930126. Einzige Baeckerei am Korridor, die um 7 aufmacht. Ca. 280 m Umweg von der Route.</desc>
     <sym>Restaurant</sym>
   </wpt>
+  <wpt lat="47.973060" lon="11.473770">
+    <ele>557</ele>
+    <name>ISARAUEN RADVERBOT km 21,5</name>
+    <desc>[km 21.5] Ab hier ca. 700 m auf Pfaden, die in OSM bicycle=no tragen (bis km 22,9). Naturschutzgebiet Pupplinger Au - hier wird kontrolliert. SCHIEBEN, nicht fahren. Geprueft am 23.08. gegen die OSM-Wegtags; eine Umfahrung kostet entweder 500 m mehr Radverbot oder macht aus dem Tag eine Asphaltetappe.</desc>
+    <sym>Danger Area</sym>
+  </wpt>
   <wpt lat="47.978610" lon="11.467250">
     <ele>560</ele>
     <name>Kloster Schaeftlarn</name>
     <desc>[km 22.4] Klosterbraeustueberl, taeglich 10:00-22:00, Ruhetag Mittwoch, Kueche 11:30-21:00. Tel 08178 3694. Um 8 Uhr noch zu - nur als Fallback.</desc>
     <sym>Restaurant</sym>
   </wpt>
+  <wpt lat="47.930500" lon="11.441500">
+    <ele>570</ele>
+    <name>ABSTEIGEN km 29,5 und 30,3</name>
+    <desc>[km 29.5] Zwei Abschnitte mit bicycle=dismount, zusammen ca. 300 m. Kurz schieben, dann geht es weiter.</desc>
+    <sym>Danger Area</sym>
+  </wpt>
+  <wpt lat="47.902020" lon="11.436730">
+    <ele>583</ele>
+    <name>TREPPE km 34,5</name>
+    <desc>[km 34.5] Hier liegt eine Treppe (highway=steps) im Track, ca. 100 m. Mit Gepaeck heisst das tragen oder aussenrum. Nicht draufzufahren - vorher absteigen.</desc>
+    <sym>Danger Area</sym>
+  </wpt>
   <wpt lat="47.898320" lon="11.450490">
     <ele>584</ele>
     <name>Pupplinger Au Badestelle</name>
-    <desc>[km 36.4] Isar-Schwimmpause. Naturschutzgebiet: nur bestehende Zugaenge, Kiesinseln meiden (Vogelschutz), Feuer/Rauchen verboten.</desc>
+    <desc>[km 36.4] Isar-Schwimmpause. Naturschutzgebiet: nur bestehende Zugaenge, Kiesinseln meiden (Vogelschutz), Feuer/Rauchen verboten. ACHTUNG: zwischen km 21,5 und 22,9 sowie bei km 29,5/30,3 liegen Wege mit Radverbot bzw. Absteigepflicht - siehe eigene Warnpunkte.</desc>
     <sym>Swimming Area</sym>
   </wpt>
   <wpt lat="47.761300" lon="11.558930">

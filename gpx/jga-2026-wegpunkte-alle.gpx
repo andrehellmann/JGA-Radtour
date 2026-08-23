@@ -19,16 +19,34 @@
     <desc>[km 9.9] Kirchplatz 2, Pullach. Mo-Fr ab 07:00 (Sommerzeiten 17.08.-13.09.: bis 14:00). Tel +49 89 7930126. Einzige Baeckerei am Korridor, die um 7 aufmacht. Ca. 280 m Umweg von der Route.</desc>
     <sym>Restaurant</sym>
   </wpt>
+  <wpt lat="47.973060" lon="11.473770">
+    <ele>557</ele>
+    <name>ISARAUEN RADVERBOT km 21,5</name>
+    <desc>[km 21.5] Ab hier ca. 700 m auf Pfaden, die in OSM bicycle=no tragen (bis km 22,9). Naturschutzgebiet Pupplinger Au - hier wird kontrolliert. SCHIEBEN, nicht fahren. Geprueft am 23.08. gegen die OSM-Wegtags; eine Umfahrung kostet entweder 500 m mehr Radverbot oder macht aus dem Tag eine Asphaltetappe.</desc>
+    <sym>Danger Area</sym>
+  </wpt>
   <wpt lat="47.978610" lon="11.467250">
     <ele>560</ele>
     <name>Kloster Schaeftlarn</name>
     <desc>[km 22.4] Klosterbraeustueberl, taeglich 10:00-22:00, Ruhetag Mittwoch, Kueche 11:30-21:00. Tel 08178 3694. Um 8 Uhr noch zu - nur als Fallback.</desc>
     <sym>Restaurant</sym>
   </wpt>
+  <wpt lat="47.930500" lon="11.441500">
+    <ele>570</ele>
+    <name>ABSTEIGEN km 29,5 und 30,3</name>
+    <desc>[km 29.5] Zwei Abschnitte mit bicycle=dismount, zusammen ca. 300 m. Kurz schieben, dann geht es weiter.</desc>
+    <sym>Danger Area</sym>
+  </wpt>
+  <wpt lat="47.902020" lon="11.436730">
+    <ele>583</ele>
+    <name>TREPPE km 34,5</name>
+    <desc>[km 34.5] Hier liegt eine Treppe (highway=steps) im Track, ca. 100 m. Mit Gepaeck heisst das tragen oder aussenrum. Nicht draufzufahren - vorher absteigen.</desc>
+    <sym>Danger Area</sym>
+  </wpt>
   <wpt lat="47.898320" lon="11.450490">
     <ele>584</ele>
     <name>Pupplinger Au Badestelle</name>
-    <desc>[km 36.4] Isar-Schwimmpause. Naturschutzgebiet: nur bestehende Zugaenge, Kiesinseln meiden (Vogelschutz), Feuer/Rauchen verboten.</desc>
+    <desc>[km 36.4] Isar-Schwimmpause. Naturschutzgebiet: nur bestehende Zugaenge, Kiesinseln meiden (Vogelschutz), Feuer/Rauchen verboten. ACHTUNG: zwischen km 21,5 und 22,9 sowie bei km 29,5/30,3 liegen Wege mit Radverbot bzw. Absteigepflicht - siehe eigene Warnpunkte.</desc>
     <sym>Swimming Area</sym>
   </wpt>
   <wpt lat="47.761300" lon="11.558930">
@@ -64,7 +82,7 @@
   <wpt lat="47.651410" lon="11.589200">
     <ele>692</ele>
     <name>START Papyrer Fleck</name>
-    <desc>[km 0.0] Abfahrt 06:30 (30 min frueher als geplant, wegen Regen). Fruehstueck erst ab 08:00 - Lunchpaket vereinbaren oder ohne los. WETTER: Regen ab ca. 12:00, Hauptregen 14-16 Uhr am Rofan.</desc>
+    <desc>[km 0.0] Abfahrt 06:30 (30 min frueher als geplant, wegen Regen). Fruehstueck erst ab 08:00 - Lunchpaket vereinbaren oder ohne los. WETTER (Stand 23.08. abends): Regen ab 11:00, Hauptregen 14-16 Uhr mit 2,9/2,7/1,8 mm, Tagessumme 10,2 mm am Rofan, Boeen bis 46 km/h, nur 10-14 Grad. Vormittag ist trocken - jede Stunde frueher zaehlt.</desc>
     <sym>Lodging</sym>
   </wpt>
   <wpt lat="47.578800" lon="11.535000">
@@ -92,27 +110,27 @@
     <sym>Information</sym>
   </wpt>
   <wpt lat="47.422830" lon="11.750950">
-    <ele>973</ele>
+    <ele>970</ele>
     <name>MPREIS Maurach WASSER+FOOD</name>
-    <desc>[km 50.3] Dorfstrasse 24, Maurach. Di 7:30-19:00, Baeckerei-Cafe bis 18:30. LETZTE Auffuellstelle - auf der Rofan-Auffahrt gibt es KEIN verifiziertes Wasser. Mind. 2,5-3 l mitnehmen plus Elektrolyte.</desc>
+    <desc>[km 50.2] Dorfstrasse 24, Maurach. Di 7:30-19:00, Baeckerei-Cafe bis 18:30. LETZTE Auffuellstelle - auf der Rofan-Auffahrt gibt es KEIN verifiziertes Wasser. Mind. 2,5-3 l mitnehmen plus Elektrolyte.</desc>
     <sym>Convenience Store</sym>
   </wpt>
   <wpt lat="47.424270" lon="11.751260">
-    <ele>973</ele>
+    <ele>975</ele>
     <name>Rofanseilbahn JOKER</name>
     <desc>[km 50.3] Talstation Maurach. 13.06.-13.09. taeglich 08:00-17:30. Bergfahrt 26,00 EUR, Sportgeraet 10,50 EUR. MTB-Mitnahme NICHT dokumentiert - vorher klaeren: +43 5243 5292. Spart die letzten 851 hm.</desc>
     <sym>Tram Stop</sym>
   </wpt>
-  <wpt lat="47.430050" lon="11.757770">
-    <ele>1130</ele>
+  <wpt lat="47.430850" lon="11.760930">
+    <ele>1276</ele>
     <name>RAMPE 20-36 PROZENT</name>
-    <desc>[km 51.4] km 51,4. Ab hier die Schlussrampe zum Rofan: 2,6 km Wegstrecke steiler als 20 Prozent, steilste 250 m mit 36 Prozent (km 53,6-53,8). Das ist Schiebegelaende - mit Gepaeck realistisch 60-90 min fuer die letzten 3,5 km. Kurz vor dem Ziel liegen ca. 300 m mit bicycle=no. JOKER: Seilbahn ab Maurach (siehe vorherigen Wegpunkt), spart die letzten 851 hm.</desc>
+    <desc>[km 52.7] Ab hier die Dauersteigung zum Rofan: 2,1 km Wegstrecke steiler als 20 Prozent, steilste 250 m mit 36 Prozent kurz vor dem Ziel. Der Weg ist zu 4,5 von 5,2 km Forstweg - Schieben auf Schotter, nicht auf Bergpfad. 166 m sind Pfad, 1,4 km sind als Bergwanderweg (SAC T2) getaggt, und ca. 309 m tragen bicycle=no. Es gibt KEINE offizielle Radroute aufs Rofan-Plateau - jedes Routingprofil trifft dieselbe Verbotsstrecke. Mit Gepaeck realistisch 60-90 min fuer die letzten 3 km. JOKER: Seilbahn ab Maurach.</desc>
     <sym>Danger Area</sym>
   </wpt>
   <wpt lat="47.441640" lon="11.762970">
     <ele>1824</ele>
     <name>ZIEL Berggasthof Rofan 1840 m</name>
-    <desc>[km 54.4] Neben Bergstation Rofanseilbahn, 5 Gehmin von der Erfurter Huette. Tel +43 676 4852540. Ruhetag Donnerstag (fuer uns irrelevant). Halbpension/Duschen/Check-in nicht publiziert - anrufen.</desc>
+    <desc>[km 55.5] Neben Bergstation Rofanseilbahn, 5 Gehmin von der Erfurter Huette. Tel +43 676 4852540. Ruhetag Donnerstag (fuer uns irrelevant). Halbpension/Duschen/Check-in nicht publiziert - anrufen.</desc>
     <sym>Lodging</sym>
   </wpt>
   <wpt lat="47.441640" lon="11.762970">
